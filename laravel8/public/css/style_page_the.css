@@ -1,0 +1,366 @@
+/*color: #88124d; 
+  color: #be6161;
+  color: #d4d6d8c2;
+
+
+
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../images/images/fond_code3.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icone_retour {
+    font-size: 35px;
+    color: #88124d;
+    margin-left: 3%;
+    margin-top: 12%;
+    position: fixed;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+h3 {
+    font-family: fantasy;
+    color: #be6161
+}
+
+
+h2 {
+    font-family: 'Raleway', 'sans-serif', 'fantasy';
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 14%;
+    font-weight: 900;
+    color: #88124d;
+    border-bottom: solid 3px #2d3960;
+}
+
+/*--------------------------------------------------------------
+# surcharge navbar bootstrap
+--------------------------------------------------------------*/
+
+
+.navbar {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+
+}
+
+.bg-light {
+    background-color: #d4d6d8c2 !important;
+}
+
+.navbar-horizontale {
+    margin-bottom: 1vw;
+
+}
+
+.navbar-nav a {
+    font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+# présentation visu home
+--------------------------------------------------------------*/
+
+
+.photo_1 {
+    background: url(../images/images/tea.jpeg);
+    width: 83%;
+    background-size: cover;
+    height: auto;
+    margin-left: 17vw;
+    background-attachment: fixed;
+}
+
+.home_title {
+    position: relative;
+    top: 40px;
+}
+
+
+.home_title p {
+    margin-bottom: 50px;
+    font-family: "Dancing Script", "Source Serif Pro";
+    font-size: 60px;
+    color: #9a2929;
+    top: 20px;
+
+
+}
+
+/*# Hero Section*/
+#hero {
+    width: 100%;
+    height: 100vh;
+
+}
+
+#hero:before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5vw;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+A Propos
+--------------------------------------------------------------*/
+
+/*icones*/
+.prod_icon {
+    font-size: 180%;
+    color: #88124d;
+}
+
+.prod_icon:hover {
+    transform: translateX(20px);
+    transition: all 1s;
+}
+
+
+
+/*--------------------------------------------------------------
+Formation
+--------------------------------------------------------------*/
+
+
+
+.container .formation {
+    background-image: url(../images/images/champ_de_the.jpeg);
+    width: 27vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.famille_forma h4 {
+    color: white;
+    font-family: serif;
+
+    width: 250px;
+    display: inline-table
+}
+
+.famille_forma p {
+    color: black;
+    font-family: serif;
+
+    width: 250px;
+    display: inline-table
+}
+
+.color_bande {
+    background-color: #d4d6d8c2;
+    text-align: center;
+}
+
+.color_bande h4 {
+    color: #656d74ec;
+}
+
+.famille_details,
+img {
+    max-width: 18vw;
+}
+
+
+/*gallerie loisirs*/
+.galerie_img {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 30px
+}
+
+.gallerie_titre {
+    position: absolute;
+    top: 10px;
+    color: white;
+    left: 50px;
+    text-transform: uppercase;
+    font-family: "Dancing Script";
+
+}
+
+.text_img_4 {
+    position: relative;
+    top: 240px;
+    color: rgb(255, 255, 255);
+    left: -20px;
+}
+
+/*vos messages*/
+.client-profil img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    float: right;
+}
+
+blockquote p {
+    font-family: "Indie Flower";
+
+
+}
+
+blockquote:before {
+    content: "\00a5";
+    display: block;
+    font-size: 40px;
+    line-height: 20px;
+    color: green;
+}
+
+cite {
+    color: green;
+}
+
+/*les packs*/
+.pack_title {
+    border-bottom: solid 2px grey;
+    text-align: center;
+
+}
+
+.pack {
+    background: #c6c1c1;
+    border: solid 2px grey;
+    box-shadow: 15px 15px 30px grey;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.pack_title h3 {
+    text-transform: uppercase;
+    font-family: fantasy;
+    color: #1e521e
+}
+
+.pack_content ul li {
+    position: relative;
+    color: #337c33;
+    padding-top: 20px;
+
+
+
+}
+
+.pack_signup .btn {
+    border: solid 2px;
+    background-color: darkgreen;
+    color: white;
+    border-color: white;
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 120px;
+    border-radius: 20px;
+}
+
+.pack_signup .btn:hover {
+    background-color: #90de90;
+}
+
+.form h2 {
+    font-size: 30px;
+
+}
+
+.form {
+    margin-top: 50px;
+}
+
+.map {
+    margin-top: 80px;
+}
+
+footer {
+    background-color: #338e33;
+    color: white;
+    height: 50px;
+    padding-bottom: 5px;
+
+}
+
+.copyright p {
+    text-align: center;
+    margin: auto;
+}

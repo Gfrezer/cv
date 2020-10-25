@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
-class PostMessagesController extends Controller
+use App\Models\Contact;
+class ContactController extends Controller
 {
 
  
@@ -43,19 +43,21 @@ class PostMessagesController extends Controller
         'email' => 'required|email',
         'message' => 'required|max:255',
     ]);
-    $this->toto($validatedData);
+    $this->save($validatedData);
+    return redirect()->route('accueil');
     }
 
-       function toto($validatedData)
+       function save($validatedData)
 	{
-        $user = new User;
-		$user->name = $validatedData['name'];
-		$user->email = $validatedData['email'];	
-		$user->message = $validatedData['message'];	
+        $contact = new Contact;
+		$contact->name = $validatedData['name'];
+		$contact->email = $validatedData['email'];	
+		$contact->message = $validatedData['message'];	
 
-		$user->save();
+        $contact->save();
+         
 	}
-   
+  
 
     /**
      * Display the specified resource.

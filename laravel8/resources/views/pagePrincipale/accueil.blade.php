@@ -504,7 +504,7 @@
                 </div>
                 <div class="col-md-6 ">
 
-                    @include('pagePrincipale/formMessages')
+                    @include('pagePrincipale/formContact')
 
                 </div>
 

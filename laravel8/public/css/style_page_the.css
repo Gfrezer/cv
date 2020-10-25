@@ -55,6 +55,10 @@ h2 {
     border-bottom: solid 3px #2d3960;
 }
 
+h5 {
+    font-size: 2vw;
+}
+
 /*--------------------------------------------------------------
 # surcharge navbar bootstrap
 --------------------------------------------------------------*/
@@ -238,8 +242,10 @@ img {
     max-width: 18vw;
 }
 
+/*--------------------------------------------------------------
+gallerie loisirs
+--------------------------------------------------------------*/
 
-/*gallerie loisirs*/
 .galerie_img {
     display: block;
     background-size: cover;
@@ -267,33 +273,11 @@ img {
     left: -20px;
 }
 
-/*vos messages*/
-.client-profil img {
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
-    float: right;
-}
 
-blockquote p {
-    font-family: "Indie Flower";
+/*--------------------------------------------------------------
+Mes applis
+--------------------------------------------------------------*/
 
-
-}
-
-blockquote:before {
-    content: "\00a5";
-    display: block;
-    font-size: 40px;
-    line-height: 20px;
-    color: green;
-}
-
-cite {
-    color: green;
-}
-
-/*les packs*/
 .pack_title {
     border-bottom: solid 2px grey;
     text-align: center;
@@ -363,4 +347,45 @@ footer {
 .copyright p {
     text-align: center;
     margin: auto;
+}
+
+/*--------------------------------------------------------------
+vos messages
+--------------------------------------------------------------*/
+
+.client-profil img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    float: right;
+}
+
+blockquote p {
+    font-family: "Indie Flower";
+
+
+}
+
+blockquote:before {
+    content: "\00a5";
+    display: block;
+    font-size: 40px;
+    line-height: 20px;
+    color: green;
+}
+
+cite {
+    color: green;
+}
+
+
+/*--------------------------------------------------------------
+contact formulaire messages
+--------------------------------------------------------------*/
+.fa-angellist {
+    width: 150px;
+}
+
+.adresse {
+    position: relative;
 }

@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\PostMessagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pagePrincipale/accueil');
 });
+Route::resource('message',PostMessagesController::class);

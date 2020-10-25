@@ -477,33 +477,49 @@
                 <div class="col-md-12">
                     <h2 id="contact">Contact</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 map">
-                        <p>Chez Moi
-                            <i class="fab fa-angellist"></i>
-                        </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="adresse">
+                        <i class="fab fa-angellist"></i>
                         <h5>Ville:</h5>
-                        <i class="fab fa-angellist"></i>
-                        <h5>Email:</h5>
-                        <i class="fab fa-angellist"></i>
-                        <h5>Télephone:</h5>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87590.98061208264!2d-1.6116818781238276!3d46.68169540456109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480430c1840dcf91%3A0x24f1c5b47ba13082!2s85190%20Venansault!5e0!3m2!1sfr!2sfr!4v1603459912746!5m2!1sfr!2sfr"
-                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
+                        <p>Venansault</p>
                     </div>
-                </div>
 
-
-                <div class="col-md-6">
-                    <div class="">
-
-
+                    <div class="adresse">
+                        <i class="fab fa-angellist"></i>
+                        <h5>Ville:</h5>
+                        <p>Venansault</p>
                     </div>
-                </div>
+                    <div class="adresse">
+                        <i class="fab fa-angellist"></i>
+                        <h5>Ville:</h5>
+                        <p>Venansault</p>
+                    </div>
 
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87590.98061208264!2d-1.6116818781238276!3d46.68169540456109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480430c1840dcf91%3A0x24f1c5b47ba13082!2s85190%20Venansault!5e0!3m2!1sfr!2sfr!4v1603459912746!5m2!1sfr!2sfr"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-md-6 ">
+
+                    @include('pagePrincipale/formMessages')
+
+                </div>
 
             </div>
+
+
+            <div class="col-md-6">
+                <div class="">
+
+
+                </div>
+            </div>
+
+
+        </div>
         </div>
 
     </section>

@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\messageUserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,4 @@ Route::get('/', function () {
     return view('pagePrincipale/accueil');
 })->name('accueil');
 Route::resource('contact',ContactController::class);
+Route::resource('message',messageUserController::class);

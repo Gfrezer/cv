@@ -25,7 +25,10 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
-                <button type="submit" class="btn btn-secondary">Envoyer !</button>
+                <button type="submit" class="btn btn-secondary submitContact">Envoyer !</button>
+
+                <div class="contactPasOK">Votre message à bien été envoyé !</div>
+
             </form>
         </div>
     </div>

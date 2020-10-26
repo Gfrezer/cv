@@ -44,7 +44,7 @@ class ContactController extends Controller
         'message' => 'required|max:255',
     ]);
     $this->save($validatedData);
-    return redirect()->route('accueil');
+    return response()->json(['sucess'=>'Ok']);
     }
 
        function save($validatedData)

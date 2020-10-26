@@ -460,7 +460,7 @@
                         </blockquote>
                     </div>
                 </div>
-
+                @include('pagePrincipale/formMessagesUsers')
             </div>
         </div>
 

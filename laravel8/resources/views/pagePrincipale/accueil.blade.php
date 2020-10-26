@@ -528,8 +528,9 @@
 
 <footer>
     <div class="copyright">
-        <p>Mon cv Gaël H. -2020.<a href="/"></a>Mentions Legals</p>
-
+        <p>Mon cv Gaël H. -2020.<a href="/">Mentions Legals</a>
+            <a href="/admin">Administateur
+        </p></a>
 
     </div>
 

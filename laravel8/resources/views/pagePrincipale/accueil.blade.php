@@ -529,7 +529,7 @@
 <footer>
     <div class="copyright">
         <p>Mon cv Gaël H. -2020.<a href="/">Mentions Legals</a>
-            <a href="/admin">Administateur
+            <a href="{{url('login')}}" target=_blank>Administateur
         </p></a>
 
     </div>

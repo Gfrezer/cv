@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\messageUserController;
+use App\Http\Controllers\loginAdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,7 @@ Route::get('/', function () {
 })->name('accueil');
 Route::resource('contact',ContactController::class);
 Route::resource('message',messageUserController::class);
+Route::get('/login',function () {
+    return view('admin/adminLogin');
+});
+Route::post('admin',[loginAdminController::class,'authenticate']);

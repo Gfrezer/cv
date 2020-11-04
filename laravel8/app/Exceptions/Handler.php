@@ -3,6 +3,9 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use App\Exceptions\CustomException;
+use PDOException;
+use Exception;
 
 class Handler extends ExceptionHandler
 {
@@ -32,6 +35,9 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
-        //
-    }
+    $this->renderable(function (CustomException $e, $request) {
+        return response()->view('erreurs.404', [], 500);
+    });
+  
+ } 
 }

@@ -18,7 +18,7 @@ class loginAdminController extends Controller
                 return view('admin/adminAccueil');
       }           
         }else{
-            return view('admin/adminLogin',['error' =>'ok']);
+            return redirect('/login')->with('error','ok');
         }
     }
 }

@@ -10,9 +10,24 @@
             <input type="text" placeholder="nom" name="nom" />
             <input type="password" placeholder="password" name="password" />
             <button type="submit">login</button>
-            @if(!empty(session::get{{'error}})){
-            echo "ca passe!!!"
-            }
+
+            @if(session('error'))
+            <div class="demi_tour">
+                <div id=flip>
+                    <div>
+                        <div>Cette accès est:</div>
+                    </div>
+                    <div>
+                        <div>Attention !</div>
+                    </div>
+                </div>
+            </div>
+            @endif
+
+            <p>Réservé à l'administrateur!</p>
+            <a href="{{url('/')}}">Retour à l'acceuil!</a>
+
+
         </form>
     </div>
 </div>

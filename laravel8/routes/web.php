@@ -23,4 +23,4 @@ Route::resource('message',messageUserController::class);
 Route::get('/login',function () {
     return view('admin/adminLogin');
 });
-Route::post('admin',[loginAdminController::class,'authenticate']);
+Route::post('admin',[loginAdminController::class,'adminLogin']);

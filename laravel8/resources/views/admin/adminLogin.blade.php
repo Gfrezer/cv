@@ -10,7 +10,9 @@
             <input type="text" placeholder="nom" name="nom" />
             <input type="password" placeholder="password" name="password" />
             <button type="submit">login</button>
-
+            @if(!empty(session::get{{'error}})){
+            echo "ca passe!!!"
+            }
         </form>
     </div>
 </div>

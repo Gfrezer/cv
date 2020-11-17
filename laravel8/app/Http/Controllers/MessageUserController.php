@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Message;
+use App\Http\Requests\MessageUser;
+
+
+class MessageUserController extends Controller
+{
+    public function index()
+    {
+        
+//
+    } 
+
+
+   public function store(MessageUser $request)
+    {
+        
+     $this->save($request->validated());
+     return response()->json(['success' => 'Ok'],200);
+    }
+
+       function save($validatedData)
+	{
+        $dataMessage = new Message;
+		$dataMessage->pseudo = $validatedData['pseudo'];	
+		$dataMessage->message_user = $validatedData['message_user'];
+        $dataMessage->save();         
+    }
+
+
+     public function show()
+     {
+        $messagesUsers = Message::all();
+        return view('pagePrincipale/accueil', compact('messagesUsers'));
+     }
+
+ 
+}
+
+    

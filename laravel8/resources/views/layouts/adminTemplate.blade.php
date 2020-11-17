@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <!-- Styles -->
-    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
-
+    <link href="{{ asset('css/admin_Login.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin_Page_Principale.css') }}" rel="stylesheet">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 

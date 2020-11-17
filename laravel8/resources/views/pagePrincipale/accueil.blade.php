@@ -418,54 +418,35 @@
             </div>
 
             <div class="row">
+
+                @foreach($messagesUsers as $messagesUser)
+                @if($messagesUser-> messageAccueil == 1)
                 <div class="col-md-4">
                     <div class="client-profil">
                         <blockquote>
                             <img src="./../public/images/">
-                            <p>« Historia non tam finitos numeros, quam orbem quemdam contextumque desiderat :
-                                namque omnia ejus membra connexa sunt, quoniam lubrica est, ac fluit » page 392 = «
-                                L'histoire n'exige pas tant une prose parfaitement cadencée, qu'une suite de phrases
-                                dont le tissu soit bien lié; car tout s'y enchaîne, tout y coule, tout y gliss</p>
+                            <p>{{$messagesUser->message_user}}</p>
                             <br />
-                            <cite>C'est de lui...</cite>
+                            <cite>{{$messagesUser->pseudo}}</cite>
                         </blockquote>
                     </div>
                 </div>
+                @endif
+                @endforeach
 
-
-                <div class="col-md-4">
-                    <div class="client-profil">
-                        <blockquote>
-                            <img src="./../public/images/">
-                            <p>« Historia non tam finitos numeros, quam orbem quemdam contextumque desiderat :
-                                namque omnia ejus membra connexa sunt, quoniam lubrica est, ac fluit » page 392 = «
-                                L'histoire n'exige pas tant une prose parfaitement cadencée, qu'une suite de phrases
-                                dont le tissu soit bien lié; car tout s'y enchaîne, tout y coule, tout y gliss</p>
-                            <br />
-                            <cite>C'est d'elle...</cite>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="client-profil">
-                        <blockquote>
-                            <img src="./../public/images/">
-                            <p>« Historia non tam finitos numeros, quam orbem quemdam contextumque desiderat :
-                                namque omnia ejus membra connexa sunt, quoniam lubrica est, ac fluit » page 392 = «
-                                L'histoire n'exige pas tant une prose parfaitement cadencée, qu'une suite de phrases
-                                dont le tissu soit bien lié; car tout s'y enchaîne, tout y coule, tout y gliss</p>
-                            <br />
-                            <cite>C'est pas de lui...</cite><br />
-                        </blockquote>
-                    </div>
-                </div>
-                @include('pagePrincipale/formMessagesUsers')
             </div>
+
+
+
+            @include('pagePrincipale/messageModal')
+
+            @if(!empty(Session::get('error_code')) && Session::get('error_code') == 5)
+
+            @endif
+
         </div>
 
     </section>
-
 
 
 
@@ -502,7 +483,7 @@
                         width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-6" id="formContactDiv">
 
                     @include('pagePrincipale/formContact')
 

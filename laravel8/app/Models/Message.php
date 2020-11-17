@@ -10,6 +10,7 @@ class Message extends Model
     use HasFactory;
      protected $fillable = [
         'pseudo',        
-        'message',
+        'message_user',
+        'messageAccueil'
     ]; 
 }

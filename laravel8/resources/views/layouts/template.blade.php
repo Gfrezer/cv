@@ -16,8 +16,9 @@
 
 
     <!-- Styles -->
-    <link href="{{ asset('css/style_page_the.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/page_Accueil_Haut.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/page_Accueil_Bas.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/messageModal.css') }}" rel="stylesheet">
 
 
     <!--icon-->
@@ -44,7 +45,7 @@
     </div>
 
     <!-- Scripts -->
-    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+
     <script type="text/javascript" src="{{ asset('js/typed.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

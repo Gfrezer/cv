@@ -6,8 +6,13 @@
     <div class="form">
         <form class="login-form" action="{{url('admin') }}" method="POST">
             @csrf
-
-            <input type="text" placeholder="nom" name="nom" />
+            <div>
+                <input type="text" placeholder="nom" class="@error('nom') is-invalid @enderror" name="nom"
+                    value="{{ old('nom') }}" />
+                @error('nom')
+                <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
             <input type="password" placeholder="password" name="password" />
             <button type="submit">login</button>
 

@@ -22,11 +22,14 @@ use Illuminate\Support\Facades\Route;
 
 
 //Message Contact
-Route::post('contactClient',[ContactClientController::class,'store']);
-Route::get('contactClient',[ContactClientController::class,'index']);
+Route::post('formContact',[ContactClientController::class,'store']);
+Route::get('formContact',[ContactClientController::class,'index']);
+
+
 
 //Message visuel CV
 Route::post('message',[MessageUserController::class,'store'])->name("message.store");
+Route::get('message',[MessageUserController::class,'index']);
 Route::get('/',[MessageUserController::class,'show'])->name('accueil');
 
 

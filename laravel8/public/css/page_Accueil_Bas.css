@@ -173,12 +173,8 @@ contact formulaire
 /*--------------------------------------------------------------
 formulaire contacts
 --------------------------------------------------------------*/
-.pasVisu {
 
-    visibility: hidden;
-}
-
-.pasVisu.visu {
+.visu {
     margin-top: 15px;
     text-align: center;
     color: #5f1313;

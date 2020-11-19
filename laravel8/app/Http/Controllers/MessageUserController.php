@@ -11,8 +11,8 @@ class MessageUserController extends Controller
 {
     public function index()
     {
-        
-//
+      return view("pagePrincipale/messModalResponse");  
+
     } 
 
 
@@ -20,7 +20,8 @@ class MessageUserController extends Controller
     {
         
      $this->save($request->validated());
-     return response()->json(['success' => 'Ok'],200);
+    
+     return redirect("message")->with("messageClientOk",'Votre message à bien été envoyé, il sera traité rapidement!');
     }
 
        function save($validatedData)

@@ -7,31 +7,103 @@ document.addEventListener("DOMContentLoaded", function (event) {
         backDelay: 2000
     });
 
-    document.getElementById("mesCompetences").addEventListener("click", update);
-
-    function update() {
-        const progressTab = document.querySelectorAll('.progress-done');
-        const percent = document.querySelector('small');
 
 
-        progressTab.forEach(element => {
-            let width = 1;
-            let identity = setInterval(scene, 10);
 
-            function scene() {
-                if (width >= element.getAttribute('data-value')) {
-                    clearInterval(identity);
-                } else {
-                    width++;
-                    element.style.width = width + '%';
-                    element.innerHTML = width + '%';
-                }
-            }
-        });
-    }
 })
+//Barre des competences
+document.getElementById("container_competences").addEventListener("mouseover", update)
+
+function update() {
+    const progressTab = document.querySelectorAll('.progress-done');
+    const percent = document.querySelector('small');
+
+
+    progressTab.forEach(element => {
+        let width = 1;
+        let identity = setInterval(scene, 10);
+
+        function scene() {
+            if (width >= element.getAttribute('data-value')) {
+                clearInterval(identity);
+            } else {
+                width++;
+                element.style.width = width + '%';
+                element.innerHTML = width + '%';
+            }
+        }
+    });
+
+}
+
+
+
 
 document.querySelectorAll('.submitForm').forEach(element => {
+    ajoutListenerFetch(element);
+});
+//Methode fetch
+function ajoutListenerFetch(element) {
+    element.addEventListener('click', function (event) {
+        event.preventDefault();
+        let form = this.closest("form");
+        let inputs = form.querySelectorAll("input");
+        let idForm = form.id;
+        let url = form.getAttribute("action");
+        let messageContact = new FormData();
+        inputs.forEach(el => messageContact.append(el.name, el.value));
+
+        fetch(url, {
+                method: 'post',
+                body: messageContact
+            }) //reponse serveur     
+            .then(response => {
+                if (response.ok) {
+                    response.text().then(responseHtml => {
+                        let formElem = this.closest(".formContainer");
+                        formElem.innerHTML = responseHtml;
+
+                        let tab = [];
+                        let textDanger = document.querySelectorAll(".alert-danger");
+                        textDanger.forEach(function (elem) {
+                            tab.push(elem.innerText);
+                        })
+                        if (tab.length === 0) {
+                            setTimeout(function () {
+                                form = document.getElementById(idForm);
+                                form.querySelector(".visu").remove();
+                            }, 3000);
+                            //Nettoyer au click les messsages erreurs et videz les inputs
+                        } else {
+                            formElem.querySelectorAll("input").forEach(el => el.addEventListener('focus', function () {
+                                el.value = "";
+                                el.closest("div").querySelector(".alert").remove();
+                                el.classList.remove("is-invalid");
+                            }))
+                        }
+                        ajoutListenerFetch(formElem.querySelector('.submitForm'));
+                    })
+                }
+            })
+    })
+}
+
+
+//Modal: vider les champs à l'eventTarget boutton fermer
+$('#myModal').on('hidden.bs.modal', function (e) {
+    e.target.querySelectorAll("input.form-control").forEach(el => el.value = "");
+    e.target.querySelectorAll(".alert").forEach(el => el.remove());
+    e.target.querySelectorAll(".form-control.is-invalid").forEach(el => el.classList.remove("is-invalid"));
+})
+
+
+
+
+
+
+
+//Methode XMLHttpRequest
+function ajoutListenerXMLHTTP(element) {
     element.addEventListener('click', function (event) {
         event.preventDefault();
         let form = this.closest("form");
@@ -45,35 +117,36 @@ document.querySelectorAll('.submitForm').forEach(element => {
         req.send(messageContact);
 
 
-
+        let self = this;
         // reponse serveur
         let reponseOk;
         req.onload = function () {
             reponseOk = req.status;
             if (reponseOk === 200) {
                 let responseHtml = req.response;
-                let formElem = document.querySelector("#formContactDiv");
+                let formElem = self.closest(".formContainer");
                 formElem.innerHTML = responseHtml;
+
                 //messages d'erreurs
                 let tab = [];
                 let textDanger = document.querySelectorAll(".alert-danger");
                 textDanger.forEach(function (elem) {
                     tab.push(elem.innerText);
                 })
-                if (tab === "") {
+                if (tab.length === 0) {
                     setTimeout(function () {
                         form = document.getElementById(idForm);
-                        form.querySelector(".visu").classList.remove(".pasvisu");
+                        form.querySelector(".visu").remove();
                     }, 3000);
                     //Si  messages erreurs
                 } else {
                     setTimeout(function () {
+                        //form.querySelector(".visu").classList.remove(".pasvisu");
 
                     }, 3000)
                 }
-
-
+                ajoutListener(formElem.querySelector('.submitForm'));
             }
         }
     })
-})
+}

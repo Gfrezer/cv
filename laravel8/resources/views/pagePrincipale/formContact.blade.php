@@ -2,7 +2,7 @@
     <div class="row card text-white bg-dark">
         <h4 class="card-header">Contactez-moi</h4>
         <div class="card-body">
-            <form action="{{url('contactClient') }}" method="POST" id="formContact">
+            <form action="{{url('formContact') }}" method="POST" id="formContact">
                 @csrf
                 <div class="form-group">
                     <input type="text" class="form-control  @error('nom') is-invalid @enderror" name="nom" id="nom"

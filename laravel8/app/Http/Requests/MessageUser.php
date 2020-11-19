@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Validation\ValidationException;
 
 class messageUser extends FormRequest
 {
@@ -24,9 +26,26 @@ class messageUser extends FormRequest
     public function rules()
     {
         return [
-            'pseudo' => 'required|max:255',        
-            'message_user' => 'required|max:255',
+            'pseudo' => 'required|alpha|max:25',
+            'message_user' => ['required','regex:#^[^<>/]*[^<>/]*[^<>/]$#']
             
         ];
+    }
+       public function messages()
+    {
+        return [
+             'pseudo.required' => 'Le champs Pseudo est requis',
+             'pseudo.max' => 'Le champs Pseudo ne doit pas dépasser 25 caractères',
+             'pseudo.alpha' => 'Le Pseudo ne doit comporter que des caractères alphanumériques',            
+             'message_user.required' => 'Envoyez un message valide !',
+             'message_user.regex' => 'Envoyez un message valide !',
+    ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw (new ValidationException($validator))
+                    ->errorBag($this->errorBag)
+                    ->redirectTo(url('message'));
     }
 }

@@ -28,7 +28,7 @@ class ContactClientController extends Controller
         $this->save($request->validated());      
       
     
-     return redirect("contactClient")->with("messageOk",'Votre message à bien été envoyé !');
+     return redirect("formContact")->with("messageOk",'Votre message à bien été envoyé !');
     }
 
        function save($validatedData)

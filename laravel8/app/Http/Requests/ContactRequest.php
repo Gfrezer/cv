@@ -28,18 +28,21 @@ class ContactRequest extends FormRequest
     {
         return [
             'nom' => 'required|alpha|max:25',
-		    'email' => 'required|email|unique:contacts',
-            'message' => 'required|max:1250|alpha_num',
+		    'email' => 'required|email',
+            'message' => ['required','regex:#^[^<>/]*[^<>/]*[^<>/]$#'],
     
         ];
     }
     
     public function messages()
     {
-    return [
-        'nom.alpha' => 'Le nom ne doit comporter que des caractères alphanumériques',
-        'email.unique' => 'Envoyez une adresse Mail valide !',
-        'message.alpha_num' => 'Envoyez un message valide !',
+        return [
+             'nom.required' => 'Le champs Nom est requis',
+             'nom.max' => 'Le champs Nom ne doit pas dépasser 25 caractères',
+             'nom.alpha' => 'Le nom ne doit comporter que des caractères alphanumériques',
+             'email.email' => 'Envoyez une adresse Mail valide !',
+             'message.required' => 'Envoyez un message valide !',
+             'message.regex' => 'Envoyez un message valide !',
     ];
     }
 
@@ -47,6 +50,6 @@ class ContactRequest extends FormRequest
     {
         throw (new ValidationException($validator))
                     ->errorBag($this->errorBag)
-                    ->redirectTo(url('contactClient'));
+                    ->redirectTo(url('formContact'));
     }
 }

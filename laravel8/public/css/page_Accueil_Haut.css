@@ -249,12 +249,12 @@ Barres de competences
 --------------------------------------------------------------*/
 
 .progress {
-    background: #c2c2c2;
-    border-radius: 20px;
-    height: 25px;
+    background: #e3e3e6;
+    height: 18px;
     width: 400px;
     overflow: hidden;
     position: relative;
+    border-radius: 0px;
 }
 
 small {
@@ -264,10 +264,8 @@ small {
 }
 
 .progress-done {
-    background: linear-gradient(to left, #941a1a, #d45959);
-    border-radius: 20px;
-    box-shadow: 0 2px 5px #5f1313;
-    height: 30px;
+    background: linear-gradient(to left, #566fc3, #d2d6ec);
+    height: 18px;
     display: flex;
     justify-content: center;
     align-items: center;

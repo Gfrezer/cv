@@ -1,9 +1,23 @@
-/*color: #88124d; 
-  color: #be6161;
-  color: #d4d6d8c2;
+/*
+  color: #2d1dff;
+  color:#f5614d;
+  color: #8e453a;
+
+￼ background-color: #422f2c;
 
 
 
+font-family: 'Sawarabi Mincho',
+sans-serif;
+
+font-family: 'Sawarabi Mincho',
+sans-serif;
+
+font-family: 'Montserrat Subrayada',
+sans-serif;
+
+font-family: 'Montserrat',
+sans-serif;
 */
 /*--------------------------------------------------------------
 GENERALE
@@ -22,17 +36,25 @@ body {
 
 header {
     background-color: rgb(255, 255, 255, 0.8);
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.icone_retour {
-    font-size: 35px;
-    color: #88124d;
-    margin-left: 3%;
-    margin-top: 12%;
-    position: fixed;
+.col-md-2,
+.col-md-4,
+.col-md-6,
+.col-md-8,
+.col-md-10,
+.col-md-12,
+header section {
+    margin-left: 0em;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.header section .container {
+    max-width: 80em;
 }
 
 p {
@@ -61,10 +83,16 @@ h5 {
     font-size: 2vw;
 }
 
-/*--------------------------------------------------------------
-# surcharge navbar bootstrap
---------------------------------------------------------------*/
+@media (min-width: 1024px) {}
 
+@media (max-width: 768px) {}
+
+/*--------------------------------------------------------------
+# surcharge navbar bootstrap + photo accueil
+--------------------------------------------------------------*/
+.navbar-horizontale {
+    position: absolute;
+}
 
 .navbar {
     position: relative;
@@ -75,50 +103,62 @@ h5 {
 
 }
 
-.bg-light {
-    background-color: #d4d6d8c2 !important;
-}
-
-.navbar-horizontale {
-    margin-bottom: 1vw;
+.nav-link {
+    padding-right: 30px !important;
 
 }
+
+.navbar-nav {
+    margin-left: 80%;
+    white-space: nowrap;
+}
+
+
 
 .navbar-nav a {
-    font-size: 20px;
+    color: #f5614d !important;
+    font-size: 100%;
+    font-weight: 500;
+    font-family: 'Montserrat',
+        sans-serif !important;
+}
+
+.navbar-nav a:hover {
+    color: #8e453a !important;
+}
+
+@media (max-width: 1824px) {
+    .navbar-nav {
+        margin-left: 50%;
+
+    }
+}
+
+@media (max-width: 1524px) {
+    .navbar-nav {
+        margin-left: 10%;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-horizontale {
+        position: fixed;
+        background-color: #d2d6ec;
+        z-index: 5;
+    }
 }
 
 /*--------------------------------------------------------------
 # présentation visu home
 --------------------------------------------------------------*/
 
-
-.photo_1 {
-    background: url(../images/images/tea.jpeg);
-    width: 83%;
-    background-size: cover;
-    height: auto;
-    margin-left: 17vw;
-    background-attachment: fixed;
-}
-
-.home_title {
-    position: relative;
-    top: 40px;
-}
-
-
-.home_title p {
-    margin-bottom: 50px;
-    font-family: "Dancing Script", "Source Serif Pro";
-    font-size: 60px;
-    color: #9a2929;
-    top: 20px;
-
-
-}
-
 /*# Hero Section*/
+
+.d-flex {
+    position: absolute;
+}
+
 #hero {
     width: 100%;
     height: 100vh;
@@ -127,7 +167,6 @@ h5 {
 
 #hero:before {
     content: "";
-
     position: absolute;
     bottom: 0;
     top: 0;
@@ -137,31 +176,35 @@ h5 {
 }
 
 #hero .hero-container {
-    position: relative;
+    margin-top: 31%;
+    margin-right: 55%;
     z-index: 2;
     min-width: 300px;
 }
 
 #hero h1 {
     margin: 0 0 10px 0;
-    font-size: 2.5vw;
-    font-weight: 700;
+    font-size: 3vw;
+    font-weight: 600;
     line-height: 56px;
-    color: #fff;
+    color: #050505;
+    font-family: 'Poppins',
+        sans-serif;
 }
 
 #hero p {
-    color: #fff;
+    color: #050505;
     margin-bottom: 50px;
-    font-size: 26px;
-    font-family: "Poppins", sans-serif;
+    font-size: 2vw;
+    font-family: 'Sawarabi Mincho';
+
 }
 
 #hero p span {
-    color: #fff;
+    color: #f5614d;
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid #149ddd;
+    border-bottom: 3px solid #f5614d;
 }
 
 @media (min-width: 1024px) {
@@ -183,6 +226,68 @@ h5 {
     }
 }
 
+/*--------------------------------------------------------------
+Navbar laterale
+--------------------------------------------------------------*/
+.navbarLaterale {
+    width: 100%;
+    height: 400px;
+
+
+}
+
+.curriCum {
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 15px;
+    position: fixed;
+}
+
+.curri-vitae {
+    position: fixed;
+    text-align: right;
+    color: #ffffff !important;
+    font-size: 3em;
+    font-weight: 500;
+    font-family: 'Montserrat',
+        sans-serif !important;
+}
+
+.oeilBeauf {
+    margin-left: 1%;
+    margin-top: 20%;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: #149ddd;
+    position: fixed;
+}
+
+
+.col-md-2.navbarLaterale {
+    background-color: #422f2c;
+    height: auto;
+    max-width: inherit;
+}
+
+/*.navbarLaterale {
+    background-color: #4157a0;
+    width: 17%;
+    height: 900px;
+    position: fixed;
+}
+*/
+.icone_retour {
+    font-size: 35px;
+    color: #f5614d;
+    margin-left: 3%;
+    margin-top: 12%;
+    position: fixed;
+}
+
+.icone_retour:hover {
+    color: #8e453a;
+}
 
 /*--------------------------------------------------------------
 A Propos
@@ -217,7 +322,6 @@ Formation
 .famille_forma h4 {
     color: white;
     font-family: serif;
-
     width: 250px;
     display: inline-table
 }
@@ -225,9 +329,12 @@ Formation
 .famille_forma p {
     color: black;
     font-family: serif;
-
-    width: 250px;
+    width: 100%;
     display: inline-table
+}
+
+.famille_forma img {
+    width: 100%;
 }
 
 .color_bande {
@@ -239,10 +346,7 @@ Formation
     color: #656d74ec;
 }
 
-.famille_details,
-img {
-    max-width: 18vw;
-}
+
 
 /*--------------------------------------------------------------
 Barres de competences

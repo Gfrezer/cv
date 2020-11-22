@@ -11,30 +11,38 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 })
+
+
 //Barre des competences
 document.getElementById("container_competences").addEventListener("mouseover", update)
 
+let open = false;
+
 function update() {
-    const progressTab = document.querySelectorAll('.progress-done');
-    const percent = document.querySelector('small');
+
+    if (!open) {
+        const progressTab = document.querySelectorAll('.progress-done');
+        const percent = document.querySelector('small');
 
 
-    progressTab.forEach(element => {
-        let width = 1;
-        let identity = setInterval(scene, 10);
+        progressTab.forEach(element => {
+            let width = 1;
+            let identity = setInterval(scene, 10);
 
-        function scene() {
-            if (width >= element.getAttribute('data-value')) {
-                clearInterval(identity);
-            } else {
-                width++;
-                element.style.width = width + '%';
-                element.innerHTML = width + '%';
+            function scene() {
+                if (width >= element.getAttribute('data-value')) {
+                    clearInterval(identity);
+                } else {
+                    width++;
+                    element.style.width = width + '%';
+                    element.innerHTML = width + '%';
+                }
             }
-        }
-    });
-
+        });
+        open = true;
+    }
 }
+
 
 
 

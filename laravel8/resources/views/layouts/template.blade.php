@@ -32,17 +32,20 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <a href="#monMenu">
-        <i class="icone_retour fas fa-home"></i>
-    </a>
 
-    <div>
-        @yield('content')
-    </div>
+
+
+    @yield('content')
+
 
     <!-- Scripts -->
 

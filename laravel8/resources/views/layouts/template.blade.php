@@ -45,6 +45,8 @@
     </div>
 
     <!-- Scripts -->
+    <!-- navbar app lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
 
     <script type="text/javascript" src="{{ asset('js/typed.min.js') }}"></script>
 

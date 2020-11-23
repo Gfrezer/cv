@@ -33,7 +33,7 @@ function update() {
             }
         }
     });
-
+    this.removeEventListener("mouseover", update);
 }
 
 
@@ -150,3 +150,19 @@ function ajoutListenerXMLHTTP(element) {
         }
     })
 }
+
+
+//STICKY
+const $realSticky = document.querySelector(".fake-header");
+const $navSticky = document.querySelector(".navbar-horizontale");
+
+const stickyHeader = () => function () {
+    const sr1 = $realSticky.getBoundingClientRect();
+    if (sr1.bottom > 0) {
+        console.log("caché");
+        $navSticky.classList.remove("sticky");
+    } else {
+        $navSticky.classList.add("sticky");
+    }
+};
+window.addEventListener("scroll", _.debounce(stickyHeader(), 100));

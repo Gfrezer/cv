@@ -6,12 +6,9 @@
 ￼ background-color: #422f2c;
 
 
+font-family: 'Poppins',
+sans-serif
 
-font-family: 'Sawarabi Mincho',
-sans-serif;
-
-font-family: 'Sawarabi Mincho',
-sans-serif;
 
 font-family: 'Montserrat Subrayada',
 sans-serif;
@@ -39,6 +36,10 @@ header {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+img {
+    width: 100%;
 }
 
 .col-md-2,
@@ -90,8 +91,24 @@ h5 {
 /*--------------------------------------------------------------
 # surcharge navbar bootstrap + photo accueil
 --------------------------------------------------------------*/
+/*STICKY*/
+.fake-header {
+    height: 50px;
+    position: absolute;
+}
+
+/*FIN STICKY*/
+
 .navbar-horizontale {
     position: absolute;
+    width: 100%;
+}
+
+.navbar-horizontale.sticky {
+    position: fixed;
+    width: 100%;
+    background-color: #88124d;
+    z-index: 5000;
 }
 
 .navbar {
@@ -109,7 +126,7 @@ h5 {
 }
 
 .navbar-nav {
-    margin-left: 80%;
+    margin-left: 20%;
     white-space: nowrap;
 }
 
@@ -196,8 +213,8 @@ h5 {
     color: #050505;
     margin-bottom: 50px;
     font-size: 2vw;
-    font-family: 'Sawarabi Mincho';
-
+    font-family: 'Poppins',
+        sans-serif
 }
 
 #hero p span {
@@ -244,44 +261,62 @@ Navbar laterale
 }
 
 .curri-vitae {
+    margin-top: 2vw;
+    margin-left: 2vw;
     position: fixed;
     text-align: right;
     color: #ffffff !important;
     font-size: 3em;
     font-weight: 500;
-    font-family: 'Montserrat',
-        sans-serif !important;
+    font-family: 'Poppins' !important;
+
 }
 
 .oeilBeauf {
-    margin-left: 20%;
-    margin-top: 20%;
-    width: 50%;
-    height: 50%;
+    background-image: url(../images/images/photoMoi.jpg);
+    background-size: contain;
+    border: solid 2px white;
+    margin-left: 1vw;
+    margin-top: 10%;
+    width: 14vw;
+    height: 14vw;
     border-radius: 50%;
-    background-color: #149ddd;
     position: fixed;
 }
 
 
 .col-md-2.navbarLaterale {
-    background-color: #422f2c;
+    background-color: #444444;
     height: auto;
     max-width: inherit;
 }
 
-/*.navbarLaterale {
-    background-color: #4157a0;
-    width: 17%;
-    height: 900px;
-    position: fixed;
+.navlater {
+    height: 370px;
+    display: grid;
+    margin-top: 15vw;
+    margin-left: 30%;
+
 }
-*/
+
+.navlater .bouton {
+    background-color: #444444;
+    width: 100px;
+    height: 36px;
+    border: solid 2px #ffffff;
+    text-align: center;
+
+
+}
+
+.navlater .bouton a {
+    color: #f5614d;
+
+}
+
 .icone_retour {
     font-size: 35px;
     color: #f5614d;
-    margin-left: 3%;
-    margin-top: 12%;
     position: fixed;
 }
 

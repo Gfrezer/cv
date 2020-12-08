@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     new Typed('.typed', {
-        strings: ['toto', 'titi', 'tata'],
+        strings: ['Gaël', 'développeur', 'back', 'front'],
         loop: true,
         typeSpeed: 100,
         backSpeed: 50,
@@ -158,11 +158,14 @@ const $navSticky = document.querySelector(".navbar-horizontale");
 
 const stickyHeader = () => function () {
     const sr1 = $realSticky.getBoundingClientRect();
-    if (sr1.bottom > 0) {
+    if ((sr1.bottom > 0) || (sr1.bottom === 60)) {
         console.log("caché");
         $navSticky.classList.remove("sticky");
     } else {
         $navSticky.classList.add("sticky");
     }
 };
-window.addEventListener("scroll", _.debounce(stickyHeader(), 100));
+window.addEventListener("scroll", _.debounce(stickyHeader(), 50));
+
+
+//EFFET A PROPOS

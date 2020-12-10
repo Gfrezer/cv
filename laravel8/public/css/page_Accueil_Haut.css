@@ -1,11 +1,26 @@
 /*
   color: #2d1dff;
+<<<<<<< HEAD
   color:#f5614d;
   color: #8e453a;
+=======
+  color:#f5614d;  orange navbar,h2
+  color: #8e453a;
+  color: #343a40;  fond navlateral formContact
+￼ background-color: #422f2c;
+  background-color:#ffffff
+>>>>>>> front
 
 ￼ background-color: #422f2c;
 
+ MEDIAQuerIES
+@media (max-width: 1024px) {}
+@media (max-width: 768px) {}
+ 
+FONT:
+font-family: 'Poppins',sans-serif;
 
+<<<<<<< HEAD
 
 font-family: 'Sawarabi Mincho',
 sans-serif;
@@ -18,6 +33,15 @@ sans-serif;
 
 font-family: 'Montserrat',
 sans-serif;
+=======
+font-family: 'Raleway','sans-serif','fantasy';
+
+font-family: 'Montserrat Subrayada',sans-serif;
+
+font-family: 'Dancing Script',cursive;
+
+font-family: 'Permanent Marker',cursive;
+>>>>>>> front
 */
 /*--------------------------------------------------------------
 GENERALE
@@ -34,13 +58,25 @@ body {
     overflow-x: hidden;
 }
 
-header {
+.overflow {
+    overflow-x: hidden;
     background-color: rgb(255, 255, 255, 0.8);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+<<<<<<< HEAD
+=======
+.btn-outline-secondary:hover {
+    background-color: green;
+}
+
+img {
+    width: 100%;
+}
+
+>>>>>>> front
 .col-md-2,
 .col-md-4,
 .col-md-6,
@@ -53,6 +89,14 @@ header section {
     padding-left: 0px;
 }
 
+<<<<<<< HEAD
+=======
+.espaceTitre {
+    width: 20%;
+    height: 9vw;
+}
+
+>>>>>>> front
 .header section .container {
     max-width: 80em;
 }
@@ -63,35 +107,98 @@ p {
 }
 
 h3 {
-    font-family: fantasy;
+    font-family: 'Raleway',
+        'sans-serif',
+        'fantasy';
+
     color: #be6161
 }
 
 
 h2 {
-    font-family: 'Raleway', 'sans-serif', 'fantasy';
+    font-family: 'Raleway',
+        'sans-serif',
+        'fantasy';
     font-size: 2vw;
     text-align: center;
     margin-bottom: 2%;
-    margin-top: 14%;
     font-weight: 900;
-    color: #88124d;
-    border-bottom: solid 3px #2d3960;
+    color: #f5614d;
+    border-bottom: solid 1px black;
+
+
+}
+
+h4 {
+    font-family: 'Raleway',
+        'sans-serif',
+        'fantasy';
 }
 
 h5 {
     font-size: 2vw;
 }
 
+<<<<<<< HEAD
 @media (min-width: 1024px) {}
 
 @media (max-width: 768px) {}
+=======
+ul li {
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .espaceTitre {
+        height: 17vw;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 5vw;
+    }
+
+    .espaceTitre {
+        height: 40vw;
+    }
+}
+>>>>>>> front
 
 /*--------------------------------------------------------------
 # surcharge navbar bootstrap + photo accueil
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 .navbar-horizontale {
     position: absolute;
+}
+=======
+/*STICKY*/
+
+.fixed-top {
+    position: absolute;
+}
+
+>>>>>>> front
+
+.fake-header {
+    height: 60px;
+    position: absolute;
+}
+
+/*FIN STICKY*/
+
+.navbar-horizontale {
+    /* position: absolute;*/
+    width: 100%;
+}
+
+.navbar-horizontale.sticky {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 500;
+    box-shadow: 15px 1px 6px #e6e6e6;
 }
 
 .navbar {
@@ -109,7 +216,11 @@ h5 {
 }
 
 .navbar-nav {
+<<<<<<< HEAD
     margin-left: 80%;
+=======
+    margin-left: 33vw;
+>>>>>>> front
     white-space: nowrap;
 }
 
@@ -117,10 +228,19 @@ h5 {
 
 .navbar-nav a {
     color: #f5614d !important;
+<<<<<<< HEAD
     font-size: 100%;
     font-weight: 500;
     font-family: 'Montserrat',
         sans-serif !important;
+=======
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: 'Raleway',
+        'sans-serif',
+        'fantasy';
+
+>>>>>>> front
 }
 
 .navbar-nav a:hover {
@@ -131,6 +251,7 @@ h5 {
     .navbar-nav {
         margin-left: 50%;
 
+<<<<<<< HEAD
     }
 }
 
@@ -156,18 +277,71 @@ h5 {
 /*# Hero Section*/
 
 .d-flex {
+=======
+
+@media (max-width: 1024px) {
+    .nav-link {
+        padding-right: 10px !important;
+
+    }
+
+    .navbar-nav {
+        margin-left: 24vw;
+
+    }
+
+    .fake-header {
+        height: 32vw;
+        position: absolute;
+    }
+
+    .navbar-nav a {
+
+        font-size: 0.9em;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-horizontale {
+        position: fixed;
+        z-index: 5000;
+    }
+
+    .fake-header {
+        height: 60px;
+        position: absolute;
+    }
+
+    .navbar-collapse {
+        background-color: #ffffff;
+    }
+}
+
+/*--------------------------------------------------------------
+# présentation visu home
+--------------------------------------------------------------*/
+
+/*# Hero Section*/
+
+.d-flex {
+
+>>>>>>> front
     position: absolute;
 }
 
 #hero {
-    width: 100%;
-    height: 100vh;
+    margin-top: 32vw;
+    margin-left: 44vw;
 
 }
 
 #hero:before {
     content: "";
+<<<<<<< HEAD
     position: absolute;
+=======
+>>>>>>> front
     bottom: 0;
     top: 0;
     left: 0;
@@ -176,13 +350,17 @@ h5 {
 }
 
 #hero .hero-container {
+<<<<<<< HEAD
     margin-top: 31%;
     margin-right: 55%;
+=======
+>>>>>>> front
     z-index: 2;
-    min-width: 300px;
+    min-width: 100%;
 }
 
 #hero h1 {
+<<<<<<< HEAD
     margin: 0 0 10px 0;
     font-size: 3vw;
     font-weight: 600;
@@ -197,6 +375,23 @@ h5 {
     margin-bottom: 50px;
     font-size: 2vw;
     font-family: 'Sawarabi Mincho';
+=======
+    margin: 0 0 0px 0;
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 56px;
+    color: #fdfdfd;
+    font-family: 'Poppins',
+        sans-serif;
+
+}
+
+#hero p {
+    color: #fdfdfd;
+    font-size: 3vw;
+    font-family: 'Permanent Marker',
+        cursive;
+>>>>>>> front
 
 }
 
@@ -204,28 +399,56 @@ h5 {
     color: #f5614d;
     padding-bottom: 4px;
     letter-spacing: 1px;
+<<<<<<< HEAD
     border-bottom: 3px solid #f5614d;
+=======
+    font-family: 'Permanent Marker',
+        cursive;
+>>>>>>> front
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     #hero {
-        background-attachment: fixed;
+        margin-top: 39vw;
+        margin-left: 52vw;
+    }
+
+    #hero h1 {
+        font-size: 5vw;
+        margin-bottom: 0px;
+        line-height: 25px;
+    }
+
+    #hero p {
+        font-size: 4vw;
+        line-height: 8vw;
+        margin-bottom: 30px;
+    }
+
+    .navbar-toggler {
+        font-size: 0.75rem;
     }
 }
 
 @media (max-width: 768px) {
-    #hero h1 {
-        font-size: 28px;
-        line-height: 36px;
+    #hero {
+        margin-top: 48vw;
+        margin-left: 53vw;
     }
 
-    #hero h2 {
-        font-size: 18px;
-        line-height: 24px;
+    #hero h1 {
+        font-size: 5vw;
+        margin-bottom: 0px;
+        line-height: 5px;
+    }
+
+    #hero p {
+        font-size: 4vw;
+        line-height: 8vw;
         margin-bottom: 30px;
     }
-}
 
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 Navbar laterale
 --------------------------------------------------------------*/
@@ -287,38 +510,49 @@ Navbar laterale
 
 .icone_retour:hover {
     color: #8e453a;
+=======
+    .navbar-toggler {
+        font-size: 0.75rem;
+    }
+>>>>>>> front
 }
 
 /*--------------------------------------------------------------
-A Propos
+Navbar laterale
 --------------------------------------------------------------*/
-
-/*icones*/
-.prod_icon {
-    font-size: 180%;
-    color: #88124d;
+.col-md-2.navbarLaterale {
+    background-color: #343a40;
+    height: auto;
+    max-width: inherit;
 }
 
-.prod_icon:hover {
-    transform: translateX(20px);
-    transition: all 1s;
+.navlater {
+    height: auto;
+    position: fixed;
+    z-index: 5000;
+    margin-top: 5vw;
+    margin-left: 4.5vw;
+
 }
 
 
 
-/*--------------------------------------------------------------
-Formation
---------------------------------------------------------------*/
+.oeilBeauf {
+    background-image: url(../images/images/photoMoi.jpg);
+    background-size: contain;
+    border: solid 2px white;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
 
+}
 
-
-.container .formation {
-    background-image: url(../images/images/champ_de_the.jpeg);
-    width: 27vw;
+.blocIcone {
+    margin-top: 1vw;
+    display: grid;
     text-align: center;
-    margin-bottom: 50px;
-}
 
+<<<<<<< HEAD
 .famille_forma h4 {
     color: white;
     font-family: serif;
@@ -341,43 +575,200 @@ Formation
     background-color: #d4d6d8c2;
     text-align: center;
 }
-
-.color_bande h4 {
-    color: #656d74ec;
+=======
 }
+
+.navlater i {
+    font-size: 3em;
+    color: #6f6f6f;
+    padding-top: 25px;
+}
+
+.nomPrenom {
+    color: #ffffff !important;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Raleway',
+        'sans-serif',
+        'fantasy';
+    margin-bottom: 4vw;
+
+}
+
+@media (max-width: 1024px) {
+    .col-md-2.navbarLaterale {
+        position: fixed;
+        z-index: 5000;
+        height: 9vw;
+        width: 100%;
+    }
+
+    .col-md-10 {
+        margin-top: 9vw;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    .navlater {
+        display: flex;
+        height: auto;
+        z-index: 5000;
+        margin-top: 1vw;
+        margin-left: 4%;
+
+    }
+
+    .oeilBeauf {
+        z-index: 5000;
+        margin-top: 0.75%;
+        margin-left: 1vw;
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+    }
+
+    .blocIcone {
+        margin-top: -1vw;
+        display: flow-root;
+    }
+
+    .navlater i {
+        font-size: 2em;
+        color: #6f6f6f;
+        padding-right: 3vw;
+    }
+
+    .nomPrenom {
+        color: #ffffff !important;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: 'Raleway',
+            'sans-serif',
+            'fantasy';
+        margin-right: 7vw;
+        margin-left: 4vw;
+    }
+
+
+
+
+>>>>>>> front
+
+}
+
+<<<<<<< HEAD
+
+=======
+@media (max-width: 768px) {
+    .col-md-2.navbarLaterale {
+        position: fixed;
+        z-index: 5000;
+        height: 22vw;
+        width: 100%;
+    }
+
+    .col-md-10 {
+        margin-top: 22vw;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    .navlater {
+        display: flex;
+        height: auto;
+        z-index: 5000;
+        margin-top: 2vw;
+        margin-left: 3%;
+
+    }
+
+    .oeilBeauf {
+        margin-left: 1vw;
+        width: 17vw;
+        height: 17vw;
+        border-radius: 50%;
+    }
+
+    .blocIcone {
+        margin-top: 4vw;
+    }
+
+    .navlater i {
+        font-size: 1em;
+        color: #6f6f6f;
+        padding-right: 1vw;
+    }
+
+    .nomPrenom {
+        color: #ffffff !important;
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: 'Raleway',
+            'sans-serif',
+            'fantasy';
+        margin-right: 7vw;
+        margin-left: 3vw;
+
+    }
+
+
+}
+>>>>>>> front
+
+
 
 
 
 /*--------------------------------------------------------------
-Barres de competences
+A Propos
 --------------------------------------------------------------*/
 
-.progress {
-    background: #e3e3e6;
-    height: 18px;
-    width: 400px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 0px;
+/*icones*/
+.containerApropos {}
+
+.textApropos {}
+
+.textApropos h3 {
+    padding: 10px;
 }
 
-small {
-    position: absolute;
-    top: 8px;
-    right: 140px;
+.textApropos p {
+    width: 30vw;
+    padding: 15px;
+    border: #f5614d 1px solid;
 }
 
-.progress-done {
-    background: linear-gradient(to left, #566fc3, #d2d6ec);
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 0;
-    transition: 1s ease;
+
+
+
+
+
+@media (max-width: 1024px) {
+    .textApropos h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .textApropos p {
+        padding: 15px;
+        font-size: 10px;
+    }
 }
 
-#mesCompetences .row .col-md-6 p {
-    margin-top: 20px;
-    margin-bottom: 2px;
+@media (max-width: 768px) {
+    .containerApropos {
+        width: 100%;
+    }
+
+    .textApropos h3 {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .textApropos p {
+        padding: 15px;
+        font-size: 5px;
+    }
 }

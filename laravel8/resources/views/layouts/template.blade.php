@@ -18,16 +18,20 @@
     <!-- Styles -->
     <link href="{{ asset('css/page_Accueil_Haut.css') }}" rel="stylesheet">
     <link href="{{ asset('css/page_Accueil_Bas.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/messageModal.css') }}" rel="stylesheet">
 
 
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--icon-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!--police-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Sawarabi+Mincho&display=swap"
         rel="stylesheet">
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
@@ -37,6 +41,15 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@400;500;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Sawarabi+Mincho&display=swap"
+=======
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Poppins:wght@700&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Permanent+Marker&family=Sawarabi+Mincho&display=swap"
+>>>>>>> front
         rel="stylesheet">
 </head>
 
@@ -48,6 +61,8 @@
 
 
     <!-- Scripts -->
+    <!-- navbar app lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
 
     <script type="text/javascript" src="{{ asset('js/typed.min.js') }}"></script>
 
@@ -61,6 +76,12 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 
 </html>

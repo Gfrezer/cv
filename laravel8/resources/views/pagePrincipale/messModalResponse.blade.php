@@ -19,12 +19,11 @@
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
-        <button type="submit" class="btn btn-secondary submitForm">Envoyer</button>
+        <div class="avatar"></div>
+        <button type="submit" class="btn btn-rounded btn-outline-secondary submitForm">Envoyer</button>
         @if(session('messageClientOk'))
         <div class="visu">Votre message à bien été envoyé !</div>
         @endif
-
-
 
 
     </form>
@@ -33,5 +32,5 @@
 <!-- Modal Footer -->
 <div class="modal-footer">
 
-    <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+    <button type="button" class="btn btn-rounded btn-outline-secondary" data-dismiss="modal">Fermer</button>
 </div>

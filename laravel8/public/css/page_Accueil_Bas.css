@@ -1,6 +1,259 @@
+/*
+ color: #2d1dff;
+ color:#f5614d;  orange navbar,
+ h2 color: #8e453a;
+ color: #343a40; fond navlateral formContact
+ background-color: #422f2c;
+ background-color:#ffffff
+ 
+ 
+ MEDIAQuerIES 
+ 
+ @media (max-width: 1024px) {}
+ @media (max-width: 768px) {}
+
+ FONT:
+ 
+ font-family: 'Poppins',
+ sans-serif;
+
+ font-family: 'Raleway',
+ 'sans-serif',
+ 'fantasy';
+
+ font-family: 'Montserrat Subrayada',
+ sans-serif;
+
+ font-family: 'Dancing Script',
+ cursive;
+
+ font-family: 'Permanent Marker',
+ cursive;
+
+
+*/
+
+/*--------------------------------------------------------------
+Formation
+--------------------------------------------------------------*/
+.card {
+    width: 18vw;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 0px 5px 20px #555;
+    height: 100%;
+}
+
+.card a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+.card:hover .card-image img {
+    width: 110%;
+    filter: grayscale(0);
+}
+
+.card-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);
+    transition-property: filter width;
+    transition-duration: 0.3s;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.card-date {
+    font-family: 'Raleway',
+        'sans-serif',
+        'fantasy';
+}
+
+.card-title,
+.card-exceprt {
+    font-family: 'Raleway',
+        'sans-serif',
+        'fantasy';
+}
+
+.card-date,
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-date,
+.card-excerpt {
+    color: #777;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 25vw;
+        height: 100%;
+    }
+
+    .card-image {
+        height: 165px;
+
+    }
+
+    .card-date time {
+        font-size: 9px;
+    }
+
+    .card-title h3 {
+        font-size: small;
+    }
+
+    .card-excerpt p {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 768px) {
+    #container_formations .col-md-4 {
+        margin-bottom: 5vw;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-image {
+        height: 270px;
+
+    }
+
+    .card-date time {
+        font-size: 9px;
+    }
+
+    .card-title h3 {
+        font-size: small;
+    }
+
+    .card-excerpt p {
+        font-size: x-small;
+    }
+}
+
+/*--------------------------------------------------------------
+Barres de competences
+--------------------------------------------------------------*/
+#container_competences h6 {
+    margin-top: 4vw;
+    padding: 5px;
+    border: #f5614d 2px solid;
+    max-width: fit-content;
+}
+
+.progress {
+    background: #e3e3e6;
+    height: 18px;
+    width: 400px;
+    overflow: hidden;
+    /* position: relative;*/
+    border-radius: 0px;
+}
+
+small {
+    /* position: absolute;*/
+    top: 8px;
+    right: 140px;
+}
+
+.progress-done {
+    background: linear-gradient(to left, #566fc3, #d2d6ec);
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    transition: 1s ease;
+}
+
+#mesCompetences .row .col-md-6 p {
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 1024px) {
+    .progress {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .progress {
+        background: #e3e3e6;
+        height: 18px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+
+}
+
 /*--------------------------------------------------------------
 EXPERIENCES
 --------------------------------------------------------------*/
+.photoExperience {
+    background-image: url(../images/images/expérience.jpg);
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-attachment: fixed;
+    padding: 2vw;
+
+}
+
+.containerExperiences {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cadreText {
+    margin-top: 14vw;
+    background-color: white;
+    width: 17vw;
+    height: auto;
+}
+
+
+.cadreText p {
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+}
+
+.cadreText p time {
+    text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+Mes applis   "voir css card formation" 
+--------------------------------------------------------------*/
+
 
 
 
@@ -8,67 +261,279 @@ EXPERIENCES
 
 
 /*--------------------------------------------------------------
-Mes applis
+gallerie loisirs
 --------------------------------------------------------------*/
 
-.pack_title {
-    border-bottom: solid 2px grey;
+.loisirsGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(2, 250px);
+}
+
+.loisirsGrid p {
+    font-family: 'Raleway',
+        'sans-serif',
+        'fantasy';
+    color: rgb(252, 250, 250);
+    padding: 20px;
+}
+
+.galerie_img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img_un {
+    background-image: url("./../images/gallerie_photos/atome.jpg");
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.img_deux {
+    background-image: url("./../images/gallerie_photos/avion.jpg");
+    grid-column: 3/6;
+    grid-row: 1;
+}
+
+.img_trois {
+    background-image: url("./../images/gallerie_photos/nebu.jpg");
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.img_quatre {
+    background-image: url("./../images/gallerie_photos/windsurf.jpg");
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.img_cinq {
+    background-image: url("./../images/gallerie_photos/livre.jpg");
+    grid-column: 4/6;
+    grid-row: 2;
+}
+
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+    .loisirsGrid {
+        display: flex;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+    }
+
+    .galerie_img {
+        display: block;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+
+    }
+
+    .loisirsGrid p {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 6vw;
+        font-weight: 500;
+        margin: auto;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+affichage de vos messages page accueil
+--------------------------------------------------------------*/
+.client-profil {
+    background-color: white;
+    border: solid 1px rgb(139, 137, 137);
+    margin-bottom: 30px;
+    width: 18vw;
+    height: 500px;
+}
+
+
+.imgAlea {
+    width: auto;
+    height: 100px;
+    background-color: #343a40;
+}
+
+
+
+blockquote {
     text-align: center;
+}
+
+
+blockquote .avatar {
+    margin-top: 2vw;
+    border: black 2px solid;
+    text-align: center;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+
+blockquote p {
+    border: 1px solid black;
+    margin: 1vw;
+    padding: 1vw;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .client-profil {
+        width: 25vw;
+        height: 400px;
+    }
+
+    blockquote .avatar {
+        margin-top: 7vw;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    blockquote p {
+        margin-top: 7vw;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {}
+
+/*--------------------------------------------------------------
+messageModal
+--------------------------------------------------------------*/
+
+
+/*accueil modal*/
+
+.wrap {
+    padding: 15px;
+}
+
+.wrap h1 {
+    font-size: 28px;
+}
+
+/* modal*/
+.modalMessage {
+    margin-top: 12vw;
+}
+
+
+
+
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+
+    .modalMessage {
+        margin-top: 40vw;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------
+MessModalResponse
+--------------------------------------------------------------*/
+
+
+.modalMessage h4,
+modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+/*--------------------------------------------------------------
+contact  adresse
+--------------------------------------------------------------*/
+.container-bottom {
+    margin-bottom: 10vw;
+}
+
+.containerAdresse {
+    margin: 0px auto;
+    width: 27vw;
+    height: auto;
+    padding: 1vw;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #555;
+}
+
+.adresse h5 {
+    margin-left: 3vw;
+    font-size: 1.5em;
+    color: brown;
+}
+
+.adresse h5 p {
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+}
+
+.icone i {
+
+    border-radius: 50%;
+    line-height: 2;
+    color: brown;
+    float: left;
+    font-size: 1.9em;
 
 }
 
-.pack {
-    background: #c6c1c1;
-    border: solid 2px grey;
-    box-shadow: 15px 15px 30px grey;
-    height: 400px;
-    border-radius: 20px;
+@media (max-width: 1024px) {
+    .containerAdresse {
+        width: 39vw;
+    }
 }
 
-.pack_title h3 {
-    text-transform: uppercase;
-    font-family: fantasy;
-    color: #1e521e
+@media (max-width: 768px) {}
+
+
+
+/*--------------------------------------------------------------
+contact formulaire
+--------------------------------------------------------------*/
+.containerContact.card {
+    width: 27vw;
 }
 
-.pack_content ul li {
-    position: relative;
-    color: #337c33;
-    padding-top: 20px;
-
-
-
+.messageOk {
+    margin-top: 15px;
+    text-align: center;
+    color: #5f1313;
+    visibility: visible;
+    font-size: 1.2vw;
+    background-color: #a87676;
 }
 
-.pack_signup .btn {
-    border: solid 2px;
-    background-color: darkgreen;
-    color: white;
-    border-color: white;
-    display: block;
-    margin: auto;
-    position: relative;
-    width: 120px;
-    border-radius: 20px;
+@media (max-width: 1024px) {
+    .containerContact.card {
+        width: 39vw;
+    }
 }
 
-.pack_signup .btn:hover {
-    background-color: #90de90;
-}
+@media (max-width: 768px) {}
 
-.form h2 {
-    font-size: 30px;
-
-}
-
-.form {
-    margin-top: 50px;
-}
-
-.map {
-    margin-top: 80px;
-}
-
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
 footer {
     background-color: #338e33;
     color: white;
@@ -80,105 +545,4 @@ footer {
 .copyright p {
     text-align: center;
     margin: auto;
-}
-
-
-/*--------------------------------------------------------------
-gallerie loisirs
---------------------------------------------------------------*/
-
-.galerie_img {
-    display: block;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 300px;
-    border-radius: 20px;
-    margin-bottom: 30px
-}
-
-.gallerie_titre {
-    position: absolute;
-    top: 10px;
-    color: white;
-    left: 50px;
-    text-transform: uppercase;
-    font-family: "Dancing Script";
-
-}
-
-.text_img_4 {
-    position: relative;
-    top: 240px;
-    color: rgb(255, 255, 255);
-    left: -20px;
-}
-
-
-
-
-/*--------------------------------------------------------------
-vos messages
---------------------------------------------------------------*/
-.client-profil {
-    border: solid 1px rgb(139, 137, 137);
-    margin-bottom: 30px;
-}
-
-
-.client-profil img {
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
-    float: right;
-}
-
-blockquote p {
-    font-family: "Indie Flower";
-
-
-}
-
-blockquote:before {
-    content: "\00a5";
-    display: block;
-    font-size: 40px;
-    line-height: 20px;
-    color: green;
-}
-
-cite {
-    color: green;
-}
-
-/*--------------------------------------------------------------
-Modal Messages => Voir messageModal.css
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-contact formulaire 
---------------------------------------------------------------*/
-.fa-angellist {
-    width: 150px;
-}
-
-.adresse {
-    position: relative;
-
-}
-
-
-
-
-/*--------------------------------------------------------------
-formulaire contacts
---------------------------------------------------------------*/
-
-.visu {
-    margin-top: 15px;
-    text-align: center;
-    color: #5f1313;
-    visibility: visible;
-    font-size: 1.2vw;
-    background-color: #a87676;
 }

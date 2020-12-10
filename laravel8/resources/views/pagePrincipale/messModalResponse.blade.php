@@ -19,6 +19,7 @@
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
+        <div class="avatar"></div>
         <button type="submit" class="btn btn-rounded btn-outline-secondary submitForm">Envoyer</button>
         @if(session('messageClientOk'))
         <div class="visu">Votre message à bien été envoyé !</div>

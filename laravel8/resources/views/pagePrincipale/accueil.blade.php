@@ -209,7 +209,7 @@
                             <div class="row">
 
                                 <div class="col-md-6">
-
+                                    <h3>Front-End</h3>
                                     <p>HTML</p>
                                     <div class="progress">
                                         <small></small>
@@ -222,7 +222,13 @@
                                         <div class="progress-done" id="css" data-value="20">
                                         </div>
                                     </div>
-                                    <p>php</p>
+                                    <p>Javascript</p>
+                                    <div class=" progress">
+                                        <small></small>
+                                        <div class="progress-done" id="php" data-value="50">
+                                        </div>
+                                    </div>
+                                    <p>Vue.js</p>
                                     <div class=" progress">
                                         <small></small>
                                         <div class="progress-done" id="php" data-value="50">
@@ -230,19 +236,26 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>HTML</p>
+                                    <h3>back-End</h3>
+                                    <p>PHP</p>
                                     <div class="progress">
                                         <small></small>
                                         <div class="progress-done" id="NodeJS" data-value="80">
                                         </div>
                                     </div>
-                                    <p>CSS</p>
+                                    <p>Laravel</p>
+                                    <div class=" progress">
+                                        <small></small>
+                                        <div class="progress-done" id="php" data-value="50">
+                                        </div>
+                                    </div>
+                                    <p>Node.js</p>
                                     <div class="progress">
                                         <small></small>
                                         <div class="progress-done" id="MySQL" data-value="20">
                                         </div>
                                     </div>
-                                    <p>php</p>
+                                    <p>Express.js</p>
                                     <div class=" progress">
                                         <small></small>
                                         <div class="progress-done" id="php" data-value="50">
@@ -302,7 +315,6 @@
                                     </div>
                                 </div>
                             </div>
-
                     </section>
 
 
@@ -321,12 +333,9 @@
                                     <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                         data-aos-duration="2900" data-aos-delay="1000">
                                         <div class="card-body">
-
-
                                             <div class="card-title">
                                                 <h3>BABYFOOT</h3>
                                             </div>
-
                                             <div class="card-excerpt">
                                                 <p>
                                                     Application web permetant de créer des parties de babyfoot en
@@ -356,17 +365,10 @@
                                 <div class="col-md-4">
                                     <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                         data-aos-duration="2000" data-aos-delay="1500">
-
-
-
                                         <div class="card-body">
-
-
-
                                             <div class="card-title">
                                                 <h3>MON BLOG</h3>
                                             </div>
-
                                             <div class="card-excerpt">
                                                 <p>
                                                 </p>
@@ -374,24 +376,15 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-md-4">
                                     <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                         data-aos-duration="2000" data-aos-delay="2000">
-
-
-
                                         <div class="card-body">
-
-
-
                                             <div class="card-title">
                                                 <h3>MON CV</h3>
                                             </div>
-
                                             <div class="card-excerpt">
                                                 <p>
-
                                                 </p>
                                             </div>
                                         </div>
@@ -468,7 +461,7 @@
                     </section>
                     <!--Contact et form de messages-->
                     <section>
-                        <div class="container">
+                        <div class="container container-bottom">
                             <div class="row">
                                 <div class="espaceTitre" id="contact"></div>
                                 <div class="col-md-12">
@@ -477,13 +470,28 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 ">
-                                    <div class="containerInfo">
+                                    <div class="containerAdresse">
                                         <div class="adresse">
-                                            <i class="fab fa-angellist"></i>
-                                            <h5>Ville:</h5>
-                                            <p>Venansault</p>
-                                        </div>
+                                            <div class="icone">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h5>Ville:
+                                                    <p>Venansault</p>
+                                                </h5>
+                                            </div>
+                                            <div class="icone">
+                                                <i class="fas fa-at"></i>
+                                                <h5>Email:
+                                                    <p>gael.hamonic@yahoo.fr</p>
+                                                </h5>
 
+                                            </div>
+                                            <div class="icone">
+                                                <i class="fas fa-mobile-alt"></i>
+                                                <h5>Télephone:
+                                                    <p>06 86 84 92 55</p>
+                                                </h5>
+                                            </div>
+                                        </div>
                                         <iframe
                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87590.98061208264!2d-1.6116818781238276!3d46.68169540456109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480430c1840dcf91%3A0x24f1c5b47ba13082!2s85190%20Venansault!5e0!3m2!1sfr!2sfr!4v1603459912746!5m2!1sfr!2sfr"
                                             width="100%" height="auto" frameborder="0" style="border:0;"
@@ -491,7 +499,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 formContainer">
+                                <div class="col-md-6 ">
                                     @include('pagePrincipale/formContact')
                                 </div>
 

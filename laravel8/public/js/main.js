@@ -60,7 +60,7 @@ function ajoutListenerFetch(element) {
             .then(response => {
                 if (response.ok) {
                     response.text().then(responseHtml => {
-                        let formElem = this.closest(".containerContact");
+                        let formElem = this.closest(".formContainer");
                         formElem.innerHTML = responseHtml;
 
                         let tab = [];

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     new Typed('.typed', {
-        strings: ['toto', 'titi', 'tata'],
+        strings: ['Gaël', 'développeur', 'back', 'front'],
         loop: true,
         typeSpeed: 100,
         backSpeed: 50,
@@ -11,38 +11,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 })
-
-
 //Barre des competences
 document.getElementById("container_competences").addEventListener("mouseover", update)
 
-let open = false;
-
 function update() {
-
-    if (!open) {
-        const progressTab = document.querySelectorAll('.progress-done');
-        const percent = document.querySelector('small');
+    const progressTab = document.querySelectorAll('.progress-done');
+    const percent = document.querySelector('small');
 
 
-        progressTab.forEach(element => {
-            let width = 1;
-            let identity = setInterval(scene, 10);
+    progressTab.forEach(element => {
+        let width = 1;
+        let identity = setInterval(scene, 10);
 
-            function scene() {
-                if (width >= element.getAttribute('data-value')) {
-                    clearInterval(identity);
-                } else {
-                    width++;
-                    element.style.width = width + '%';
-                    element.innerHTML = width + '%';
-                }
+        function scene() {
+            if (width >= element.getAttribute('data-value')) {
+                clearInterval(identity);
+            } else {
+                width++;
+                element.style.width = width + '%';
+                element.innerHTML = width + '%';
             }
-        });
-        open = true;
-    }
+        }
+    });
+    this.removeEventListener("mouseover", update);
 }
-
 
 
 
@@ -55,7 +47,7 @@ function ajoutListenerFetch(element) {
     element.addEventListener('click', function (event) {
         event.preventDefault();
         let form = this.closest("form");
-        let inputs = form.querySelectorAll("input");
+        let inputs = form.querySelectorAll("input ,textarea");
         let idForm = form.id;
         let url = form.getAttribute("action");
         let messageContact = new FormData();
@@ -68,7 +60,7 @@ function ajoutListenerFetch(element) {
             .then(response => {
                 if (response.ok) {
                     response.text().then(responseHtml => {
-                        let formElem = this.closest(".formContainer");
+                        let formElem = this.closest(".containerContact");
                         formElem.innerHTML = responseHtml;
 
                         let tab = [];
@@ -158,3 +150,22 @@ function ajoutListenerXMLHTTP(element) {
         }
     })
 }
+
+
+//STICKY
+const $realSticky = document.querySelector(".fake-header");
+const $navSticky = document.querySelector(".navbar-horizontale");
+
+const stickyHeader = () => function () {
+    const sr1 = $realSticky.getBoundingClientRect();
+    if ((sr1.bottom > 0) || (sr1.bottom === 60)) {
+        console.log("caché");
+        $navSticky.classList.remove("sticky");
+    } else {
+        $navSticky.classList.add("sticky");
+    }
+};
+window.addEventListener("scroll", _.debounce(stickyHeader(), 50));
+
+
+//EFFET A PROPOS

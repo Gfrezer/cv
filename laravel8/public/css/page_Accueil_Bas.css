@@ -1,35 +1,29 @@
 /*
- color: #2d1dff;
- color:#f5614d;  orange navbar,
- h2 color: #8e453a;
- color: #343a40; fond navlateral formContact
- background-color: #422f2c;
- background-color:#ffffff
+  
+  color:#f5614d;  orange navbar,titre des paragraphes
+  color: #33a24e;  btnValidez
+  color: #343a40;  fond navlateral formContact
+￼ color: ##8f8f8f;   gris
+  background-color:#ffffff;  fond blanc
+
+
+
+
+ MEDIAQuerIES
+@media (max-width: 1024px) {}
+@media (max-width: 768px) {}
  
- 
- MEDIAQuerIES 
- 
- @media (max-width: 1024px) {}
- @media (max-width: 768px) {}
+FONT:
+font-family: 'Poppins',sans-serif;
 
- FONT:
- 
- font-family: 'Poppins',
- sans-serif;
 
- font-family: 'Raleway',
- 'sans-serif',
- 'fantasy';
+font-family: 'Raleway','sans-serif','fantasy';
 
- font-family: 'Montserrat Subrayada',
- sans-serif;
+font-family: 'Montserrat Subrayada',sans-serif;
 
- font-family: 'Dancing Script',
- cursive;
+font-family: 'Dancing Script',cursive;
 
- font-family: 'Permanent Marker',
- cursive;
-
+font-family: 'Permanent Marker',cursive;
 
 */
 
@@ -159,6 +153,11 @@ Formation
 /*--------------------------------------------------------------
 Barres de competences
 --------------------------------------------------------------*/
+
+.competencesProgress {
+    padding-left: 3vw;
+}
+
 #container_competences h6 {
     margin-top: 4vw;
     padding: 5px;
@@ -169,7 +168,7 @@ Barres de competences
 .progress {
     background: #e3e3e6;
     height: 18px;
-    width: 400px;
+    width: 20vw;
     overflow: hidden;
     /* position: relative;*/
     border-radius: 0px;
@@ -182,7 +181,8 @@ small {
 }
 
 .progress-done {
-    background: linear-gradient(to left, #566fc3, #d2d6ec);
+    color: #ffffff;
+    background: #566fc3;
     height: 18px;
     display: flex;
     justify-content: center;
@@ -191,10 +191,11 @@ small {
     transition: 1s ease;
 }
 
-#mesCompetences .row .col-md-6 p {
-    margin-top: 20px;
-    margin-bottom: 2px;
+.competencesProgress p {
+    margin-bottom: 0.1vw;
+    margin-top: 1vw;
 }
+
 
 @media (max-width: 1024px) {
     .progress {
@@ -250,10 +251,23 @@ EXPERIENCES
     text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+    .cadreText {
+        width: 24vw;
+
+    }
+
+}
+
+@media (max-width: 768px) {}
+
 /*--------------------------------------------------------------
 Mes applis   "voir css card formation" 
 --------------------------------------------------------------*/
 
+.card-excerpt li {
+    font-size: 0.8em;
+}
 
 
 
@@ -469,7 +483,7 @@ contact  adresse
 .containerAdresse {
     margin: 0px auto;
     width: 27vw;
-    height: auto;
+    height: 25vw;
     padding: 1vw;
     border-radius: 4px;
     background-color: white;
@@ -487,6 +501,10 @@ contact  adresse
     color: rgb(0, 0, 0);
 }
 
+iframe {
+    height: 13vw;
+}
+
 .icone i {
 
     border-radius: 50%;
@@ -500,6 +518,7 @@ contact  adresse
 @media (max-width: 1024px) {
     .containerAdresse {
         width: 39vw;
+        height: 45vw;
     }
 }
 
@@ -512,6 +531,7 @@ contact formulaire
 --------------------------------------------------------------*/
 .containerContact.card {
     width: 27vw;
+    height: 25vw;
 }
 
 .messageOk {
@@ -526,6 +546,7 @@ contact formulaire
 @media (max-width: 1024px) {
     .containerContact.card {
         width: 39vw;
+        height: 45vw;
     }
 }
 

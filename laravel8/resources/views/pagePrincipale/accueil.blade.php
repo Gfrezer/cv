@@ -211,7 +211,7 @@
                             <h6>Compétences:</h6>
                             <div class="row">
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 competencesProgress">
                                     <h3>Front-End</h3>
                                     <p>HTML</p>
                                     <div class="progress">
@@ -238,7 +238,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 competencesProgress">
                                     <h3>back-End</h3>
                                     <p>PHP</p>
                                     <div class="progress">
@@ -351,13 +351,13 @@
                                                 </ul>
                                                 <a target="_blank" type="button"
                                                     href="https://github.com/Gfrezer/babyfoot"
-                                                    class="btn btn-rounded btn-outline-secondary"><i
-                                                        class="fas fa-cogs pr-2" aria-hidden="true"></i>DEMO
+                                                    class="btn btn-rounded  btnValidez"><i class="fas fa-cogs pr-2"
+                                                        aria-hidden="true">DEMO</i>
                                                 </a>
                                                 <a target="_blank" type="button"
                                                     href="https://github.com/Gfrezer/babyfoot"
-                                                    class="btn btn-rounded btn-outline-secondary"><i
-                                                        class="fab fa-github pr-2" aria-hidden="true"></i>GITHUB
+                                                    class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
+                                                        aria-hidden="true">GITHUB</i>
                                                 </a>
                                                 </p>
                                             </div>
@@ -447,7 +447,10 @@
                                 @foreach($messagesUsers as $messagesUser)
                                 @if($messagesUser-> messageAccueil == 1)
                                 <div class="col-md-4">
-                                    <div class="client-profil">
+                                    <div class="client-profil" data-aos-delay="400" data-aos-duration="2000"
+                                        data-aos="flip-right">
+                                        <div class="imgAlea" data-aos-delay="1400" data-aos-duration="2000"
+                                            data-aos="flip-up"></div>
                                         <blockquote>
                                             <p>{{$messagesUser->message_user}}</p>
                                             <br />

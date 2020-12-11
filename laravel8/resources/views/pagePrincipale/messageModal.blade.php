@@ -1,7 +1,7 @@
 <!-- bouton sur la page accueil -->
 <div class="wrap">
     <h1>Votre Message...
-        <button type="button" class=" btn btn-rounded btn-outline-secondary" data-toggle="modal"
+        <button type="button" class=" btn btn-rounded btnValidez" data-toggle="modal"
             data-target=".bs-example-modal-new">
             Ouvrir
         </button>

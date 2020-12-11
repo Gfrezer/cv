@@ -26,7 +26,7 @@
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
-            <button type="submit" class="btn btn-secondary submitForm">Envoyer !</button>
+            <button type="submit" class="btn btn-secondary btnValidez submitForm">Envoyer !</button>
             @if(session('messageOk'))
             <div class="messageOk"> {{ session('messageOk') }}</div>
             @endif

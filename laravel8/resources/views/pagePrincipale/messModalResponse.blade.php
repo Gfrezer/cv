@@ -19,7 +19,7 @@
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
-        <button type="submit" class="btn btn-rounded btn-outline-secondary submitForm">Envoyer</button>
+        <button type="submit" class="btn btn-rounded btnValidez submitForm">Envoyer</button>
         @if(session('messageClientOk'))
         <div class="messageOk">Votre message à bien été envoyé !</div>
         @endif

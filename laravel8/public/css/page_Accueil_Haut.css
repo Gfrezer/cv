@@ -1,14 +1,13 @@
 /*
-  color: #2d1dff;
-
-  color:#f5614d;  orange navbar,h2
-  color: #8e453a;
+  
+  color:#f5614d;  orange navbar,titre des paragraphes
+  color: #33a24e;  btnValidez
   color: #343a40;  fond navlateral formContact
-￼ background-color: #422f2c;
-  background-color:#ffffff
+￼ color: ##8f8f8f;   gris
+  background-color:#ffffff;  fond blanc
 
 
-￼ background-color: #422f2c;
+
 
  MEDIAQuerIES
 @media (max-width: 1024px) {}
@@ -69,6 +68,16 @@ header section {
     height: 9vw;
 }
 
+.btnValidez {
+
+    border-color: #8f8f8f;
+}
+
+
+
+.btnValidez:hover {
+    background-color: #33a24e;
+}
 
 .header section .container {
     max-width: 80em;
@@ -129,6 +138,15 @@ ul li {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .btnValidez {
+        width: 12vw;
+    }
+
+    .btnValidez i {
+        font-size: 0.9;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -137,7 +155,7 @@ ul li {
     }
 
     .espaceTitre {
-        height: 40vw;
+        height: 10vw;
     }
 }
 
@@ -190,7 +208,6 @@ ul li {
 
 .navbar-nav {
     margin-left: 33vw;
-
     white-space: nowrap;
 }
 
@@ -212,12 +229,7 @@ ul li {
     color: #8e453a !important;
 }
 
-@media (max-width: 1824px) {
-    .navbar-nav {
-        margin-left: 50%;
 
-    }
-}
 
 
 
@@ -237,7 +249,7 @@ ul li {
     }
 
     .navbar-nav {
-        margin-left: 12vw;
+        margin-left: 16vw;
 
     }
 
@@ -254,6 +266,11 @@ ul li {
 }
 
 @media (max-width: 768px) {
+    .navbar-nav {
+        margin-left: 2vw;
+
+    }
+
     .navbar-horizontale {
         position: fixed;
         z-index: 5000;
@@ -267,6 +284,15 @@ ul li {
     .navbar-collapse {
         background-color: #ffffff;
     }
+
+    .navbar-light .navbar-toggler {
+        border-color: #ffffff;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
 }
 
 /*--------------------------------------------------------------
@@ -338,17 +364,17 @@ ul li {
 @media (max-width: 1024px) {
     #hero {
         margin-top: 39vw;
-        margin-left: 48vw;
+        margin-left: 54vw;
     }
 
     #hero h1 {
-        font-size: 4vw;
+        font-size: 5vw;
         margin-bottom: 0px;
         line-height: 25px;
     }
 
     #hero p {
-        font-size: 3vw;
+        font-size: 4vw;
         line-height: 8vw;
         margin-bottom: 30px;
     }
@@ -568,6 +594,10 @@ A Propos
 
 /*icones*/
 
+.containerApropos img {
+    width: 100%;
+
+}
 
 .textApropos h3 {
     padding: 10px;
@@ -601,13 +631,18 @@ A Propos
         width: 100%;
     }
 
+    .textApropos {
+        width: 100%;
+    }
+
     .textApropos h3 {
         padding: 10px;
         font-size: 10px;
     }
 
     .textApropos p {
+        width: 100%;
         padding: 15px;
-        font-size: 5px;
+        font-size: 12px;
     }
 }

@@ -1,15 +1,12 @@
 /*
   color: #2d1dff;
-<<<<<<< HEAD
-  color:#f5614d;
-  color: #8e453a;
-=======
+
   color:#f5614d;  orange navbar,h2
   color: #8e453a;
   color: #343a40;  fond navlateral formContact
 ￼ background-color: #422f2c;
   background-color:#ffffff
->>>>>>> front
+
 
 ￼ background-color: #422f2c;
 
@@ -20,20 +17,7 @@
 FONT:
 font-family: 'Poppins',sans-serif;
 
-<<<<<<< HEAD
 
-font-family: 'Sawarabi Mincho',
-sans-serif;
-
-font-family: 'Sawarabi Mincho',
-sans-serif;
-
-font-family: 'Montserrat Subrayada',
-sans-serif;
-
-font-family: 'Montserrat',
-sans-serif;
-=======
 font-family: 'Raleway','sans-serif','fantasy';
 
 font-family: 'Montserrat Subrayada',sans-serif;
@@ -41,7 +25,7 @@ font-family: 'Montserrat Subrayada',sans-serif;
 font-family: 'Dancing Script',cursive;
 
 font-family: 'Permanent Marker',cursive;
->>>>>>> front
+
 */
 /*--------------------------------------------------------------
 GENERALE
@@ -66,17 +50,7 @@ body {
     margin-right: auto;
 }
 
-<<<<<<< HEAD
-=======
-.btn-outline-secondary:hover {
-    background-color: green;
-}
 
-img {
-    width: 100%;
-}
-
->>>>>>> front
 .col-md-2,
 .col-md-4,
 .col-md-6,
@@ -89,14 +63,13 @@ header section {
     padding-left: 0px;
 }
 
-<<<<<<< HEAD
-=======
+
 .espaceTitre {
     width: 20%;
     height: 9vw;
 }
 
->>>>>>> front
+
 .header section .container {
     max-width: 80em;
 }
@@ -139,11 +112,7 @@ h5 {
     font-size: 2vw;
 }
 
-<<<<<<< HEAD
-@media (min-width: 1024px) {}
 
-@media (max-width: 768px) {}
-=======
 ul li {
     text-align: left;
 }
@@ -171,23 +140,19 @@ ul li {
         height: 40vw;
     }
 }
->>>>>>> front
+
 
 /*--------------------------------------------------------------
 # surcharge navbar bootstrap + photo accueil
 --------------------------------------------------------------*/
-<<<<<<< HEAD
-.navbar-horizontale {
-    position: absolute;
-}
-=======
+
 /*STICKY*/
 
 .fixed-top {
     position: absolute;
 }
 
->>>>>>> front
+
 
 .fake-header {
     height: 60px;
@@ -224,11 +189,8 @@ ul li {
 }
 
 .navbar-nav {
-<<<<<<< HEAD
-    margin-left: 80%;
-=======
     margin-left: 33vw;
->>>>>>> front
+
     white-space: nowrap;
 }
 
@@ -236,19 +198,14 @@ ul li {
 
 .navbar-nav a {
     color: #f5614d !important;
-<<<<<<< HEAD
-    font-size: 100%;
-    font-weight: 500;
-    font-family: 'Montserrat',
-        sans-serif !important;
-=======
+
     font-size: 1.3em;
     font-weight: 500;
     font-family: 'Raleway',
         'sans-serif',
         'fantasy';
 
->>>>>>> front
+
 }
 
 .navbar-nav a:hover {
@@ -259,24 +216,10 @@ ul li {
     .navbar-nav {
         margin-left: 50%;
 
-<<<<<<< HEAD
     }
 }
 
-@media (max-width: 1524px) {
-    .navbar-nav {
-        margin-left: 10%;
-        display: block;
-    }
-}
 
-@media (max-width: 768px) {
-    .navbar-horizontale {
-        position: fixed;
-        background-color: #d2d6ec;
-        z-index: 5;
-    }
-}
 
 /*--------------------------------------------------------------
 # présentation visu home
@@ -284,8 +227,8 @@ ul li {
 
 /*# Hero Section*/
 
-.d-flex {
-=======
+
+
 
 @media (max-width: 1024px) {
     .nav-link {
@@ -334,7 +277,6 @@ ul li {
 
 .d-flex {
 
->>>>>>> front
     position: absolute;
 }
 
@@ -346,10 +288,8 @@ ul li {
 
 #hero:before {
     content: "";
-<<<<<<< HEAD
-    position: absolute;
-=======
->>>>>>> front
+
+
     bottom: 0;
     top: 0;
     left: 0;
@@ -358,32 +298,14 @@ ul li {
 }
 
 #hero .hero-container {
-<<<<<<< HEAD
-    margin-top: 31%;
-    margin-right: 55%;
-=======
->>>>>>> front
+
+
     z-index: 2;
     min-width: 100%;
 }
 
 #hero h1 {
-<<<<<<< HEAD
-    margin: 0 0 10px 0;
-    font-size: 3vw;
-    font-weight: 600;
-    line-height: 56px;
-    color: #050505;
-    font-family: 'Poppins',
-        sans-serif;
-}
 
-#hero p {
-    color: #050505;
-    margin-bottom: 50px;
-    font-size: 2vw;
-    font-family: 'Sawarabi Mincho';
-=======
     margin: 0 0 0px 0;
     font-size: 4vw;
     font-weight: 600;
@@ -399,7 +321,7 @@ ul li {
     font-size: 3vw;
     font-family: 'Permanent Marker',
         cursive;
->>>>>>> front
+
 
 }
 
@@ -407,12 +329,10 @@ ul li {
     color: #f5614d;
     padding-bottom: 4px;
     letter-spacing: 1px;
-<<<<<<< HEAD
-    border-bottom: 3px solid #f5614d;
-=======
+
     font-family: 'Permanent Marker',
         cursive;
->>>>>>> front
+
 }
 
 @media (max-width: 1024px) {
@@ -456,73 +376,11 @@ ul li {
         margin-bottom: 30px;
     }
 
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-Navbar laterale
---------------------------------------------------------------*/
-.navbarLaterale {
-    width: 100%;
-    height: 400px;
 
-
-}
-
-.curriCum {
-    text-align: right;
-    margin-top: 25px;
-    margin-right: 15px;
-    position: fixed;
-}
-
-.curri-vitae {
-    position: fixed;
-    text-align: right;
-    color: #ffffff !important;
-    font-size: 3em;
-    font-weight: 500;
-    font-family: 'Montserrat',
-        sans-serif !important;
-}
-
-.oeilBeauf {
-    margin-left: 1%;
-    margin-top: 20%;
-    width: 5em;
-    height: 5em;
-    border-radius: 50%;
-    background-color: #149ddd;
-    position: fixed;
-}
-
-
-.col-md-2.navbarLaterale {
-    background-color: #422f2c;
-    height: auto;
-    max-width: inherit;
-}
-
-/*.navbarLaterale {
-    background-color: #4157a0;
-    width: 17%;
-    height: 900px;
-    position: fixed;
-}
-*/
-.icone_retour {
-    font-size: 35px;
-    color: #f5614d;
-    margin-left: 3%;
-    margin-top: 12%;
-    position: fixed;
-}
-
-.icone_retour:hover {
-    color: #8e453a;
-=======
     .navbar-toggler {
         font-size: 0.75rem;
     }
->>>>>>> front
+
 }
 
 /*--------------------------------------------------------------
@@ -560,30 +418,7 @@ Navbar laterale
     display: grid;
     text-align: center;
 
-<<<<<<< HEAD
-.famille_forma h4 {
-    color: white;
-    font-family: serif;
-    width: 250px;
-    display: inline-table
-}
 
-.famille_forma p {
-    color: black;
-    font-family: serif;
-    width: 100%;
-    display: inline-table
-}
-
-.famille_forma img {
-    width: 100%;
-}
-
-.color_bande {
-    background-color: #d4d6d8c2;
-    text-align: center;
-}
-=======
 }
 
 .navlater i {
@@ -661,13 +496,11 @@ Navbar laterale
 
 
 
->>>>>>> front
+
 
 }
 
-<<<<<<< HEAD
 
-=======
 @media (max-width: 768px) {
     .col-md-2.navbarLaterale {
         position: fixed;
@@ -723,7 +556,7 @@ Navbar laterale
 
 
 }
->>>>>>> front
+
 
 
 

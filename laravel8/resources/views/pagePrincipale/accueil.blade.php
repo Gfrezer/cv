@@ -968,7 +968,11 @@
                                     </div>
                                 </div>
 
+<<<<<<< HEAD
                                 <div class="col-md-6 ">
+>>>>>>> front
+=======
+                                <div class="col-md-6 formContainer">
 >>>>>>> front
                                     @include('pagePrincipale/formContact')
                                 </div>

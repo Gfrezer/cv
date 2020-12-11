@@ -47,7 +47,11 @@ function ajoutListenerFetch(element) {
     element.addEventListener('click', function (event) {
         event.preventDefault();
         let form = this.closest("form");
+<<<<<<< HEAD
         let inputs = form.querySelectorAll("input ,textarea");
+=======
+        let inputs = form.querySelectorAll("input textarea");
+>>>>>>> front
         let idForm = form.id;
         let url = form.getAttribute("action");
         let messageContact = new FormData();
@@ -71,7 +75,7 @@ function ajoutListenerFetch(element) {
                         if (tab.length === 0) {
                             setTimeout(function () {
                                 form = document.getElementById(idForm);
-                                form.querySelector(".visu").remove();
+                                form.querySelector(".messageOk").remove();
                             }, 3000);
                             //Nettoyer au click les messsages erreurs et videz les inputs
                         } else {

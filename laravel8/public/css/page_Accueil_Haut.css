@@ -120,6 +120,14 @@ ul li {
     .espaceTitre {
         height: 17vw;
     }
+
+    .overflow {
+        overflow-x: hidden;
+        background-color: rgb(255, 255, 255, 0.8);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -206,7 +214,7 @@ ul li {
     }
 
     .navbar-nav {
-        margin-left: 24vw;
+        margin-left: 12vw;
 
     }
 
@@ -299,17 +307,17 @@ ul li {
 @media (max-width: 1024px) {
     #hero {
         margin-top: 39vw;
-        margin-left: 52vw;
+        margin-left: 48vw;
     }
 
     #hero h1 {
-        font-size: 5vw;
+        font-size: 4vw;
         margin-bottom: 0px;
         line-height: 25px;
     }
 
     #hero p {
-        font-size: 4vw;
+        font-size: 3vw;
         line-height: 8vw;
         margin-bottom: 30px;
     }
@@ -522,9 +530,7 @@ A Propos
 --------------------------------------------------------------*/
 
 /*icones*/
-.containerApropos {}
 
-.textApropos {}
 
 .textApropos h3 {
     padding: 10px;

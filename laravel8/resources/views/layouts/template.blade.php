@@ -31,17 +31,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Sawarabi+Mincho&display=swap"
         rel="stylesheet">
-<<<<<<< HEAD
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@400;500;700;800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Sawarabi+Mincho&display=swap"
-=======
+
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Poppins:wght@700&family=Sawarabi+Mincho&display=swap"
         rel="stylesheet">
@@ -49,7 +39,6 @@
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Permanent+Marker&family=Sawarabi+Mincho&display=swap"
->>>>>>> front
         rel="stylesheet">
 </head>
 

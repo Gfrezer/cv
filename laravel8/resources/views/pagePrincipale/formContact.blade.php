@@ -18,8 +18,8 @@
                 @enderror
             </div>
             <div class="form-group">
-                <textarea type="textarea" class="form-control  @error('message') is-invalid @enderror" name="message"
-                    id="messageContact" placeholder="Votre message" value="{{ old('message') }}" required></textarea>
+                <input type="textarea" class="form-control  @error('message') is-invalid @enderror" name="message"
+                    id="messageContact" placeholder="Votre message" value="{{ old('message') }}" required>
                 @error('message')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

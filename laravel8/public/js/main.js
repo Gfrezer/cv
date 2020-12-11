@@ -47,7 +47,7 @@ function ajoutListenerFetch(element) {
     element.addEventListener('click', function (event) {
         event.preventDefault();
         let form = this.closest("form");
-        let inputs = form.querySelectorAll("input textarea");
+        let inputs = form.querySelectorAll("input");
         let idForm = form.id;
         let url = form.getAttribute("action");
         let messageContact = new FormData();

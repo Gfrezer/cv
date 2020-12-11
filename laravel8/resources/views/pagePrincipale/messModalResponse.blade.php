@@ -13,13 +13,12 @@
         </div>
 
         <div class="form-group">
-            <textarea type="textarea" class="form-control  @error('message_user') is-invalid @enderror"
-                name="message_user" id="message_user" placeholder="Votre message" value="{{ old('message_user') }}">
+            <input type="textarea" class="form-control  @error('message_user') is-invalid @enderror" name="message_user"
+                id="message_user" placeholder="Votre message" value="{{ old('message_user') }}">
             @error('message_user')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
-        <div class="avatar"></div>
         <button type="submit" class="btn btn-rounded btn-outline-secondary submitForm">Envoyer</button>
         @if(session('messageClientOk'))
         <div class="messageOk">Votre message à bien été envoyé !</div>

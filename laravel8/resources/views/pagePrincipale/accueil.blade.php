@@ -449,9 +449,6 @@
                                 <div class="col-md-4">
                                     <div class="client-profil">
                                         <blockquote>
-                                            <div class="imgAlea">
-                                                <img class="avatar">
-                                            </div>
                                             <p>{{$messagesUser->message_user}}</p>
                                             <br />
                                             <cite>{{$messagesUser->pseudo}}</cite>

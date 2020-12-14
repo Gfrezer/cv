@@ -19,8 +19,8 @@
             </div>
             <div class="form-group">
 
-                <input type="textarea" class="form-control  @error('message') is-invalid @enderror" name="message"
-                    id="messageContact" placeholder="Votre message" value="{{ old('message') }}" required>
+                <textarea type="textarea" class="form-control  @error('message') is-invalid @enderror" name="message"
+                    id="messageContact" placeholder="Votre message" value="{{ old('message') }}" required></textarea>
 
                 @error('message')
                 <div class="alert alert-danger">{{ $message }}</div>

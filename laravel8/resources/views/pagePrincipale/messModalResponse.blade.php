@@ -13,8 +13,8 @@
         </div>
 
         <div class="form-group">
-            <input type="textarea" class="form-control  @error('message_user') is-invalid @enderror" name="message_user"
-                id="message_user" placeholder="Votre message" value="{{ old('message_user') }}">
+            <textarea type="text" class="form-control  @error('message_user') is-invalid @enderror" name="message_user"
+                id="message_user" placeholder="Votre message" value="{{ old('message_user') }}"></textarea>
             @error('message_user')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror

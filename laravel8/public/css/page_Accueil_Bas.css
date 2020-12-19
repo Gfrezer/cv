@@ -1,13 +1,21 @@
 /*
-  
-  color:#f5614d;  orange navbar,titre des paragraphes
-  color: #33a24e;  btnValidez
-  color: #343a40;  fond navlateral formContact
-￼ color: ##8f8f8f;   gris
-  background-color:#ffffff;  fond blanc
+  Bouton
+  color: #33a24e;         btnValidez
+  border-color: #8f8f8f;  bordure
+  background-color: #33a24e;  validez
 
+  color:#f5614d;    orange navbar,titre des paragraphes,h2 
+  color: #8e453a;   texte navbar hover
+  color: #343a40;   fond navlateral formContact
+￼ color: #8f8f8f;   gris
+  color: #be6161;   adresse,text experience,icone,h3,h5
+  color: #777;      texte p
+  color: #333;      texte date
+  background-color:#ffffff;    fond blanc
+  background-color: #a87676;   messageOK
 
-
+  box-shadow: #555;     ombre cartes icone
+  box-shadow: #ffffff;  navbar sticky
 
  MEDIAQuerIES
 @media (max-width: 1024px) {}
@@ -15,7 +23,6 @@
  
 FONT:
 font-family: 'Poppins',sans-serif;
-
 
 font-family: 'Raleway','sans-serif','fantasy';
 
@@ -26,14 +33,13 @@ font-family: 'Dancing Script',cursive;
 font-family: 'Permanent Marker',cursive;
 
 */
-
 /*--------------------------------------------------------------
 Formation
 --------------------------------------------------------------*/
 .card {
     width: 18vw;
     margin: 0px auto;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0px 5px 20px #555;
     height: 100%;
 }
@@ -146,7 +152,7 @@ Formation
     }
 
     .card-excerpt p {
-        font-size: x-small;
+        font-size: 0.9em;
     }
 }
 
@@ -154,9 +160,7 @@ Formation
 Barres de competences
 --------------------------------------------------------------*/
 
-.competencesProgress {
-    padding-left: 3vw;
-}
+
 
 #container_competences h6 {
     margin-top: 4vw;
@@ -191,6 +195,12 @@ small {
     transition: 1s ease;
 }
 
+.competencesProgress {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
 .competencesProgress p {
     margin-bottom: 0.1vw;
     margin-top: 1vw;
@@ -204,6 +214,14 @@ small {
 }
 
 @media (max-width: 768px) {
+    .competencesProgress {
+        margin-top: 10vw;
+        display: block;
+    }
+
+    .competencesProgress h3 {
+        font-size: 1.5em;
+    }
 
     .progress {
         background: #e3e3e6;
@@ -233,11 +251,24 @@ EXPERIENCES
     justify-content: space-around;
 }
 
+.textExperences {
+    text-align: justify;
+    color: #777;
+    padding: 0.5;
+}
+
+.cadreText h5 {
+    font-weight: bold;
+    text-align: center;
+    color: #be6161;
+}
+
 .cadreText {
-    margin-top: 14vw;
-    background-color: white;
+    margin-top: 4vw;
+    background-color: #ffffff;
     width: 17vw;
     height: auto;
+    padding: 0.5em;
 }
 
 
@@ -245,21 +276,46 @@ EXPERIENCES
     text-align: center;
     font-weight: bold;
     color: #777;
+
 }
 
 .cadreText p time {
     text-transform: uppercase;
+    color: #777;
+
+}
+
+
+
+.cadreText ul li {
+    color: #777;
 }
 
 @media (max-width: 1024px) {
     .cadreText {
-        width: 24vw;
+        width: 100%;
 
     }
 
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+    .containerExperiences {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photoExperience {
+        height: auto;
+    }
+
+    .textExperences {
+        font-size: 0.9em;
+    }
+
+
+}
 
 /*--------------------------------------------------------------
 Mes applis   "voir css card formation" 
@@ -270,9 +326,18 @@ Mes applis   "voir css card formation"
 }
 
 
+@media (max-width: 768px) {
+    .cardApplis {
+        height: auto;
+        margin-top: 5vw;
+    }
 
+    .card-title h4 {
+        font-size: 1em;
+        color: #be6161;
+    }
 
-
+}
 
 /*--------------------------------------------------------------
 gallerie loisirs
@@ -289,7 +354,7 @@ gallerie loisirs
     font-family: 'Raleway',
         'sans-serif',
         'fantasy';
-    color: rgb(252, 250, 250);
+    color: #ffffff;
     padding: 20px;
 }
 
@@ -365,7 +430,7 @@ gallerie loisirs
 affichage de vos messages page accueil
 --------------------------------------------------------------*/
 .client-profil {
-    background-color: white;
+    background-color: #ffffff;
     border: solid 1px rgb(139, 137, 137);
     margin-bottom: 30px;
     width: 18vw;
@@ -374,12 +439,51 @@ affichage de vos messages page accueil
 
 
 .imgAlea {
-    width: auto;
+    position: absolute;
+    width: 100%;
     height: 100px;
-    background-color: #343a40;
+    background-color: #555;
 }
 
+.avatar {
+    margin: 1vw auto;
+    position: relative;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-size: contain;
 
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    color: #be6161;
+    font-size: 12px;
+}
+
+.avatar.a1h {
+    background-image: url('http://fakeface.rest/thumb/view/1?minimum_age=20&gender=male');
+}
+
+.avatar.a2h {
+    background-image: url('http://fakeface.rest/thumb/view/2?minimum_age=20&gender=male');
+}
+
+.avatar.a3h {
+    background-image: url('http://fakeface.rest/thumb/view/3?minimum_age=20&gender=male');
+}
+
+.avatar.a1f {
+    background-image: url('http://fakeface.rest/thumb/view/1?minimum_age=20&gender=female');
+}
+
+.avatar.a2f {
+    background-image: url('http://fakeface.rest/thumb/view/2?minimum_age=20&gender=female');
+}
+
+.avatar.a3f {
+    background-image: url('http://fakeface.rest/thumb/view/3?minimum_age=20&gender=female');
+}
 
 blockquote {
     text-align: center;
@@ -409,19 +513,23 @@ blockquote p {
         height: 400px;
     }
 
-    blockquote .avatar {
-        margin-top: 7vw;
-        width: 10vw;
-        height: 10vw;
-    }
 
-    blockquote p {
-        margin-top: 7vw;
-        font-size: 0.8em;
-    }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .client-profil {
+        width: 100%;
+        height: auto;
+    }
+
+    .avatar {
+        margin: 5vw auto;
+        width: 35vw;
+        height: 35vw;
+    }
+
+
+}
 
 /*--------------------------------------------------------------
 messageModal
@@ -435,7 +543,7 @@ messageModal
 }
 
 .wrap h1 {
-    font-size: 28px;
+    font-size: 1.5em;
 }
 
 /* modal*/
@@ -486,14 +594,14 @@ contact  adresse
     height: 25vw;
     padding: 1vw;
     border-radius: 4px;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0px 5px 20px #555;
 }
 
 .adresse h5 {
     margin-left: 3vw;
     font-size: 1.5em;
-    color: brown;
+    color: #be6161;
 }
 
 .adresse h5 p {
@@ -506,23 +614,38 @@ iframe {
 }
 
 .icone i {
-
     border-radius: 50%;
-    line-height: 2;
-    color: brown;
+    color: #be6161;
     float: left;
     font-size: 1.9em;
-
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
     .containerAdresse {
-        width: 39vw;
-        height: 45vw;
+        margin: 30px auto;
+        width: 100%;
+        height: 95vw;
+        padding: 3vw;
     }
-}
 
-@media (max-width: 768px) {}
+    iframe {
+        height: 36vw;
+    }
+
+    .icone i {
+        font-size: 1.5em;
+    }
+
+    .adresse h5 {
+        margin-bottom: 0px;
+        font-size: 1.2em;
+        margin-left: 11vw;
+        color: #be6161;
+    }
+
+}
 
 
 
@@ -537,7 +660,7 @@ contact formulaire
 .messageOk {
     margin-top: 15px;
     text-align: center;
-    color: #5f1313;
+    color: #ffffff;
     visibility: visible;
     font-size: 1.2vw;
     background-color: #a87676;
@@ -545,25 +668,48 @@ contact formulaire
 
 @media (max-width: 1024px) {
     .containerContact.card {
-        width: 39vw;
-        height: 45vw;
+        width: 95vw;
+        height: 70vw;
     }
+
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .containerContact.card {
+        width: 100%;
+        height: auto;
+    }
+
+    .messageOk {
+        font-size: 5vw;
+    }
+
+    .btnValidez {
+        width: 30vw;
+    }
+}
 
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
 footer {
-    background-color: #338e33;
-    color: white;
-    height: 50px;
-    padding-bottom: 5px;
+    background-color: #343a40;
+    color: #ffffff;
+    height: 100px;
+}
 
+.copyright {
+    text-align: center;
+    padding: 5px;
 }
 
 .copyright p {
     text-align: center;
-    margin: auto;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.copyright a {
+    padding: 5px;
+    text-decoration: underline;
 }

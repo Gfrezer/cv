@@ -57,6 +57,9 @@
                     Message
                 </th>
                 <th class="cell">
+                    Sexe
+                </th>
+                <th class="cell">
                     ID
                 </th>
                 <th class="cell">
@@ -76,6 +79,9 @@
                     </td>
                     <td class="cell" data-title="message_user">
                         {{$messagesUser->message_user}}
+                    </td>
+                    <td class="cell" data-title="message_user">
+                        {{$messagesUser->sexe}}
                     </td>
                     <td class="cell" data-title="message_user">
                         {{$messagesUser->id}}

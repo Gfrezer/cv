@@ -13,11 +13,15 @@
         </div>
 
         <div class="form-group">
-            <textarea type="text" class="form-control  @error('message_user') is-invalid @enderror" name="message_user"
-                id="message_user" placeholder="Votre message" value="{{ old('message_user') }}"></textarea>
+            <textarea type="textarea" class="form-control  @error('message_user') is-invalid @enderror"
+                name="message_user" id="message_user" placeholder="Votre message"
+                value="{{ old('message_user') }}"></textarea>
             @error('message_user')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
+            <label for="sexe">Vous êtes un(e)...?</label><br />
+            <input type=radio id=sexe name=sexe value=h> homme
+            <input type=radio id=sexe name=sexe value=f> femme
         </div>
         <button type="submit" class="btn btn-rounded btnValidez submitForm">Envoyer</button>
         @if(session('messageClientOk'))

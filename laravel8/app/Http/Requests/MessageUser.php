@@ -27,8 +27,8 @@ class messageUser extends FormRequest
     {
         return [
             'pseudo' => 'required|alpha|max:25',
-            'message_user' => ['required','regex:#^[^<>/]*[^<>/]*[^<>/]$#']
-            
+            'message_user' => ['required','regex:#^[^<>/]*[^<>/]*[^<>/]$#'],
+            'sexe' => 'required'
         ];
     }
        public function messages()

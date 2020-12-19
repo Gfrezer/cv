@@ -1,13 +1,21 @@
 /*
-  
-  color:#f5614d;  orange navbar,titre des paragraphes
-  color: #33a24e;  btnValidez
-  color: #343a40;  fond navlateral formContact
-￼ color: ##8f8f8f;   gris
-  background-color:#ffffff;  fond blanc
+  Bouton
+  color: #33a24e;         btnValidez
+  border-color: #8f8f8f;  bordure
+  background-color: #33a24e;  validez
 
+  color: #f5614d;    orange navbar,titre des paragraphes,h2 
+  color: #8e453a;   texte navbar hover
+  color: #343a40;   fond navlateral formContact
+￼ color: #8f8f8f;   gris
+  color: #be6161;   adresse,text experience,icone,h3,h5,h4
+  color: #777;      texte p
+  color: #333;      texte date
+  background-color: #ffffff;    fond blanc
+  background-color: #a87676;   messageOK
 
-
+  box-shadow: #555;     ombre cartes icone
+  box-shadow: #ffffff;  navbar sticky
 
  MEDIAQuerIES
 @media (max-width: 1024px) {}
@@ -15,7 +23,6 @@
  
 FONT:
 font-family: 'Poppins',sans-serif;
-
 
 font-family: 'Raleway','sans-serif','fantasy';
 
@@ -41,14 +48,15 @@ body {
     overflow-x: hidden;
 }
 
+
+
 .overflow {
     overflow-x: hidden;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(#ffffff, 0.8);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .col-md-2,
 .col-md-4,
@@ -62,18 +70,19 @@ header section {
     padding-left: 0px;
 }
 
-
 .espaceTitre {
     width: 20%;
-    height: 9vw;
+    height: 10vw;
+}
+
+.espaceTitreCompetence {
+    width: 20%;
+    height: 5vw;
 }
 
 .btnValidez {
-
     border-color: #8f8f8f;
 }
-
-
 
 .btnValidez:hover {
     background-color: #33a24e;
@@ -92,8 +101,7 @@ h3 {
     font-family: 'Raleway',
         'sans-serif',
         'fantasy';
-
-    color: #be6161
+    color: #be6161;
 }
 
 
@@ -117,9 +125,6 @@ h4 {
         'fantasy';
 }
 
-h5 {
-    font-size: 2vw;
-}
 
 
 ul li {
@@ -133,7 +138,7 @@ ul li {
 
     .overflow {
         overflow-x: hidden;
-        background-color: rgb(255, 255, 255, 0.8);
+        background-color: (#ffffff, 0.8);
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -151,11 +156,11 @@ ul li {
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .espaceTitre {
-        height: 10vw;
+        height: 40vw;
     }
 }
 
@@ -207,7 +212,7 @@ ul li {
 }
 
 .navbar-nav {
-    margin-left: 33vw;
+    margin-left: 24vw;
     white-space: nowrap;
 }
 
@@ -336,14 +341,14 @@ ul li {
     font-size: 4vw;
     font-weight: 600;
     line-height: 56px;
-    color: #fdfdfd;
+    color: #ffffff;
     font-family: 'Poppins',
         sans-serif;
 
 }
 
 #hero p {
-    color: #fdfdfd;
+    color: #ffffff;
     font-size: 3vw;
     font-family: 'Permanent Marker',
         cursive;
@@ -386,18 +391,18 @@ ul li {
 
 @media (max-width: 768px) {
     #hero {
-        margin-top: 48vw;
-        margin-left: 53vw;
+        margin-top: 47vw;
+        margin-left: 48vw;
     }
 
     #hero h1 {
-        font-size: 5vw;
+        font-size: 6vw;
         margin-bottom: 0px;
         line-height: 5px;
     }
 
     #hero p {
-        font-size: 4vw;
+        font-size: 5vw;
         line-height: 8vw;
         margin-bottom: 30px;
     }
@@ -432,7 +437,7 @@ Navbar laterale
 .oeilBeauf {
     background-image: url(../images/images/photoMoi.jpg);
     background-size: contain;
-    border: solid 2px white;
+    border: solid 2px #ffffff;
     width: 8vw;
     height: 8vw;
     border-radius: 50%;
@@ -449,7 +454,7 @@ Navbar laterale
 
 .navlater i {
     font-size: 3em;
-    color: #6f6f6f;
+    color: #555;
     padding-top: 25px;
 }
 
@@ -504,7 +509,7 @@ Navbar laterale
 
     .navlater i {
         font-size: 2em;
-        color: #6f6f6f;
+        color: #555;
         padding-right: 3vw;
     }
 
@@ -564,7 +569,7 @@ Navbar laterale
 
     .navlater i {
         font-size: 1em;
-        color: #6f6f6f;
+        color: #555;
         padding-right: 1vw;
     }
 
@@ -603,10 +608,14 @@ A Propos
     padding: 10px;
 }
 
+.textApropos {
+    background-color: #ffffff;
+}
+
 .textApropos p {
     width: 30vw;
     padding: 15px;
-    border: #f5614d 1px solid;
+
 }
 
 

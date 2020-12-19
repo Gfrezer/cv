@@ -47,12 +47,13 @@ function ajoutListenerFetch(element) {
     element.addEventListener('click', function (event) {
         event.preventDefault();
         let form = this.closest("form");
+        let sexe = document.querySelector('input[name=h_f]:checked').value;
         let inputs = form.querySelectorAll("input, textarea");
         let idForm = form.id;
         let url = form.getAttribute("action");
         let messageContact = new FormData();
         inputs.forEach(el => messageContact.append(el.name, el.value));
-
+        messageContact.append('sexe', sexe);
         fetch(url, {
                 method: 'post',
                 body: messageContact
@@ -168,4 +169,19 @@ const stickyHeader = () => function () {
 window.addEventListener("scroll", _.debounce(stickyHeader(), 50));
 
 
-//EFFET A PROPOS
+//Fermer la navbar toggler "version mobile"
+$('.navbar-nav a').click(function () {
+    $(".navbar-to-collapse").collapse("hide")
+});
+
+
+
+//Taille de l ecran desktop tablette mobile
+
+function change() {
+    window.resizeBy(-100, -10);
+}
+
+function changeScreenSize() {
+    window.resizeTo(screen.width - 300, screen.height - 500)
+}

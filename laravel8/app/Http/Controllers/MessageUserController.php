@@ -27,8 +27,9 @@ class MessageUserController extends Controller
        function save($validatedData)
 	{
         $dataMessage = new Message;
-		$dataMessage->pseudo = $validatedData['pseudo'];	
-		$dataMessage->message_user = $validatedData['message_user'];
+		    $dataMessage->pseudo = $validatedData['pseudo'];	
+        $dataMessage->message_user = $validatedData['message_user'];
+        $dataMessage->sexe = $validatedData['sexe'];
         $dataMessage->save();         
     }
 

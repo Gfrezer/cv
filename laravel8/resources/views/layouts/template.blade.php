@@ -4,8 +4,6 @@
 
 <head>
     <title>{{ config('app.name', 'Mon CV') }}</title>
-
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,14 +12,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-
     <!-- Styles -->
     <link href="{{ asset('css/page_Accueil_Haut.css') }}" rel="stylesheet">
     <link href="{{ asset('css/page_Accueil_Bas.css') }}" rel="stylesheet">
 
-
     <!--AOS-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--intro css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.2.0/introjs.min.css" />
     <!--icon-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -43,12 +41,7 @@
 </head>
 
 <body>
-
-
-
     @yield('content')
-
-
     <!-- Scripts -->
     <!-- navbar app lodash -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
@@ -68,6 +61,8 @@
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- intro -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.2.0/intro.min.js"></script>
     <script>
     AOS.init();
     </script>

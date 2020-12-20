@@ -47,7 +47,9 @@ function ajoutListenerFetch(element) {
     element.addEventListener('click', function (event) {
         event.preventDefault();
         let form = this.closest("form");
-        let sexe = document.querySelector('input[name=h_f]:checked').value;
+        if (form.id == "formMessageUser") {
+            let sexe = document.querySelector('input[name=sexe]:checked').value;
+        }
         let inputs = form.querySelectorAll("input, textarea");
         let idForm = form.id;
         let url = form.getAttribute("action");
@@ -173,15 +175,3 @@ window.addEventListener("scroll", _.debounce(stickyHeader(), 50));
 $('.navbar-nav a').click(function () {
     $(".navbar-to-collapse").collapse("hide")
 });
-
-
-
-//Taille de l ecran desktop tablette mobile
-
-function change() {
-    window.resizeBy(-100, -10);
-}
-
-function changeScreenSize() {
-    window.resizeTo(screen.width - 300, screen.height - 500)
-}

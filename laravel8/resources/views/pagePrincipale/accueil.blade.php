@@ -36,6 +36,7 @@
                             </div>
                         </div>
                     </div>
+
                 </section>
                 <!--navbar Photo-->
 
@@ -58,7 +59,9 @@
                                     <h2>A PROPOS...</h2>
                                 </div>
                             </div>
-                            <div class="row">
+
+                            <div class="row  card__image "
+                                data-intro=" Intro.js peut mettre en évidence sur les éléments ">
                                 <div class="col-md-6 containerApropos" data-aos="fade-right" data-aos-delay="500"
                                     data-aos-duration="1000" data-aos-easing="ease-in-sine">
                                     <img src="./../public/images/images/cabanePetit.jpg" class="binary">
@@ -145,9 +148,11 @@
                                                 <p>
                                                     Développement de diverses applications web :
                                                     - application de coaching minceur (toujours en cours)
-                                                    Technologies : VueJs, Node.js, Bootstrap, PostgreSQL, ORM Sequelize
+                                                    Technologies : VueJs, Node.js, Bootstrap, PostgreSQL, ORM
+                                                    Sequelize
                                                     - application démo temps-réel de gestion de parties de babyfoot
-                                                    Technologies : Javascript avec Websockets, Node.js, PostgreSQL sans
+                                                    Technologies : Javascript avec Websockets, Node.js, PostgreSQL
+                                                    sans
                                                     ORM
                                                     - application de gestion de parties de palet vendéen
                                                     Technologies : Javascript, Node.js, Postgresql
@@ -180,7 +185,8 @@
                                                 <p>
                                                     ARINFO La roche Sur Yon
                                                     Février 2019 à septembre 2019
-                                                    Titre Professionnel "Développeur Web et Web-Mobile" bac+2, inscrit
+                                                    Titre Professionnel "Développeur Web et Web-Mobile" bac+2,
+                                                    inscrit
                                                     au RNCP </p>
                                             </div>
                                         </div>
@@ -210,10 +216,12 @@
                                                 <p>
                                                     Ecole Pivaut (Nantes)
                                                     Septembre 1991 à juin 1993
-                                                    Formation à la peinture décorative. Réalisation de fresque, décor
+                                                    Formation à la peinture décorative. Réalisation de fresque,
+                                                    décor
                                                     mural dans
                                                     édifices et habitats. Lettres à main levée.
-                                                    Utilisation de logiciels d'infographie type CorelDraw et Photoshop
+                                                    Utilisation de logiciels d'infographie type CorelDraw et
+                                                    Photoshop
                                                 </p>
                                             </div>
                                         </div>
@@ -339,7 +347,8 @@
                                         <h5>Graphiste décorateur </h5> </br>
                                         <div class="textExperences">
                                             Réalisation de marquage publicitaire.
-                                            Polyvalant dans le but de répondre aux besoins du client dans une multitude
+                                            Polyvalant dans le but de répondre aux besoins du client dans une
+                                            multitude
                                             de choix pour attirer l'attention sur son produit.
                                             Activité exercée aux sein de diverses entreprises du Grand Ouest.
                                             Les principales :

@@ -19,6 +19,12 @@ use Illuminate\Support\Facades\Route;
 */
 //ACCUEIL
 
+Route::get('/mon_cv',function () {
+    return view('/pagePrincipale/monCv');
+});
+
+
+
 
 
 //Message Contact

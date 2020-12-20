@@ -46,6 +46,7 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     overflow-x: hidden;
+    margin: 0px;
 }
 
 
@@ -170,6 +171,9 @@ ul li {
 --------------------------------------------------------------*/
 
 /*STICKY*/
+.iframeTablette {
+    margin: 0 auto;
+}
 
 .fixed-top {
     position: absolute;

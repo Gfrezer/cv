@@ -14,7 +14,7 @@
 </div>
 
 <script>
-document.querySelectorAll('.blocIcone .htm').forEach(element => {
+document.querySelectorAll('.blocIcone a').forEach(element => {
     hrefListener(element);
 
 });
@@ -23,14 +23,15 @@ function hrefListener(element) {
     element.addEventListener('click', function(event) {
         event.preventDefault();
 
-        if (this.querySelector('i').classList.contains("fa-tablet-alt")) {
-            console.log("azzerttrhrth");
-            var event = new Event('tablette');
-            console.log(window.parent.document);
-            window.parent.document.dispatchEvent(event);
+        let choixDim = element.childNodes[0].classList[1];
 
-        }
+        var event = new CustomEvent('choix', {
+            detail: {
+                name: choixDim
+            }
+        });
+        window.parent.document.dispatchEvent(event);
+
     })
-
 };
 </script>

@@ -133,6 +133,7 @@ ul li {
 }
 
 @media (max-width: 1024px) {
+
     .espaceTitre {
         height: 17vw;
     }

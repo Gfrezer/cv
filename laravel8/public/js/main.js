@@ -47,15 +47,12 @@ function ajoutListenerFetch(element) {
     element.addEventListener('click', function (event) {
         event.preventDefault();
         let form = this.closest("form");
-        if (form.id == "formMessageUser") {
-            let sexe = document.querySelector('input[name=sexe]:checked').value;
-        }
-        let inputs = form.querySelectorAll("input, textarea");
+        let inputs = form.querySelectorAll("input[type=text], input[type=hidden], input[type=radio]:checked, textarea");
         let idForm = form.id;
         let url = form.getAttribute("action");
         let messageContact = new FormData();
         inputs.forEach(el => messageContact.append(el.name, el.value));
-        messageContact.append('sexe', sexe);
+
         fetch(url, {
                 method: 'post',
                 body: messageContact

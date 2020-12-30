@@ -1,15 +1,11 @@
 @extends('layouts/template')
-@section('content')
-<section>
 
+<section>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2 navbarLaterale">
-
-
                 @include('pagePrincipale/navbarLateral')
             </div>
-
             <div class="col-md-10">
                 <section>
                     <div class="fake-header">
@@ -36,14 +32,12 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
                 <!--navbar Photo-->
-
                 <!-- ======= Hero Section ======= -->
                 <div id="hero" class="d-flex flex-column justify-content-center align-items-center">
                     <div class="hero-container" data-aos="fade-in">
-                        <h1>Welcome</h1>
+                        <h1>Bienvenue</h1>
                         <p>je suis <span class="typed"></span></p>
                     </div>
                 </div>
@@ -59,7 +53,6 @@
                                     <h2>A PROPOS...</h2>
                                 </div>
                             </div>
-
                             <div class="row  card__image "
                                 data-intro=" Intro.js peut mettre en évidence sur les éléments ">
                                 <div class="col-md-6 containerApropos" data-aos="fade-right" data-aos-delay="500"
@@ -72,8 +65,7 @@
                                     <p>Sortie de formation développeur web, passionné par
                                         le language informatique et plus particulièrement dans
                                         les créations de sites web, j'aime autant la partie Front-end que la partie
-                                        Back-end
-
+                                        Back-end.
                                     </p>
                                     <div class="row">
                                         <div class="col-md-6">
@@ -82,13 +74,13 @@
                                                     <p><b>Anniversaire:</b> 29 Septembre 1973</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Site Web:</b>www.moncv.com</p>
+                                                    <p><b>Site Web:</b> www.moncv.com</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Téléphone:</b>06 86 84 92 55</p>
+                                                    <p><b>Téléphone:</b> 06 86 84 92 55</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Ville:</b>Venansault</p>
+                                                    <p><b>Ville:</b> Venansault</p>
                                                 </li>
                                             </ul>
                                         </div>
@@ -96,16 +88,16 @@
                                         <div class="col-md-6">
                                             <ul>
                                                 <li>
-                                                    <p><b>Age:</b>47 ans</p>
+                                                    <p><b>Age:</b> 47 ans</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Diplôme:</b>Bac+2</p>
+                                                    <p><b>Diplôme:</b> Bac+2</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Email:</b>gael.hamonic@yahoo.fr</p>
+                                                    <p><b>Email:</b> gael.hamonic@yahoo.fr</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Departement:</b>Vendée</p>
+                                                    <p><b>Departement:</b> Vendée</p>
                                                 </li>
                                             </ul>
                                         </div>
@@ -121,73 +113,74 @@
                             <div class="row">
                                 <div class="espaceTitre" id="formations"></div>
                                 <div class="col-md-12">
-
                                     <h2>FORMATIONS</h2>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row introFormation">
                                 <div class="col-md-4">
                                     <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                         data-aos-duration="2900" data-aos-delay="1000">
-
                                         <div class="card-image">
                                             <img src="./../public/images/formation/autodidacte.png" alt="Orange" />
                                         </div>
-
                                         <div class="card-body">
-
                                             <div class="card-date">
-                                                <time>Depuis octobre 2019</time>
+                                                <time>2020</time>
                                             </div>
-
                                             <div class="card-title">
                                                 <h3>Auto-formation</h3>
                                             </div>
-
                                             <div class="card-excerpt">
                                                 <p>
-                                                    Développement de diverses applications web :
-                                                    - application de coaching minceur (toujours en cours)
-                                                    Technologies : VueJs, Node.js, Bootstrap, PostgreSQL, ORM
-                                                    Sequelize
-                                                    - application démo temps-réel de gestion de parties de babyfoot
-                                                    Technologies : Javascript avec Websockets, Node.js, PostgreSQL
+                                                    Développement de diverses applications web.</br>
+                                                    <span>- Application démo temps-réel de gestion de parties de
+                                                        babyfoot:</span>
+                                                    (Technologies : Javascript avec Websockets, Node.js, PostgreSQL,
                                                     sans
-                                                    ORM
-                                                    - application de gestion de parties de palet vendéen
-                                                    Technologies : Javascript, Node.js, Postgresql
+                                                    ORM)</br>
+                                                    <span>- Mon cv en ligne :</span>
+                                                    (Technologies : PHP, Laravel 8, MySQL)</br>
+                                                    <span>- application de coaching minceur (toujours en
+                                                        cours):</span>
+                                                    (Technologies : VueJs, Node.js, Bootstrap, PostgreSQL, ORM
+                                                    Sequelize)</br>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-
                                 <div class="col-md-4">
                                     <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                         data-aos-duration="2000" data-aos-delay="1500">
-
                                         <div class="card-image">
                                             <img src="./../public/images/formation/dev.jpeg" alt="Orange" />
                                         </div>
-
                                         <div class="card-body">
-
                                             <div class="card-date">
-                                                <time>Depuis octobre 2019</time>
+                                                <time>2019</time>
                                             </div>
-
                                             <div class="card-title">
                                                 <h3>Développeur Web</h3>
                                             </div>
-
                                             <div class="card-excerpt">
                                                 <p>
-                                                    ARINFO La roche Sur Yon
-                                                    Février 2019 à septembre 2019
-                                                    Titre Professionnel "Développeur Web et Web-Mobile" bac+2,
-                                                    inscrit
-                                                    au RNCP </p>
+                                                    <span>ARINFO</span> (La roche Sur Yon)</br>
+                                                    Mars 2019 à septembre 2019</br>
+                                                    <span>-Titre Professionnel:</span>(Développeur Web et Web-Mobile"
+                                                    bac+2,
+                                                    inscrit au RNCP.)</br>
+                                                    <span> Logiciels et outils abordés:</span></br>
+                                                    <span>- Environnement serveur:</span>(Hébergement de site web, Ligne
+                                                    de commande
+                                                    SSH)</br>
+                                                    <span>- Langages:</span></br>
+                                                    (HTML-CSS, Bootstrap, Javascript, Node JS) </br>
+                                                    <span>- CMS:</span></br>
+                                                    (Wordpress "survoler")</br>
+                                                    <span>- Gestion de projet Web:</span></br>
+                                                    (Méthode Scrum Agile)
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -201,27 +194,29 @@
                                         <div class="card-image">
                                             <img src="./../public/images/formation/graphiste.jpg" alt="Orange" />
                                         </div>
-
                                         <div class="card-body">
-
                                             <div class="card-date">
-                                                <time>Depuis octobre 2019</time>
+                                                <time>1991 à 1995</time>
                                             </div>
-
                                             <div class="card-title">
-                                                <h3>Graphiste</h3>
+                                                <h3>Graphiste Décorateur</h3>
                                             </div>
-
                                             <div class="card-excerpt">
                                                 <p>
-                                                    Ecole Pivaut (Nantes)
-                                                    Septembre 1991 à juin 1993
-                                                    Formation à la peinture décorative. Réalisation de fresque,
-                                                    décor
-                                                    mural dans
-                                                    édifices et habitats. Lettres à main levée.
+                                                    <span>-Ecole Pivaut</span> (Nantes)</br>
+                                                    Septembre 1991 à juin 1993.</br>
+                                                    Formation aux métiers de la communication visuelle - designers
+                                                    graphiques - illustrateurs graphistes.</br>
+                                                    <span>-Ecole Bonnec</span> (Auray)</br>
+                                                    Septembre 1993 à juin 1994.</br>
+                                                    Formation à la peinture décorative. Réalisation de
+                                                    décor mural dans les édifices et habitats. Lettres à main
+                                                    levée.</br>
+                                                    <span>-Ecole de formation Inslow en PAO DAO</span> (La
+                                                    Rochelle)</br>
+                                                    Septembre 1994 à juin 1995.</br>
                                                     Utilisation de logiciels d'infographie type CorelDraw et
-                                                    Photoshop
+                                                    Photoshop.
                                                 </p>
                                             </div>
                                         </div>
@@ -238,7 +233,7 @@
                                     <h2>COMPETENCES</h2>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row introCompetences">
                                 <div class="col-md-6 competencesProgress">
                                     <h3>Front-End</h3>
                                     <p>HTML</p>
@@ -315,9 +310,9 @@
                                         <h5>Développeur Web</h5> </br>
                                         <div class="textExperences">
                                             Auto-Formation avec OpenClassrooms (HTML CSS),
-                                            cours d'algorithmie,</br>
+                                            cours d'algorithmie.</br>
                                             Formation de 6 mois à ARINFO (Node.js, Express, Bootstrap, Méthode Scrum
-                                            Agile), diplome Bac+2.</br>
+                                            Agile), diplôme Bac+2.</br>
                                             Auto-Formation à Javascript et les Websockets, VueJS.</br>
                                             Auto-Formation depuis Octobre 2019 en PHP/Laravel/MySQL.</br>
                                         </div>
@@ -387,7 +382,7 @@
                                             </div>
                                             <div class="card-excerpt">
                                                 <p>
-                                                    Application web permetant de créer des parties de babyfoot en
+                                                    Application web permettant de créer des parties de babyfoot en
                                                     collaboration et en temps réel.
                                                 <ul>
                                                     <li> Node.js</li>
@@ -420,13 +415,15 @@
                                             </div>
                                             <div class="card-excerpt">
                                                 <p>
-                                                    Application web permetant de créer des parties de babyfoot en
-                                                    collaboration et en temps réel.
+                                                    Application web permettant de laisser des messages avec un
+                                                    formulaire d'inscription
+                                                    pour être client ou administrateur qui gères les articles et les
+                                                    utilisateurs.
                                                 <ul>
-                                                    <li> Node.js</li>
-                                                    <li> Express.js</li>
-                                                    <li> Postgresql</li>
-                                                    <li> ORM Sequelize</li>
+                                                    <li> PHP</li>
+                                                    <li> Laravel 8</li>
+                                                    <li> MySQL</li>
+                                                    <li> ORM Eloquent</li>
                                                 </ul>
                                                 <a target="_blank" type="button"
                                                     href="https://github.com/Gfrezer/babyfoot"
@@ -452,8 +449,7 @@
                                             </div>
                                             <div class="card-excerpt">
                                                 <p>
-                                                    Application web permetant de créer des parties de babyfoot en
-                                                    collaboration et en temps réel.
+                                                    Site de mon cv en ligne.
                                                 <ul>
                                                     <li> Node.js</li>
                                                     <li> Express.js</li>
@@ -606,7 +602,6 @@
     <div class="copyright">
         <p>Mon cv Gaël H. - 2020.</p>
         <a href="/">Mentions Legals</a>
-        <a href="{{url('login')}}" target=_blank>Administateur</a>
+        <a class="admin" href="{{url('login')}}" target=_blank>Administateur</a>
     </div>
 </footer>
-@endsection

@@ -1,0 +1,71 @@
+.heroHelperLayer {
+    border: solid 1px white;
+}
+
+.progressDemo>.introjs-arrow {
+    bottom: 42px;
+}
+
+.htmHelperLayer {
+    border: solid 1px white;
+}
+
+.avatarDemo>.introjs-arrow {
+    bottom: 70px;
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+
+
+    .oeilBeaufDemo {
+        top: 75px;
+        left: 20px;
+    }
+
+    .htmDemo {
+        right: -35px;
+    }
+
+    .htmDemo>.introjs-arrow.top-middle {
+        left: 75%;
+    }
+
+    .heroDemo {
+        margin-left: -25vw;
+    }
+
+    .heroHelperLayer {
+        top: 64vw;
+    }
+
+    .introFormationDemo {
+        bottom: 298vw !important;
+        left: 8vw;
+    }
+
+    .progressDemo {
+        left: 8vw;
+    }
+
+    .introModaleDemo {
+        left: 8vw;
+    }
+
+    .avatarDemo {
+        right: -27vw;
+    }
+
+    .avatarDemo>.introjs-arrow {
+        left: 35% !important;
+    }
+
+    .introContactDemo {
+        left: 8vw;
+    }
+
+    .adminDemo {
+        right: -35px;
+    }
+}

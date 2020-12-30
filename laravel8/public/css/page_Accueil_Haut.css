@@ -73,12 +73,12 @@ header section {
 
 .espaceTitre {
     width: 20%;
-    height: 10vw;
+    height: 7vw;
 }
 
-.espaceTitreCompetence {
+.espaceTitre#competences {
     width: 20%;
-    height: 5vw;
+    height: 11vw;
 }
 
 .btnValidez {
@@ -92,6 +92,7 @@ header section {
 .header section .container {
     max-width: 80em;
 }
+
 
 p {
     font-family: sans-serif;
@@ -120,6 +121,10 @@ h2 {
 
 }
 
+h3 {
+    font-size: 1.45em;
+}
+
 h4 {
     font-family: 'Raleway',
         'sans-serif',
@@ -135,6 +140,11 @@ ul li {
 @media (max-width: 1024px) {
 
     .espaceTitre {
+        height: 15vw;
+    }
+
+
+    .espaceTitre#competences {
         height: 17vw;
     }
 
@@ -151,9 +161,15 @@ ul li {
     }
 
     .btnValidez i {
-        font-size: 0.9;
+        font-size: 1em;
     }
 
+}
+
+@media (max-width: 1024px) {
+    .btnValidez i {
+        font-size: 0.9em;
+    }
 }
 
 @media (max-width: 768px) {
@@ -164,6 +180,7 @@ ul li {
     .espaceTitre {
         height: 40vw;
     }
+
 }
 
 
@@ -190,7 +207,6 @@ ul li {
 /*FIN STICKY*/
 
 .navbar-horizontale {
-    /* position: absolute;*/
     width: 100%;
 }
 
@@ -239,33 +255,19 @@ ul li {
     color: #8e453a !important;
 }
 
-
-
-
-
-/*--------------------------------------------------------------
-# présentation visu home
---------------------------------------------------------------*/
-
-/*# Hero Section*/
-
-
-
-
 @media (max-width: 1024px) {
     .nav-link {
         padding-right: 10px !important;
 
     }
 
+    .navbar {
+        padding: 0;
+    }
+
     .navbar-nav {
         margin-left: 16vw;
 
-    }
-
-    .fake-header {
-        height: 32vw;
-        position: absolute;
     }
 
     .navbar-nav a {
@@ -453,8 +455,10 @@ Navbar laterale
     margin-top: 1vw;
     display: grid;
     text-align: center;
+}
 
-
+.blocIcone p {
+    text-align: center;
 }
 
 .navlater i {
@@ -462,6 +466,7 @@ Navbar laterale
     color: #555;
     padding-top: 25px;
 }
+
 
 .nomPrenom {
     color: #ffffff !important;
@@ -508,32 +513,24 @@ Navbar laterale
     }
 
     .blocIcone {
-        margin-top: -1vw;
-        display: flow-root;
+        margin-top: 4vw;
+        display: flex;
+        align-items: baseline;
     }
 
     .navlater i {
         font-size: 2em;
         color: #555;
         padding-right: 3vw;
+        padding-top: 0;
     }
 
     .nomPrenom {
-        color: #ffffff !important;
         font-size: 1em;
-        font-weight: 500;
-        font-family: 'Raleway',
-            'sans-serif',
-            'fantasy';
-        margin-right: 7vw;
+        margin-bottom: 0vw;
+        margin-right: 5vw;
         margin-left: 4vw;
     }
-
-
-
-
-
-
 }
 
 
@@ -557,7 +554,7 @@ Navbar laterale
         height: auto;
         z-index: 5000;
         margin-top: 2vw;
-        margin-left: 3%;
+        margin-left: 0.5vw;
 
     }
 
@@ -569,13 +566,14 @@ Navbar laterale
     }
 
     .blocIcone {
-        margin-top: 4vw;
+        margin-top: 0vw;
+        align-items: center;
     }
 
     .navlater i {
-        font-size: 1em;
+        font-size: 1.5em;
         color: #555;
-        padding-right: 1vw;
+        padding-right: 4vw;
     }
 
     .nomPrenom {
@@ -585,9 +583,8 @@ Navbar laterale
         font-family: 'Raleway',
             'sans-serif',
             'fantasy';
-        margin-right: 7vw;
-        margin-left: 3vw;
-
+        margin-right: 0vw;
+        margin-left: 2vw;
     }
 
 
@@ -656,7 +653,7 @@ A Propos
 
     .textApropos p {
         width: 100%;
-        padding: 15px;
+        padding: 0px;
         font-size: 12px;
     }
 }

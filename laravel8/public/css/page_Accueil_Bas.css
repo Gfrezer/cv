@@ -104,6 +104,14 @@ Formation
     color: #777;
 }
 
+.card-excerpt span {
+    font-weight: 600;
+}
+
+.card-excerpt p {
+    text-align: left;
+}
+
 @media (max-width: 1024px) {
     .card {
         width: 25vw;
@@ -207,11 +215,7 @@ small {
 }
 
 
-@media (max-width: 1024px) {
-    .progress {
-        width: 100%;
-    }
-}
+@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
     .competencesProgress {
@@ -297,6 +301,13 @@ EXPERIENCES
 
     }
 
+    .containerExperiences {
+        display: contents;
+    }
+
+    .photoExperience {
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -325,6 +336,12 @@ Mes applis   "voir css card formation"
     font-size: 0.8em;
 }
 
+
+
+.card-title h4 {
+    font-size: 1.5em;
+    color: #be6161;
+}
 
 @media (max-width: 768px) {
     .cardApplis {
@@ -506,6 +523,11 @@ blockquote p {
     margin-top: 2vw;
     text-align: center;
 }
+
+.client-profil p {
+    margin-left: 1vw;
+}
+
 
 @media (max-width: 1024px) {
     .client-profil {

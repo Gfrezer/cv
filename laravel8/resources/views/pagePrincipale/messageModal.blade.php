@@ -1,5 +1,5 @@
 <!-- bouton sur la page accueil -->
-<div class="wrap">
+<div class="wrap introModale">
     <h1>Votre Message...
         <button type="button" class=" btn btn-rounded btnValidez" data-toggle="modal"
             data-target=".bs-example-modal-new">

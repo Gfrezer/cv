@@ -6,19 +6,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
         backSpeed: 50,
         backDelay: 2000
     });
-
-
-
-
 })
+
+
+
+
+
+
+
+
 //Barre des competences
 document.getElementById("container_competences").addEventListener("mouseover", update)
 
 function update() {
     const progressTab = document.querySelectorAll('.progress-done');
     const percent = document.querySelector('small');
-
-
     progressTab.forEach(element => {
         let width = 1;
         let identity = setInterval(scene, 10);

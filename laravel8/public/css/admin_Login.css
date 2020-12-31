@@ -154,3 +154,11 @@ body {
 #flip div:last-child div {
     background: #DC143C;
 }
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+    .login-page {
+        width: 100%;
+    }
+}

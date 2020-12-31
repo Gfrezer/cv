@@ -2,112 +2,127 @@
 
 @section('content')
 
-<p>Bonjour ici c'est admin</p>
+<p>Bonjour Gaël</p>
+<div class="btn_logout">
+    <button>
+        <a href="{{url('logout')}}">Déconnection</a>
+    </button>
+</div>
+@foreach($contacts as $contact)
+
 <div class="wrapper">
-    <table>
-        <div class="table">
-
-            <tr class="row header">
-                <th class="cell">
-                    Nom
-                </th>
-                <th class="cell">
-                    Email
-                </th>
-                <th class="cell">
-                    Message
-                </th>
-            </tr>
-
-            <div class="row">
-                @foreach($contacts as $contact)
-
-                <tr>
-                    <td class="cell" data-title="nom">
-                        {{$contact->nom}}
-                    </td>
-                    <td class="cell" data-title="email">
-                        {{$contact->email}}
-                    </td>
-                    <td class="cell" data-title="message">
-                        {{ $contact->message }}
-                    </td>
-                </tr>
-
-                @endforeach
+    <p>Contact</p>
+    <div class="table">
+        <div class="row header width">
+            <div class="cell">
+                Nom
             </div>
-            <div class="btn_logout">
-                <button>
-                    <a href="{{url('logout')}}">Déconnection</a>
-                </button>
+            <div class="cell">
+                Email
             </div>
-
-
+            <div class="cell">
+                Message
+            </div>
 
         </div>
-    </table>
-    <table>
-        <div class="table">
 
-            <tr class="row header">
-                <th class="cell">
-                    Pseudo
-                </th>
-                <th class="cell">
-                    Message
-                </th>
-                <th class="cell">
-                    Sexe
-                </th>
-                <th class="cell">
-                    ID
-                </th>
-                <th class="cell">
-                    validé
-                </th>
-                <th class="cell">
-                    Suppression
-                </th>
+        <div class="row ">
+
+            <tr>
+                <td>
+                    <div class="cell" data-title="Nom">
+                        {{$contact->nom}}
+                    </div>
+                </td>
+                <td>
+                    <div class="cell" data-title="Email">
+                        {{$contact->email}}
+                    </div>
+                </td>
+                <td>
+                    <div class="cell" data-title="Message">
+                        {{ $contact->message }}
+                    </div>
+                </td>
             </tr>
 
-            <div class="row">
-                @foreach($messagesUsers as $messagesUser)
+        </div>
+    </div>
+</div>
+@endforeach
 
-                <tr>
-                    <td class="cell" data-title="pseudo">
+
+
+@foreach($messagesUsers as $messagesUser)
+
+<div class="wrapper">
+    <p>Messages</p>
+    <div class="table">
+
+        <div class="row header width">
+            <div class="cell">
+                Pseudo
+            </div>
+            <div class="cell">
+                Message
+            </div>
+            <div class="cell">
+                Sexe
+            </div>
+            <div class="cell">
+                ID
+            </div>
+            <div class="cell">
+                validé
+            </div>
+            <div class="cell">
+                Suppression
+            </div>
+        </div>
+
+        <div class="row">
+            <tr>
+                <td>
+                    <div class="cell" data-title="Pseudo">
                         {{$messagesUser->pseudo}}
-                    </td>
-                    <td class="cell" data-title="message_user">
+                    </div>
+                </td>
+                <td>
+                    <div class="cell" data-title="Message">
                         {{$messagesUser->message_user}}
-                    </td>
-                    <td class="cell" data-title="message_user">
+                    </div>
+                </td>
+                <td>
+                    <div class="cell" data-title="Sexe">
                         {{$messagesUser->sexe}}
-                    </td>
-                    <td class="cell" data-title="message_user">
+                    </div>
+                </td>
+                <td>
+                    <div class="cell" data-title="ID">
                         {{$messagesUser->id}}
-                    </td>
-
-
-                    <td class="cell" data-title="bool">
+                    </div>
+                </td>
+                <td>
+                    <div class="cell" data-title="Valider">
                         @if($messagesUser->messageAccueil === NULL)
                         <form action="{{ url('valide' ,$messagesUser->id) }}" method="POST" id="formMessageUser">
                             @csrf
                             <button type="submit">validez</button>
                         </form>
                         @endif
-                    </td>
-
-                    <td class="cell" data-title="destroy">
+                    </div>
+                </td>
+                <td>
+                    <div class="cell" data-title="Supprimer">
                         <form action="{{ url('destroy' ,$messagesUser->id) }}" method="POST" id="formMessageUser">
                             @csrf
                             <button type="submit">Supprimer</button>
                         </form>
-                    </td>
-                </tr>
-
-                @endforeach
-            </div>
+                    </div>
+                </td>
+            </tr>
         </div>
-    </table>
+
+    </div>
 </div>
-@endsection
+@endforeach

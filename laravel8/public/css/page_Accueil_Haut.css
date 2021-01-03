@@ -81,13 +81,18 @@ header section {
     height: 11vw;
 }
 
+/*Les Bouttons*/
 .btnValidez {
+    width: 7vw;
+    display: block;
+    margin: 0 auto 5px;
     border-color: #8f8f8f;
 }
 
 .btnValidez:hover {
     background-color: #33a24e;
 }
+
 
 .header section .container {
     max-width: 80em;
@@ -156,8 +161,10 @@ ul li {
         margin-right: auto;
     }
 
+    /*Les Bouttons*/
     .btnValidez {
-        width: 12vw;
+        width: 10vw;
+
     }
 
     .btnValidez i {
@@ -173,6 +180,10 @@ ul li {
 }
 
 @media (max-width: 768px) {
+    .overflow {
+        overflow-x: unset;
+    }
+
     h2 {
         font-size: 7vw;
     }
@@ -181,6 +192,11 @@ ul li {
         height: 40vw;
     }
 
+    /*Les Bouttons*/
+    .btnValidez {
+        width: 28vw;
+
+    }
 }
 
 
@@ -632,8 +648,9 @@ A Propos
     }
 
     .textApropos p {
-        padding: 15px;
-        font-size: 10px;
+        width: 47vw;
+
+        font-size: 0.8em;
     }
 }
 

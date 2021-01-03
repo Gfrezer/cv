@@ -451,7 +451,8 @@ affichage de vos messages page accueil
     border: solid 1px rgb(139, 137, 137);
     margin-bottom: 30px;
     width: 18vw;
-    height: 500px;
+    height: 29vw;
+    text-align: center;
 }
 
 
@@ -504,6 +505,7 @@ affichage de vos messages page accueil
 
 blockquote {
     text-align: center;
+    position: absolute;
 }
 
 
@@ -517,31 +519,42 @@ blockquote .avatar {
 }
 
 blockquote p {
+    width: 16vw;
+    height: 11vw;
     border: 1px solid black;
     margin: 1vw;
     padding: 1vw;
-    margin-top: 2vw;
     text-align: center;
 }
 
-.client-profil p {
+.dateMessage {
     margin-left: 1vw;
+    position: absolute;
+    margin-top: 320px;
 }
 
+.client-profil cite {
+    position: absolute;
+    margin-top: 240px;
+}
 
 @media (max-width: 1024px) {
     .client-profil {
-        width: 25vw;
-        height: 400px;
+        width: 30vw;
+        height: 44vw;
     }
 
+    blockquote p {
+        width: 28vw;
+        height: 22vw;
+    }
 
 }
 
 @media (max-width: 768px) {
     .client-profil {
         width: 100%;
-        height: auto;
+        height: 142vw;
     }
 
     .avatar {
@@ -550,6 +563,10 @@ blockquote p {
         height: 35vw;
     }
 
+    blockquote p {
+        width: 89vw;
+        height: 50vw;
+    }
 
 }
 
@@ -571,6 +588,7 @@ messageModal
 /* modal*/
 .modalMessage {
     margin-top: 12vw;
+
 }
 
 
@@ -580,6 +598,14 @@ messageModal
 @media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
+
+    .formContainer {
+        height: -1px;
+    }
+
+    .formContainer.message {
+        height: 100vw;
+    }
 
     .modalMessage {
         margin-top: 40vw;
@@ -647,7 +673,7 @@ iframe {
         margin: 30px auto;
         width: 100%;
         height: 42vw;
-        padding: 3vw;
+        padding: 2vw;
     }
 
     iframe {
@@ -714,33 +740,33 @@ contact formulaire
 
 @media (max-width: 1024px) {
     .containerContact.card {
+        margin: 30px auto;
         width: 100%;
-        height: auto;
+        height: 42vw;
+
+
     }
+
+
 
     .messageOk {
         font-size: 5vw;
     }
 
-    .btnValidez {
-        width: 30vw;
-    }
 
 }
 
 @media (max-width: 768px) {
     .containerContact.card {
         width: 100%;
-        height: auto;
+        height: 91vw;
     }
 
     .messageOk {
         font-size: 5vw;
     }
 
-    .btnValidez {
-        width: 30vw;
-    }
+
 }
 
 /*--------------------------------------------------------------

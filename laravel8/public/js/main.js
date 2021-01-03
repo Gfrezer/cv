@@ -1,17 +1,12 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     new Typed('.typed', {
-        strings: ['Gaël', 'développeur', 'back', 'front'],
+        strings: ['Gaël', 'dév', 'back', 'front'],
         loop: true,
         typeSpeed: 100,
         backSpeed: 50,
         backDelay: 2000
     });
 })
-
-
-
-
-
 
 
 

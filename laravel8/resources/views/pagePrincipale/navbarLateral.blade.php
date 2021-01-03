@@ -5,7 +5,7 @@
     <div class="blocIcone">
         <p class="nomPrenom">Gaël Hamonic</p>
         <a class="git" href="#"><i class="fab fa-github" title="GitHub"></i></a>
-        <a class="intro" href="#"><i class="far fa-play-circle" title="Intro"></i></a>
+        <a class="intro" href="#"><i class="far fa-play-circle" title="Démo"></i></a>
         <a class="htm" href="#"><i class="fas fa-desktop" title="Desktop"></i></a>
         <a class="htm" href="#"><i class="fas fa-tablet-alt" title="Tablette"></i></a>
         <a class="htm" href="#"><i class="fas fa-mobile-alt" title="Mobile"></i></a>
@@ -69,7 +69,7 @@ function hrefListener(element) {
                         },
                         {
                             element: document.querySelector('.avatar'),
-                            intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur,il est génerer avec fakeface qui crée des visages qui n'existe pas.",
+                            intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur,il est génerer avec fakeface une A.I. qui crée des visages qui n'existe pas.",
                             position: 'bottom',
                             tooltipClass: "avatarDemo"
                         },
@@ -83,6 +83,12 @@ function hrefListener(element) {
                             element: document.querySelector('.admin'),
                             intro: "Partie administrateur non accessible par les utilisateurs qui permet de gérer les contacts et les messages ",
                             position: 'up',
+                            tooltipClass: "adminDemo"
+                        },
+                        {
+                            element: document.querySelector('.finDemo'),
+                            intro: "Bien sur je ne peux pas tous detaillé, si vous le souhaiter vous pouvez regarder pour plus de détails mon GitHup dans Mes Applis.",
+                            position: 'right',
                             tooltipClass: "adminDemo"
                         }
 

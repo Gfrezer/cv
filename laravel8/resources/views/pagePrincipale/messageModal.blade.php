@@ -1,11 +1,10 @@
 <!-- bouton sur la page accueil -->
 <div class="wrap introModale">
-    <h1>Votre Message...
-        <button type="button" class=" btn btn-rounded btnValidez" data-toggle="modal"
-            data-target=".bs-example-modal-new">
-            Ouvrir
-        </button>
-    </h1>
+    <h1>Votre Message... </h1>
+    <button type="button" class=" btn btn-rounded btnValidez" data-toggle="modal" data-target=".bs-example-modal-new">
+        Ouvrir
+    </button>
+
 </div>
 <!-- Modal Header -->
 <div class="container">
@@ -13,7 +12,7 @@
         aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modalMessage">
             <div class="modal-content">
-                <div class="col-md-12 formContainer">
+                <div class="col-md-12 formContainer message">
                     @include('pagePrincipale/messModalResponse')
                 </div>
             </div>

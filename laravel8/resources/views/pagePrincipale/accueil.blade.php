@@ -53,8 +53,7 @@
                                     <h2>A PROPOS...</h2>
                                 </div>
                             </div>
-                            <div class="row  card__image "
-                                data-intro=" Intro.js peut mettre en évidence sur les éléments ">
+                            <div class="row  card__image ">
                                 <div class="col-md-6 containerApropos" data-aos="fade-right" data-aos-delay="500"
                                     data-aos-duration="1000" data-aos-easing="ease-in-sine">
                                     <img src="./../public/images/images/cabanePetit.jpg" class="binary">
@@ -390,19 +389,17 @@
                                                     <li> Postgresql</li>
                                                     <li> ORM Sequelize</li>
                                                 </ul>
-                                                <a target="_blank" type="button"
-                                                    href="https://github.com/Gfrezer/babyfoot"
-                                                    class="btn btn-rounded  btnValidez"><i class="fas fa-cogs pr-2"
-                                                        aria-hidden="true">DEMO</i>
-                                                </a>
-                                                <a target="_blank" type="button"
-                                                    href="https://github.com/Gfrezer/babyfoot"
-                                                    class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
-                                                        aria-hidden="true">GITHUB</i>
-                                                </a>
                                                 </p>
                                             </div>
                                         </div>
+                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
+                                            class="btn btn-rounded  btnValidez"><i class="fas fa-cogs pr-2"
+                                                aria-hidden="true">DEMO</i>
+                                        </a>
+                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
+                                            class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
+                                                aria-hidden="true">GITHUB</i>
+                                        </a>
                                     </div>
                                 </div>
 
@@ -425,19 +422,17 @@
                                                     <li> MySQL</li>
                                                     <li> ORM Eloquent</li>
                                                 </ul>
-                                                <a target="_blank" type="button"
-                                                    href="https://github.com/Gfrezer/babyfoot"
-                                                    class="btn btn-rounded  btnValidez"><i class="fas fa-cogs pr-2"
-                                                        aria-hidden="true">DEMO</i>
-                                                </a>
-                                                <a target="_blank" type="button"
-                                                    href="https://github.com/Gfrezer/babyfoot"
-                                                    class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
-                                                        aria-hidden="true">GITHUB</i>
-                                                </a>
                                                 </p>
                                             </div>
                                         </div>
+                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
+                                            class="btn btn-rounded  btnValidez"><i class="fas fa-cogs pr-2"
+                                                aria-hidden="true">DEMO</i>
+                                        </a>
+                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
+                                            class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
+                                                aria-hidden="true">GITHUB</i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -456,14 +451,13 @@
                                                     <li> Postgresql</li>
                                                     <li> ORM Sequelize</li>
                                                 </ul>
-                                                <a target="_blank" type="button"
-                                                    href="https://github.com/Gfrezer/babyfoot"
-                                                    class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
-                                                        aria-hidden="true">GITHUB</i>
-                                                </a>
                                                 </p>
                                             </div>
                                         </div>
+                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
+                                            class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
+                                                aria-hidden="true">GITHUB</i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -530,9 +524,9 @@
                                             <p><i class="fas fa-quote-left"></i> {{$messagesUser->message_user}} <i
                                                     class="fas fa-quote-right"></i></p>
                                             <br />
-                                            <cite>{{$messagesUser->pseudo}}</cite>
                                         </blockquote>
-                                        <p>"{{$messagesUser->created_at->format('j F Y')}}"</p>
+                                        <cite>{{$messagesUser->pseudo}}</cite>
+                                        <p class="dateMessage">"{{$messagesUser->created_at->format('j F Y')}}"</p>
                                     </div>
 
                                 </div>
@@ -581,20 +575,17 @@
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                                     </div>
                                 </div>
-                                <div class="col-md-6 ">
-                                    <div class="col-md-6 formContainer">
-                                        @include('pagePrincipale/formContact')
-                                    </div>
+
+                                <div class="col-md-6 formContainer">
+                                    @include('pagePrincipale/formContact')
                                 </div>
 
-                                <div class="col-md-6">
-                                    <div class="">
-                                    </div>
-                                </div>
+
+
                             </div>
                     </section>
                 </section>
-            </div>
+            </div class="finDemo">
         </div>
     </div>
 </section>

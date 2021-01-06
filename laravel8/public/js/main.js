@@ -169,3 +169,85 @@ window.addEventListener("scroll", _.debounce(stickyHeader(), 50));
 $('.navbar-nav a').click(function () {
     $(".navbar-to-collapse").collapse("hide")
 });
+
+
+
+
+
+
+//DEMO
+const elementDemo = document.querySelector('.href-demo.monCv');
+elementDemo.addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 0);
+    setTimeout(function () {
+        introJs().setOptions({
+            steps: [{
+                    element: document.querySelector('.oeilBeauf'),
+                    intro: "Bonjour, je suis Intro et je vais vous montrer quelques une des fonctionnalitées que j'ai utilisé pour créer mon site.",
+                    position: 'bottom',
+                    tooltipClass: "oeilBeaufDemo"
+                },
+                {
+                    element: document.querySelector('.htm'),
+                    intro: "En cliquant sur une de ces icones cela permet en un click de voir l'aspect du site en responsive sur tablette et mobile grace à l'utilisation d'iframes. ",
+                    position: 'right',
+                    tooltipClass: "htmDemo",
+                    highlightClass: "htmHelperLayer"
+                },
+                {
+                    element: document.querySelector('#hero'),
+                    intro: "L'effet d'ecriture automatique est réalisé par la bibliotheque Typed.js",
+                    position: 'left',
+                    tooltipClass: "heroDemo",
+                    highlightClass: "heroHelperLayer"
+                },
+                {
+                    element: document.querySelector('.introFormation'),
+                    intro: "Ici j'ai fait appel à AOS (Animate On Scroll)qui est une librairie toute légère permettant d’ajouter des animations sur des éléments HTML",
+                    position: 'left',
+                    tooltipClass: "introFormationDemo"
+                },
+                {
+                    element: document.querySelector('.progress'),
+                    intro: "Pour donner de l'effet aux barres de progressions, j'ai recuperer un code Javascript que j'ai adapté pour mon utilisation. ",
+                    position: 'right',
+                    tooltipClass: "progressDemo",
+
+                },
+                {
+                    element: document.querySelector('.introModale'),
+                    intro: "la fenêtre modale beaucoup plus ergonomique et flexible q'un Pop-up à l’avantage d’être membre du DOM de la page.",
+                    position: 'right',
+                    tooltipClass: "introModaleDemo",
+                    highlightClass: "introHelperModale"
+                },
+                {
+                    element: document.querySelector('.avatar'),
+                    intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur,il est génerer avec fakeface une A.I. qui crée des visages qui n'existe pas.",
+                    position: 'bottom',
+                    tooltipClass: "avatarDemo"
+                },
+                {
+                    element: document.querySelector('.introContact'),
+                    intro: "Formulaire avec l'excellent systeme d'Authentification Laravel, la methode fetch permet de gérer le corps de la requête et de la réponse de maniere asychrone ",
+                    position: 'left',
+                    tooltipClass: "introContactDemo"
+                },
+                {
+                    element: document.querySelector('.admin'),
+                    intro: "Partie administrateur non accessible par les utilisateurs qui permet de gérer les contacts et les messages ",
+                    position: 'up',
+                    tooltipClass: "adminDemo"
+                },
+                {
+                    element: document.querySelector('.finDemo'),
+                    intro: "Bien sur je ne peux pas tous detaillé, si vous le souhaiter vous pouvez regarder pour plus de détails mon GitHup dans Mes Applis.",
+                    position: 'right',
+                    tooltipClass: "adminDemo"
+                }
+            ]
+        }).start();
+    }, 1500);
+    window.parent.document.dispatchEvent(event);
+});

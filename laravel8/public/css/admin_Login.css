@@ -155,7 +155,7 @@ body {
     background: #DC143C;
 }
 
-@media (max-width: 1024px) {}
+@media (max-width: 1366px) {}
 
 @media (max-width: 768px) {
     .login-page {

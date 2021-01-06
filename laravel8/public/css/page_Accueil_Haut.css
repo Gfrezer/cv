@@ -11,14 +11,16 @@
   color: #be6161;   adresse,text experience,icone,h3,h5,h4
   color: #777;      texte p
   color: #333;      texte date
-  background-color: #ffffff;    fond blanc
+  background: #f5f5f5;         fond gris claire div bouton 
+  background: #286f8b;         barre progress
+  background-color: #ffffff;   fond blanc
   background-color: #a87676;   messageOK
 
   box-shadow: #555;     ombre cartes icone
   box-shadow: #ffffff;  navbar sticky
 
  MEDIAQuerIES
-@media (max-width: 1024px) {}
+@media (max-width: 1366px) {}
 @media (max-width: 768px) {}
  
 FONT:
@@ -82,22 +84,112 @@ header section {
 }
 
 /*Les Bouttons*/
-.btnValidez {
-    width: 7vw;
-    display: block;
-    margin: 0 auto 5px;
-    border-color: #8f8f8f;
+.icon-btn {
+    background: #f5f5f5;
 }
 
-.btnValidez:hover {
-    background-color: #33a24e;
+.icon-btn button {
+    margin: 5px auto;
 }
 
+.btn-gradient {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    left: -19px;
+    background: rgba(0, 0, 0, 0.15);
+    border-top-right-radius: 60px;
+    box-shadow: 2px 0px 0px 0px rgba(78, 72, 72, 0.4);
+    padding: 5px 10px 4px 10px;
+}
+
+
+.btn-github {
+    font-size: 1.2em;
+    padding: 0px 20px;
+    color: #fff;
+    background-color: #5a5a5a;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 8vw;
+}
+
+.btn-github:hover {
+    color: green;
+    background: #ffffff;
+}
+
+.btn-github .btn-gradient {
+    padding: 5px 19px 4px 13px;
+    margin-left: 0.2em;
+    left: -14px;
+}
+
+.btn-demo {
+    font-size: 1.2em;
+    padding: 0px 20px;
+    color: #fff;
+    background-color: #286f8b;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 8vw;
+}
+
+.btn-demo:hover {
+    color: green;
+    background: #ffffff;
+}
+
+.btn-gradient i {
+    color: #ffffff;
+    font-size: 1.2vw;
+}
+
+.btn-demo.message {
+    width: 14vw;
+}
+
+.btn-demo.message .btn-gradient {
+    width: 4vw;
+}
+
+.btn-demo.message span {
+    width: 9vw;
+}
+
+.card-body .btn-gradient {
+    left: -16px;
+}
+
+.card-body .icon-btn {
+    background: none;
+}
+
+.modal-footer .btn-demo {
+    background: #5a5a5a;
+}
+
+.modal-footer .btn-demo:hover {
+    background: #ffffff;
+}
+
+.modal-footer .btn-gradient {
+    left: -19px;
+}
+
+.modal-footer .icon-btn {
+    background: none;
+}
+
+/*FIN Les Bouttons*/
 
 .header section .container {
     max-width: 80em;
 }
-
 
 p {
     font-family: sans-serif;
@@ -127,7 +219,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.45em;
+    font-size: 1.40m;
+    padding: 10px;
 }
 
 h4 {
@@ -140,9 +233,22 @@ h4 {
 
 ul li {
     text-align: left;
+    list-style: none;
 }
 
-@media (max-width: 1024px) {
+i {
+    margin-right: 0.5vw;
+    color: #f5614d;
+}
+
+@media (max-width: 1366px) {
+    .col-md-12 h2 {
+        font-size: 4vw;
+    }
+
+    .container.cv {
+        max-width: 90vw;
+    }
 
     .espaceTitre {
         height: 15vw;
@@ -162,26 +268,56 @@ ul li {
     }
 
     /*Les Bouttons*/
-    .btnValidez {
-        width: 10vw;
-
+    .btn-gradient {
+        padding: 10px 9px 10px 9px;
     }
 
-    .btnValidez i {
-        font-size: 1em;
+    .btn-gradient i {
+        font-size: 2vw;
     }
 
-}
-
-@media (max-width: 1024px) {
-    .btnValidez i {
-        font-size: 0.9em;
+    .btn-demo {
+        width: 14vw;
     }
+
+    .btn-github {
+        width: 14vw;
+    }
+
+    .btn-demo .btn-gradient {
+        padding: 10px 9px 10px 13px;
+        margin-left: 0.2em;
+        left: -22px;
+    }
+
+    .btn-github .btn-gradient {
+        padding: 10px 9px 10px 13px;
+        margin-left: 0.2em;
+        left: -14px;
+    }
+
+    .btn-demo.message {
+        width: 25vw;
+    }
+
+    .btn-demo.message .btn-gradient {
+        width: 11vw;
+    }
+
+    .btn-demo.message span {
+        width: 47vw;
+    }
+
+    .card-body .btn-gradient {
+        left: -16px;
+    }
+
+    /*FIN Les Bouttons*/
 }
 
 @media (max-width: 768px) {
     .overflow {
-        overflow-x: unset;
+        overflow-x: hidden;
     }
 
     h2 {
@@ -193,10 +329,65 @@ ul li {
     }
 
     /*Les Bouttons*/
-    .btnValidez {
-        width: 28vw;
-
+    .btn-gradient {
+        padding: 10px 5px 10px 5px;
     }
+
+    .btn-gradient i {
+        font-size: 5vw;
+    }
+
+    .btn-demo {
+        width: 37vw;
+    }
+
+    .btn-github {
+        width: 37vw;
+    }
+
+    .btn-github .btn-gradient {
+        padding: 10px 9px 10px 9px;
+        margin-left: 0.2em;
+        left: -24px;
+    }
+
+    .btn-demo.message {
+        width: 52vw;
+    }
+
+    .btn-demo.message .btn-gradient {
+        width: 25vw;
+    }
+
+    .btn-demo.message span {
+        width: 61vw;
+    }
+
+    .card-body .btn-gradient {
+        left: -20px;
+    }
+
+    .card-body .icon-btn {
+        background: none;
+    }
+
+    .modal-footer .btn-demo {
+        background: #5a5a5a;
+    }
+
+    .modal-footer .btn-demo:hover {
+        background: #ffffff;
+    }
+
+    .modal-footer .btn-gradient {
+        left: -19px;
+    }
+
+    .modal-footer .icon-btn {
+        background: none;
+    }
+
+    /*FIN Les Bouttons*/
 }
 
 
@@ -257,7 +448,6 @@ ul li {
 
 .navbar-nav a {
     color: #f5614d !important;
-
     font-size: 1.3em;
     font-weight: 500;
     font-family: 'Raleway',
@@ -271,7 +461,7 @@ ul li {
     color: #8e453a !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
     .nav-link {
         padding-right: 10px !important;
 
@@ -282,7 +472,7 @@ ul li {
     }
 
     .navbar-nav {
-        margin-left: 16vw;
+        margin-left: 25vw;
 
     }
 
@@ -389,7 +579,7 @@ ul li {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
     #hero {
         margin-top: 39vw;
         margin-left: 54vw;
@@ -495,7 +685,7 @@ Navbar laterale
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
     .col-md-2.navbarLaterale {
         position: fixed;
         z-index: 5000;
@@ -599,8 +789,8 @@ Navbar laterale
         font-family: 'Raleway',
             'sans-serif',
             'fantasy';
-        margin-right: 0vw;
-        margin-left: 2vw;
+        margin-right: 7vw;
+        margin-left: 5vw;
     }
 
 
@@ -622,8 +812,8 @@ A Propos
 
 }
 
-.textApropos h3 {
-    padding: 10px;
+.col-md-6 ul {
+    padding-left: 20px;
 }
 
 .textApropos {
@@ -633,23 +823,15 @@ A Propos
 .textApropos p {
     width: 30vw;
     padding: 15px;
-
 }
 
 
 
+@media (max-width: 1366px) {
 
-
-
-@media (max-width: 1024px) {
-    .textApropos h3 {
-        padding: 10px;
-        font-size: 20px;
-    }
 
     .textApropos p {
         width: 47vw;
-
         font-size: 0.8em;
     }
 }
@@ -664,8 +846,8 @@ A Propos
     }
 
     .textApropos h3 {
-        padding: 10px;
-        font-size: 10px;
+        font-size: 1.2em;
+        text-align: center;
     }
 
     .textApropos p {
@@ -673,4 +855,6 @@ A Propos
         padding: 0px;
         font-size: 12px;
     }
+
+
 }

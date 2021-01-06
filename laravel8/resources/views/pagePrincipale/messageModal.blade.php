@@ -1,11 +1,3 @@
-<!-- bouton sur la page accueil -->
-<div class="wrap introModale">
-    <h1>Votre Message... </h1>
-    <button type="button" class=" btn btn-rounded btnValidez" data-toggle="modal" data-target=".bs-example-modal-new">
-        Ouvrir
-    </button>
-
-</div>
 <!-- Modal Header -->
 <div class="container">
     <div class="modal fade bs-example-modal-new" id="myModal" tabindex="-1" role="dialog"

@@ -26,7 +26,17 @@
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
-            <button type="submit" class="btn btn-secondary btnValidez submitForm">Envoyer !</button>
+            <div class="icon-btn">
+
+            </div>
+            <div class="icon-btn">
+                <button type="submit" class="btn-demo btnValidez submitForm" data-dismiss="modal">
+                    <span class="btn-gradient">
+                        <i class="fas fa-paper-plane"></i>
+                    </span>
+                    <span class="btn-text">Envoyer</span>
+                </button>
+            </div>
             @if(session('messageOk'))
             <div class="messageOk"> {{ session('messageOk') }}</div>
             @endif

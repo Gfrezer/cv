@@ -23,7 +23,14 @@
             <input type=radio id=sexe name=sexe value=h> homme
             <input type=radio id=sexe name=sexe value=f> femme
         </div>
-        <button type="submit" class="btn btn-rounded btnValidez submitForm">Envoyer</button>
+        <div class="icon-btn">
+            <button type="submit" class="btn-demo btnValidez submitForm">
+                <span class="btn-gradient">
+                    <i class="fas fa-paper-plane"></i>
+                </span>
+                <span class="btn-text">Envoyer</span>
+            </button>
+        </div>
         @if(session('messageClientOk'))
         <div class="messageOk">Votre message à bien été envoyé !</div>
         @endif
@@ -34,6 +41,13 @@
 
 <!-- Modal Footer -->
 <div class="modal-footer">
+    <div class="icon-btn">
+        <button type="submit" class="btn-demo" data-dismiss="modal">
+            <span class="btn-gradient">
+                <i class="fas fa-times-circle"></i>
+            </span>
+            <span class="btn-text">Fermer</span>
+        </button>
+    </div>
 
-    <button type="button" class="btn btn-rounded btn-outline-secondary" data-dismiss="modal">Fermer</button>
 </div>

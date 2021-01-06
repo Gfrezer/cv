@@ -11,12 +11,10 @@
                     <div class="fake-header">
                         <div class="navbar-horizontale">
                             <div class="navbar navbar-expand-md  navbar-light fixed-top">
-
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#monMenu" aria-controles="monMenu" aria-label="Menu pour mobile">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-
                                 <div class="collapse navbar-collapse navbar-to-collapse" id="monMenu">
                                     <div class="navbar-nav" ml="auto">
                                         <a class="nav-item nav-link" href="#aPropos">A Propos </a>
@@ -46,7 +44,7 @@
                 <section class="overflow">
                     <!--à propos-->
                     <section>
-                        <div class="container">
+                        <div class="container cv">
                             <div class="row">
                                 <div class="espaceTitre" id="aPropos"></div>
                                 <div class="col-md-12">
@@ -70,16 +68,21 @@
                                         <div class="col-md-6">
                                             <ul>
                                                 <li>
-                                                    <p><b>Anniversaire:</b> 29 Septembre 1973</p>
+                                                    <p><i class="fas fa-cog fa-spin"></i><b>Anniversaire:</b> 29
+                                                        Septembre 1973</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Site Web:</b> www.moncv.com</p>
+                                                    <p><i class="fas fa-spinner fa-spin"></i><b>Site Web:</b>
+                                                        www.moncv.com
+                                                    </p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Téléphone:</b> 06 86 84 92 55</p>
+                                                    <p><i class="fas fa-circle-notch fa-spin"></i><b>Téléphone:</b> 06
+                                                        86 84 92
+                                                        55</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Ville:</b> Venansault</p>
+                                                    <p><i class="fas fa-sync fa-spin"></i><b>Ville:</b> Venansault</p>
                                                 </li>
                                             </ul>
                                         </div>
@@ -87,16 +90,19 @@
                                         <div class="col-md-6">
                                             <ul>
                                                 <li>
-                                                    <p><b>Age:</b> 47 ans</p>
+                                                    <p><i class="fas fa-spinner fa-spin"></i><b>Age:</b> 47 ans</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Diplôme:</b> Bac+2</p>
+                                                    <p><i class="fas fa-stroopwafel fa-spin"></i><b>Diplôme:</b> Bac+2
+                                                    </p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Email:</b> gael.hamonic@yahoo.fr</p>
+                                                    <p><i class="fas fa-atom fa-spin"></i><b>Email:</b>
+                                                        gael.hamonic@yahoo.fr</p>
                                                 </li>
                                                 <li>
-                                                    <p><b>Departement:</b> Vendée</p>
+                                                    <p><i class="fas fa-snowflake fa-spin"></i><b>Departement:</b>
+                                                        Vendée</p>
                                                 </li>
                                             </ul>
                                         </div>
@@ -108,7 +114,7 @@
 
                     <!--formations-->
                     <section>
-                        <div class="container" id="container_formations">
+                        <div class="container cv" id="container_formations">
                             <div class="row">
                                 <div class="espaceTitre" id="formations"></div>
                                 <div class="col-md-12">
@@ -224,7 +230,7 @@
                             </div>
                         </div>
 
-                        <div class="container" id="container_competences">
+                        <div class="container cv" id="container_competences">
                             <div class="row">
                                 <div class="espaceTitre" id="competences"></div>
                                 <div class="col-md-12">
@@ -261,7 +267,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 competencesProgress">
-                                    <h3>back-End</h3>
+                                    <h3>Back-End</h3>
                                     <p>PHP</p>
                                     <div class="progress">
                                         <small></small>
@@ -293,7 +299,7 @@
                     </section>
                     <!--EXPERIENCES-->
                     <section>
-                        <div class=" container">
+                        <div class="container cv">
                             <div class="row">
                                 <div class="espaceTitre" id="experiences"></div>
                                 <div class="col-md-12">
@@ -304,13 +310,13 @@
                                 <div class="containerExperiences">
                                     <div class="cadreText" data-aos="slide-right" data-aos-duration="1200">
                                         <p>
-                                            <time>Janvier 2019 à décembre 2020:</time> </br>
+                                            <time>Janvier 2019 à aujourd'hui:</time> </br>
 
                                         <h5>Développeur Web</h5> </br>
                                         <div class="textExperences">
                                             Auto-Formation avec OpenClassrooms (HTML CSS),
                                             cours d'algorithmie.</br>
-                                            Formation de 6 mois à ARINFO (Node.js, Express, Bootstrap, Méthode Scrum
+                                            Formation à ARINFO (Node.js, Express, Bootstrap, Méthode Scrum
                                             Agile), diplôme Bac+2.</br>
                                             Auto-Formation à Javascript et les Websockets, VueJS.</br>
                                             Auto-Formation depuis Octobre 2019 en PHP/Laravel/MySQL.</br>
@@ -325,9 +331,9 @@
                                         <h5> Chauffeur Livreur</h5>
                                         </br>
                                         <div class="textExperences">
-                                            Chauffeur Livreur remplacent sur diverses tournées,
-                                            formateur des nouveaux arrivants.
-                                            Organisation de la tournée pour la livraison,
+                                            Chauffeur Livreur remplacent sur diverses tournées.</br>
+                                            Formateur des nouveaux arrivants.</br>
+                                            Organisation de la tournée pour la livraison.</br>
                                             Relation clientèle, résoudre les problèmes en
                                             cas de perte, détoration, envoie de pieces et leurs suivies.
                                         </div>
@@ -363,7 +369,7 @@
 
                     <!--MES APPLIS-->
                     <section>
-                        <div class="container">
+                        <div class="container cv">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="espaceTitre" id="mesApplis"></div>
@@ -372,6 +378,46 @@
                             </div>
 
                             <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card cardApplis" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="2000" data-aos-delay="1500">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h4>MON CV</h4>
+                                            </div>
+                                            <div class="card-excerpt">
+                                                <p>
+                                                    Site de mon cv en ligne.
+                                                <ul>
+                                                    <li> Node.js</li>
+                                                    <li> Express.js</li>
+                                                    <li> Postgresql</li>
+                                                    <li> ORM Sequelize</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="icon-btn">
+                                            <a class="href-demo monCv">
+                                                <button class="btn-demo monCv">
+                                                    <span class="btn-gradient">
+                                                        <i class="fas fa-cogs pr-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Démo</span>
+                                                </button>
+                                            </a>
+
+                                            <a target="_blank" href="https://github.com/Gfrezer/MonBlogPHP">
+                                                <button class="btn-github">
+                                                    <span class="btn-gradient">
+                                                        <i class="fab fa-github pr-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Github</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-md-4">
                                     <div class="card cardApplis" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                                         data-aos-duration="2900" data-aos-delay="1000">
@@ -392,14 +438,25 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
-                                            class="btn btn-rounded  btnValidez"><i class="fas fa-cogs pr-2"
-                                                aria-hidden="true">DEMO</i>
-                                        </a>
-                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
-                                            class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
-                                                aria-hidden="true">GITHUB</i>
-                                        </a>
+                                        <div class="icon-btn">
+                                            <a target="_blank" href="https://github.com/Gfrezer/MonBlogPHP">
+                                                <button class="btn-demo">
+                                                    <span class="btn-gradient">
+                                                        <i class="fas fa-cogs pr-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Démo</span>
+                                                </button>
+                                            </a>
+
+                                            <a target="_blank" href="https://github.com/Gfrezer/MonBlogPHP">
+                                                <button class="btn-github">
+                                                    <span class="btn-gradient">
+                                                        <i class="fab fa-github pr-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Github</span>
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -425,41 +482,28 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
-                                            class="btn btn-rounded  btnValidez"><i class="fas fa-cogs pr-2"
-                                                aria-hidden="true">DEMO</i>
-                                        </a>
-                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
-                                            class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
-                                                aria-hidden="true">GITHUB</i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card cardApplis" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-                                        data-aos-duration="2000" data-aos-delay="1500">
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <h4>MON CV</h4>
-                                            </div>
-                                            <div class="card-excerpt">
-                                                <p>
-                                                    Site de mon cv en ligne.
-                                                <ul>
-                                                    <li> Node.js</li>
-                                                    <li> Express.js</li>
-                                                    <li> Postgresql</li>
-                                                    <li> ORM Sequelize</li>
-                                                </ul>
-                                                </p>
-                                            </div>
+                                        <div class="icon-btn">
+                                            <a target="_blank" href="https://github.com/Gfrezer/MonBlogPHP">
+                                                <button class="btn-demo">
+                                                    <span class="btn-gradient">
+                                                        <i class="fas fa-cogs pr-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Démo</span>
+                                                </button>
+                                            </a>
+
+                                            <a target="_blank" href="https://github.com/Gfrezer/MonBlogPHP">
+                                                <button class="btn-github">
+                                                    <span class="btn-gradient">
+                                                        <i class="fab fa-github pr-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Github</span>
+                                                </button>
+                                            </a>
                                         </div>
-                                        <a target="_blank" type="button" href="https://github.com/Gfrezer/babyfoot"
-                                            class="btn btn-rounded  btnValidez"><i class="fab fa-github pr-2"
-                                                aria-hidden="true">GITHUB</i>
-                                        </a>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </section>
@@ -467,7 +511,7 @@
 
                     <!--LOISIRS-->
                     <section>
-                        <div class="container">
+                        <div class="container cv">
                             <div class="row">
 
                                 <div class="espaceTitre" id="loisirs"></div>
@@ -502,7 +546,7 @@
 
                     <!--MESSAGES-->
                     <section>
-                        <div class="container">
+                        <div class="container cv">
                             <div class="row">
                                 <div class="espaceTitre" id="vosMessages"></div>
                                 <div class="col-md-12">
@@ -526,19 +570,33 @@
                                             <br />
                                         </blockquote>
                                         <cite>{{$messagesUser->pseudo}}</cite>
-                                        <p class="dateMessage">"{{$messagesUser->created_at->format('j F Y')}}"</p>
+                                        <p class="dateMessage">
+                                            {{ \Carbon\Carbon::parse($messagesUser->created_at)->translatedFormat('d F Y') }}
+
+
+                                        </p>
                                     </div>
 
                                 </div>
                                 @endif
                                 @endforeach
                             </div>
+                            <!-- bouton sur la page accueil -->
+                            <div class="wrap introModale">
+                                <button class="btn-demo message" data-toggle="modal"
+                                    data-target=".bs-example-modal-new">
+                                    <span class="btn-gradient">
+                                        <i class="far fa-edit"></i>
+                                    </span>
+                                    <span class="btn-text">Votre message...</span>
+                                </button>
+                            </div>
                     </section>
 
 
                     <!--Contact et form de messages-->
                     <section>
-                        <div class="container container-bottom">
+                        <div class="container cv container-bottom">
                             <div class="row">
                                 <div class="espaceTitre" id="contact"></div>
                                 <div class="col-md-12">
@@ -570,7 +628,7 @@
                                             </div>
                                         </div>
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87590.98061208264!2d-1.6116818781238276!3d46.68169540456109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480430c1840dcf91%3A0x24f1c5b47ba13082!2s85190%20Venansault!5e0!3m2!1sfr!2sfr!4v1603459912746!5m2!1sfr!2sfr"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87590.98061208264!2d-1.6116818781238276!3d46.68169540456109!2m3!1f0!2f0!3f0!3m2!1i1366!2i768!4f13.1!3m3!1m2!1s0x480430c1840dcf91%3A0x24f1c5b47ba13082!2s85190%20Venansault!5e0!3m2!1sfr!2sfr!4v1603459912746!5m2!1sfr!2sfr"
                                             width="100%" height="auto" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                                     </div>

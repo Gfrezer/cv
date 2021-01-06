@@ -1,5 +1,15 @@
+.htmDemo {
+    left: 7vw !important;
+}
+
+.htmDemo .introjs-arrow {
+    top: 2vw !important;
+}
+
 .heroHelperLayer {
     border: solid 1px white;
+    height: 9vw !important;
+    top: 31vw !important;
 }
 
 .progressDemo>.introjs-arrow {
@@ -8,48 +18,120 @@
 
 .htmHelperLayer {
     border: solid 1px white;
+    width: 4vw !important;
+    height: 3.5vw !important;
+    top: 27.5vw !important;
+    left: 6.4vw !important;
 }
 
 .avatarDemo>.introjs-arrow {
     bottom: 70px;
 }
 
-@media (max-width: 1024px) {
+.progressDemo .introjs-arrow {
+    bottom: 2.2vw !important;
+}
+
+.introModaleDemo .introjs-arrow {
+    bottom: 2vw !important;
+}
+
+.introHelperModale {
+    height: 6vw !important;
+}
+
+@media (max-width: 1366px) {
     .introFormationDemo {
         bottom: 8vw !important;
         display: none;
     }
 
-    .progressDemo {
-        bottom: 0;
-        left: 22vw;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-
-    .oeilBeaufDemo {
-        top: 75px;
-        left: 20px;
-    }
-
-    .htmDemo {
-        right: -35px;
-    }
-
-    .htmDemo>.introjs-arrow.top-middle {
-        left: 75%;
-    }
-
-    .heroDemo {
-        margin-left: -25vw;
+    .htmHelperLayer {
+        width: 4.3vw !important;
+        top: 4.5vw !important;
+        left: 46vw !important;
     }
 
     .heroHelperLayer {
-        top: 64vw;
+        top: 46vw !important;
+        height: 11vw !important;
     }
+
+    .heroDemo {
+        right: 29vw !important;
+        bottom: 0 !important;
+        height: 24vw !important;
+    }
+
+    .heroDemo .introjs-arrow {
+        bottom: 9vw !important;
+    }
+
+    .progressDemo {
+        top: 0vw !important;
+        left: 22vw;
+    }
+
+    .progressDemo .introjs-arrow {
+        bottom: 26.5vw !important;
+    }
+
+    .introModaleDemo {
+        bottom: 0px !important;
+        left: 23vw !important;
+        top: 0px !important;
+        height: 28vw !important;
+    }
+
+    .introModaleDemo .introjs-arrow {
+        bottom: 25vw !important;
+    }
+
+    .introHelperModale {
+        height: 10vw !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .oeilBeaufDemo {
+        top: 75px !important;
+        left: 20px !important;
+    }
+
+    .htmDemo {
+        left: -41vw !important;
+    }
+
+    .htmDemo>.introjs-arrow {
+        left: 82% !important;
+        top: -3% !important;
+    }
+
+    .htmHelperLayer {
+        width: 37px !important;
+        top: 6vw !important;
+        left: 75vw !important;
+        height: 9.5vw !important;
+    }
+
+    .heroHelperLayer {
+        top: 65vw !important;
+        height: 13vw !important;
+    }
+
+    .heroDemo {
+        right: 4vw !important;
+        bottom: 0 !important;
+        height: 68vw !important;
+        top: 20vw !important;
+    }
+
+    .heroDemo .introjs-arrow {
+        bottom: 69vw !important;
+        left: 55vw !important;
+        top: -10px !important;
+    }
+
 
     .introFormationDemo {
         bottom: 298vw !important;
@@ -58,10 +140,28 @@
 
     .progressDemo {
         left: 8vw;
+        height: 74vw;
+        top: -77vw !important;
+    }
+
+    .progressDemo .introjs-arrow {
+        top: 74vw !important;
     }
 
     .introModaleDemo {
-        left: 8vw;
+        min-width: 83vw !important;
+        height: 80vw !important;
+        left: 2vw !important;
+        top: -83vw !important;
+    }
+
+    .introModaleDemo .introjs-arrow {
+        top: 80vw !important;
+
+    }
+
+    .introHelperModale {
+        height: 28vw !important;
     }
 
     .avatarDemo {

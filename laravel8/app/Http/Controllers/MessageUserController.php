@@ -16,7 +16,7 @@ class MessageUserController extends Controller
    public function store(MessageUser $request)
     {        
      $this->save($request->validated());    
-     return redirect("message")->with("messageClientOk",'Votre message à bien été envoyé, il sera traité rapidement!');
+     return redirect("message")->with("messageClientOk",'Votre message à bien été envoyé, il sera traité rapidement par notre équipe!');
     }
 
        function save($validatedData)

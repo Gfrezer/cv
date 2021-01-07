@@ -23,8 +23,10 @@ Route::get('/mon_cv',function () {
     return view('/pagePrincipale/monCv');
 });
 
-
-
+//RGPD
+Route::get('/rgpd',function () {
+    return view('/pagePrincipale/rgpd');
+});
 
 
 //Message Contact

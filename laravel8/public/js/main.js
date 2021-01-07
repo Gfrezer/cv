@@ -44,44 +44,49 @@ function ajoutListenerFetch(element) {
     element.addEventListener('click', function (event) {
         event.preventDefault();
         let form = this.closest("form");
-        let inputs = form.querySelectorAll("input[type=text], input[type=hidden], input[type=radio]:checked, textarea");
+        let inputs = form.querySelectorAll("input[type=text], input[type=hidden],input[type=checkbox]:checked, input[type=radio]:checked, textarea");
         let idForm = form.id;
         let url = form.getAttribute("action");
-        let messageContact = new FormData();
-        inputs.forEach(el => messageContact.append(el.name, el.value));
+        if ((scales.checked === false) && (form.id === "formContact")) {
+            const visuRgpd = document.querySelector(".textRgpd");
+            visuRgpd.classList.add("pasChecked");
+        } else {
+            let messageContact = new FormData();
+            inputs.forEach(el => messageContact.append(el.name, el.value));
 
-        fetch(url, {
-                method: 'post',
-                body: messageContact
-            }) //reponse serveur     
-            .then(response => {
-                if (response.ok) {
-                    response.text().then(responseHtml => {
-                        let formElem = this.closest(".formContainer");
-                        formElem.innerHTML = responseHtml;
+            fetch(url, {
+                    method: 'post',
+                    body: messageContact
+                }) //reponse serveur     
+                .then(response => {
+                    if (response.ok) {
+                        response.text().then(responseHtml => {
+                            let formElem = this.closest(".formContainer");
+                            formElem.innerHTML = responseHtml;
 
-                        let tab = [];
-                        let textDanger = document.querySelectorAll(".alert-danger");
-                        textDanger.forEach(function (elem) {
-                            tab.push(elem.innerText);
+                            let tab = [];
+                            let textDanger = document.querySelectorAll(".alert-danger");
+                            textDanger.forEach(function (elem) {
+                                tab.push(elem.innerText);
+                            })
+                            if (tab.length === 0) {
+                                setTimeout(function () {
+                                    form = document.getElementById(idForm);
+                                    form.querySelector(".messageOk").remove();
+                                }, 3000);
+                                //Nettoyer au click les messsages erreurs et videz les inputs
+                            } else {
+                                formElem.querySelectorAll("input").forEach(el => el.addEventListener('focus', function () {
+                                    el.value = "";
+                                    el.closest("div").querySelector(".alert").remove();
+                                    el.classList.remove("is-invalid");
+                                }))
+                            }
+                            ajoutListenerFetch(formElem.querySelector('.submitForm'));
                         })
-                        if (tab.length === 0) {
-                            setTimeout(function () {
-                                form = document.getElementById(idForm);
-                                form.querySelector(".messageOk").remove();
-                            }, 3000);
-                            //Nettoyer au click les messsages erreurs et videz les inputs
-                        } else {
-                            formElem.querySelectorAll("input").forEach(el => el.addEventListener('focus', function () {
-                                el.value = "";
-                                el.closest("div").querySelector(".alert").remove();
-                                el.classList.remove("is-invalid");
-                            }))
-                        }
-                        ajoutListenerFetch(formElem.querySelector('.submitForm'));
-                    })
-                }
-            })
+                    }
+                })
+        }
     })
 }
 

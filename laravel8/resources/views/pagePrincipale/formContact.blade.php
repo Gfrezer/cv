@@ -40,6 +40,19 @@
             @if(session('messageOk'))
             <div class="messageOk"> {{ session('messageOk') }}</div>
             @endif
+            <div class="rgpd">
+                <label for="scales">
+                    <input type="checkbox" id="scales" name="scales">
+                    J'autorise ce site à conserver mes données personnelles transmises via ce
+                    formulaire.
+                    Aucune exploitation commerciale ne sera faite des données conservées.</br>Voir la <a target="_blank"
+                        href="{{url('/rgpd')}}">politique de
+                        gestion des données personnelles</a>
+                </label>
+            </div>
+            <div class="textRgpd" id="textRgpd">
+                <p>Vous devez Validez le RGPD!</p>
+            </div>
         </form>
     </div>
 </div>

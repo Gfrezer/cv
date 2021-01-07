@@ -529,12 +529,12 @@ blockquote p {
 .dateMessage {
     margin-left: 1vw;
     position: absolute;
-    margin-top: 46vw;
+    margin-top: 17vw;
 }
 
 .client-profil cite {
     position: absolute;
-    margin-top: 34vw;
+    margin-top: 13vw;
 }
 
 @media (max-width: 1366px) {
@@ -723,7 +723,7 @@ contact formulaire
 --------------------------------------------------------------*/
 .containerContact.card {
     width: 27vw;
-    height: 25vw;
+    min-height: 25vw;
 }
 
 .messageOk {
@@ -735,11 +735,34 @@ contact formulaire
     background-color: #a87676;
 }
 
+.card-body .rgpd label {
+    font-size: 0.8em;
+
+}
+
+.textRgpd p {
+    visibility: collapse;
+    background: none;
+
+}
+
+.textRgpd.pasChecked p {
+    visibility: visible;
+    background: #be6161;
+    color: #ffffff;
+
+}
+
+.rgpd a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 @media (max-width: 1366px) {
     .containerContact.card {
         margin: 30px auto;
         width: 44vw;
-        height: 42vw;
+        min-height: 42vw;
     }
 
     .messageOk {
@@ -752,14 +775,12 @@ contact formulaire
 @media (max-width: 768px) {
     .containerContact.card {
         width: 100%;
-        height: 91vw;
+        min-height: 91vw;
     }
 
     .messageOk {
         font-size: 5vw;
     }
-
-
 }
 
 /*--------------------------------------------------------------

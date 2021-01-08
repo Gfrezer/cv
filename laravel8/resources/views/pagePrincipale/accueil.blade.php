@@ -1,5 +1,6 @@
+ 
 @extends('layouts/template')
-
+@section('content')
 <section>
     <div class="container-fluid">
         <div class="row">
@@ -396,6 +397,12 @@
                                                 </ul>
                                                 </p>
                                             </div>
+                                            <p class="textVisite">Visite guidée du site</p>
+                                            <div class="applis fleche">
+                                                <div class="chevron"></div>
+                                                <div class="chevron"></div>
+                                                <div class="chevron"></div>
+                                            </div>
                                         </div>
                                         <div class="icon-btn">
                                             <a class="href-demo monCv">
@@ -403,7 +410,7 @@
                                                     <span class="btn-gradient">
                                                         <i class="fas fa-cogs pr-2"></i>
                                                     </span>
-                                                    <span class="btn-text">Démo</span>
+                                                    <span class="btn-text">Visite</span>
                                                 </button>
                                             </a>
 
@@ -654,3 +661,4 @@
         <a class="admin" href="{{url('login')}}" target=_blank>Administateur</a>
     </div>
 </footer>
+@endsection

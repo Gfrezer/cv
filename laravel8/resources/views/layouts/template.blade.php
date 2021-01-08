@@ -42,7 +42,14 @@
 </head>
 
 <body>
-    @yield('content')
+    <div class="titreIframe">
+        <p>blablabla</p>
+    </div>
+    <div>
+        @section('content')
+        @show
+    </div>
+
     <!-- Scripts -->
     <!-- navbar app lodash -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
@@ -62,7 +69,8 @@
     <!-- intro -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.2.0/intro.min.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
+
     </script>
 </body>
 

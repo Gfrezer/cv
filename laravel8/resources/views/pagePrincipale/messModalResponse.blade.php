@@ -22,6 +22,9 @@
             <label for="sexe">Vous êtes un(e)...?</label><br />
             <input type=radio id=sexe name=sexe value=h> homme
             <input type=radio id=sexe name=sexe value=f> femme
+            @error('sexe')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
         <div class="icon-btn">
             <button type="submit" class="btn-demo btnValidez submitForm">
@@ -32,7 +35,7 @@
             </button>
         </div>
         @if(session('messageClientOk'))
-        <div class="messageOk">Votre message à bien été envoyé !</div>
+        <div class="messageOk">{{ session('messageClientOk') }}</div>
         @endif
 
 

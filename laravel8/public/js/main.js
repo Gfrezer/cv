@@ -73,10 +73,10 @@ function ajoutListenerFetch(element) {
                                 setTimeout(function () {
                                     form = document.getElementById(idForm);
                                     form.querySelector(".messageOk").remove();
-                                }, 3000);
+                                }, 4000);
                                 //Nettoyer au click les messsages erreurs et videz les inputs
                             } else {
-                                formElem.querySelectorAll("input").forEach(el => el.addEventListener('focus', function () {
+                                formElem.querySelectorAll("input,textarea").forEach(el => el.addEventListener('focus', function () {
                                     el.value = "";
                                     el.closest("div").querySelector(".alert").remove();
                                     el.classList.remove("is-invalid");

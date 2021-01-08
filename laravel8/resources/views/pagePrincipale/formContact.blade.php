@@ -5,14 +5,14 @@
             @csrf
             <div class="form-group">
                 <input type="text" class="form-control  @error('nom') is-invalid @enderror" name="nom" id="nom"
-                    placeholder="Votre nom" value="{{ old('nom') }}" required></input>
+                    placeholder="Votre nom" value="{{ old('nom') }}" required>
                 @error('nom')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="form-group">
                 <input type="text" class="form-control  @error('email') is-invalid @enderror" name="email" id="email"
-                    placeholder="Votre email" value="{{ old('email') }}" required></input>
+                    placeholder="Votre email" value="{{ old('email') }}" required>
                 @error('email')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

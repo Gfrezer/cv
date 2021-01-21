@@ -320,8 +320,8 @@ i {
         overflow-x: hidden;
     }
 
-    h2 {
-        font-size: 7vw;
+    .col-md-12 h2 {
+        font-size: 9vw;
     }
 
     .espaceTitre {
@@ -360,7 +360,7 @@ i {
     }
 
     .btn-demo.message span {
-        width: 61vw;
+        width: 66vw;
     }
 
     .card-body .btn-gradient {
@@ -726,7 +726,7 @@ Navbar laterale
     }
 
     .blocIcone {
-        margin-top: 4vw;
+        margin-top: 2vw;
         display: flex;
         align-items: baseline;
     }

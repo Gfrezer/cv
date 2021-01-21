@@ -13,24 +13,28 @@
 
 
 <script>
-document.querySelectorAll('.blocIcone a').forEach(element => {
-    hrefListener(element);
-});
+    document.querySelectorAll('.blocIcone a').forEach(element => {
+        hrefListener(element);
+    });
 
-function hrefListener(element) {
-    element.addEventListener('click', function(event) {
-        event.preventDefault();
-        if (element.className === "git") {
-            window.open("https://github.com/Gfrezer");
-        } else {
-            let choixDim = element.childNodes[0].classList[1];
-            var event = new CustomEvent('choix', {
-                detail: {
-                    name: choixDim
-                }
-            });
-            window.parent.document.dispatchEvent(event);
-        }
-    })
-};
+    function hrefListener(element) {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (element.className === "git") {
+                window.open("https://github.com/Gfrezer");
+            } else {
+
+                let choixDim = element.childNodes[0].classList[1];
+                var event = new CustomEvent('choix', {
+                    detail: {
+                        name: choixDim
+                    }
+                });
+
+
+                window.parent.document.dispatchEvent(event);
+            }
+        })
+    };
+
 </script>

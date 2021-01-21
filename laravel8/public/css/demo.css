@@ -3,7 +3,7 @@
 }
 
 .htmDemo .introjs-arrow {
-    top: 2vw !important;
+    top: 6vw !important;
 }
 
 .heroHelperLayer {
@@ -37,19 +37,28 @@
 }
 
 .introHelperModale {
-    height: 6vw !important;
+    height: auto !important;
 }
 
 @media (max-width: 1366px) {
     .introFormationDemo {
-        bottom: 8vw !important;
+        bottom: 27vw !important;
         display: none;
+    }
+
+    .htmDemo {
+        left: 13vw !important;
+    }
+
+    .htmDemo .introjs-arrow {
+        top: 2vw !important;
     }
 
     .htmHelperLayer {
         width: 4.3vw !important;
-        top: 4.5vw !important;
-        left: 46vw !important;
+        top: 2.5vw !important;
+        left: 48vw !important;
+        height: 5vw !important;
     }
 
     .heroHelperLayer {
@@ -60,7 +69,7 @@
     .heroDemo {
         right: 29vw !important;
         bottom: 0 !important;
-        height: 24vw !important;
+        height: 28vw !important;
     }
 
     .heroDemo .introjs-arrow {
@@ -73,12 +82,12 @@
     }
 
     .progressDemo .introjs-arrow {
-        bottom: 26.5vw !important;
+        bottom: 30vw !important;
     }
 
     .introModaleDemo {
         bottom: 0px !important;
-        left: 23vw !important;
+        left: 28vw !important;
         top: 0px !important;
         height: 28vw !important;
     }
@@ -88,7 +97,8 @@
     }
 
     .introHelperModale {
-        height: 10vw !important;
+        height: 6vw !important;
+        width: 20vw !important;
     }
 }
 

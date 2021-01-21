@@ -11,13 +11,13 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Styles -->
     <link href="{{ asset('css/page_Accueil_Haut.css') }}" rel="stylesheet">
     <link href="{{ asset('css/page_Accueil_Bas.css') }}" rel="stylesheet">
     <link href="{{ asset('css/demo.css') }}" rel="stylesheet">
-    <!--AOS-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--intro css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.2.0/introjs.min.css" />
 
@@ -42,9 +42,7 @@
 </head>
 
 <body>
-    <div class="titreIframe">
-        <p>blablabla</p>
-    </div>
+
     <div>
         @section('content')
         @show

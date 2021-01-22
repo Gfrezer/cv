@@ -13,7 +13,7 @@
 }
 
 .progressDemo>.introjs-arrow {
-    bottom: 42px;
+    bottom: 42px !important;
 }
 
 .htmHelperLayer {
@@ -24,8 +24,17 @@
     left: 6.4vw !important;
 }
 
+.avatarDemo {
+    left: 7vw !important;
+}
+
 .avatarDemo>.introjs-arrow {
-    bottom: 70px;
+    bottom: 70px !important;
+}
+
+.avatarHelperLayer {
+    width: 10vw !important;
+    left: 32vw !important;
 }
 
 .progressDemo .introjs-arrow {
@@ -33,11 +42,13 @@
 }
 
 .introModaleDemo .introjs-arrow {
-    bottom: 2vw !important;
+    bottom: -10px !important;
 }
 
 .introHelperModale {
-    height: auto !important;
+    height: 2vw !important;
+    width: 15vw !important;
+    top: 6062px !important;
 }
 
 @media (max-width: 1366px) {

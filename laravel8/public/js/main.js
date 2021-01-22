@@ -221,18 +221,20 @@ elementDemo.addEventListener('click', function (event) {
 
                 },
                 {
+                    element: document.querySelector('.avatar'),
+                    intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur,il est génerer avec fakeface une A.I. qui crée des visages qui n'existe pas.",
+                    position: 'right',
+                    tooltipClass: "avatarDemo",
+                    highlightClass: "avatarHelperLayer"
+                },
+                {
                     element: document.querySelector('.introModale'),
                     intro: "la fenêtre modale beaucoup plus ergonomique et flexible q'un Pop-up à l’avantage d’être membre du DOM de la page.",
                     position: 'right',
                     tooltipClass: "introModaleDemo",
                     highlightClass: "introHelperModale"
                 },
-                {
-                    element: document.querySelector('.avatar'),
-                    intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur,il est génerer avec fakeface une A.I. qui crée des visages qui n'existe pas.",
-                    position: 'bottom',
-                    tooltipClass: "avatarDemo"
-                },
+
                 {
                     element: document.querySelector('.introContact'),
                     intro: "Formulaire avec l'excellent systeme d'Authentification Laravel, la methode fetch permet de gérer le corps de la requête et de la réponse de maniere asychrone ",
@@ -254,5 +256,5 @@ elementDemo.addEventListener('click', function (event) {
             ]
         }).start();
     }, 1500);
-    window.parent.document.dispatchEvent(event);
+    //window.parent.document.dispatchEvent(event);
 });

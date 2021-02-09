@@ -37,12 +37,13 @@ class ContactRequest extends FormRequest
     public function messages()
     {
         return [
-             'nom.required' => 'Le champs Nom est requis',
-             'nom.max' => 'Le champs Nom ne doit pas dépasser 25 caractères',
-             'nom.alpha' => 'Le nom ne doit comporter que des caractères alphanumériques',
-             'email.email' => 'Envoyez une adresse Mail valide !',
-             'message.required' => 'Envoyez un message valide !',
-             'message.regex' => 'Envoyez un message valide !',
+             'nom.required' => 'Le champ nom est requis',
+             'nom.max' => 'Le champ nom ne doit pas dépasser 25 caractères',
+             'nom.alpha' => 'Le champ nom ne doit comporter que des caractères alphanumériques',
+             'email.email' => 'Le champ email est invalide',
+             'email.required' => 'Le champ email est requis',
+             'message.required' => 'Le champ message est requis',
+             'message.regex' => "Le champ message n'est pas valide !",
     ];
     }
 

@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 //ACCUEIL
 
-Route::get('/mon_cv',function () {
+Route::get('/',function () {
     return view('/pagePrincipale/monCv');
 });
 
@@ -38,7 +38,7 @@ Route::get('formContact',[ContactClientController::class,'index']);
 //Message visuel CV
 Route::post('message',[MessageUserController::class,'store'])->name("message.store");
 Route::get('message',[MessageUserController::class,'index']);
-Route::get('/',[MessageUserController::class,'show'])->name('accueil');
+Route::get('/mon_cv',[MessageUserController::class,'show'])->name('accueil');
 
 
 //ADMIN

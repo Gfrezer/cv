@@ -334,7 +334,7 @@ Mes applis   "voir css card formation"
 --------------------------------------------------------------*/
 .cardApplis {
     width: 22vw;
-    height: 22vw;
+    height: 25vw;
 }
 
 .container.applis {
@@ -439,9 +439,14 @@ Mes applis   "voir css card formation"
 
 @media (max-width: 1366px) {
     .cardApplis {
-        width: 93%;
-        height: 44vw;
+        width: 95%;
+        height: 58vw;
         margin-top: 5vw;
+
+    }
+
+    .container.applis {
+        width: 100%;
     }
 
     .card-excerpt p {
@@ -456,9 +461,18 @@ Mes applis   "voir css card formation"
 }
 
 @media (max-width: 768px) {
+
+    .container.cv.applis {
+        width: 93vw;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .cardApplis {
         width: 100%;
-        height: 80vw;
+        height: 136vw;
         margin-top: 5vw;
     }
 
@@ -570,7 +584,6 @@ affichage de vos messages page accueil
     margin-bottom: 30px;
     width: 18vw;
     height: 29vw;
-    text-align: center;
 }
 
 
@@ -598,27 +611,27 @@ affichage de vos messages page accueil
 }
 
 .avatar.a1h {
-    background-image: url('http://fakeface.rest/thumb/view/1?minimum_age=20&gender=male');
+    background-image: url('https://fakeface.rest/thumb/view/1?minimum_age=20&gender=male');
 }
 
 .avatar.a2h {
-    background-image: url('http://fakeface.rest/thumb/view/2?minimum_age=20&gender=male');
+    background-image: url('https://fakeface.rest/thumb/view/2?minimum_age=20&gender=male');
 }
 
 .avatar.a3h {
-    background-image: url('http://fakeface.rest/thumb/view/3?minimum_age=20&gender=male');
+    background-image: url('https://fakeface.rest/thumb/view/3?minimum_age=20&gender=male');
 }
 
 .avatar.a1f {
-    background-image: url('http://fakeface.rest/thumb/view/1?minimum_age=20&gender=female');
+    background-image: url('https://fakeface.rest/thumb/view/1?minimum_age=20&gender=female');
 }
 
 .avatar.a2f {
-    background-image: url('http://fakeface.rest/thumb/view/2?minimum_age=20&gender=female');
+    background-image: url('https://fakeface.rest/thumb/view/2?minimum_age=20&gender=female');
 }
 
 .avatar.a3f {
-    background-image: url('http://fakeface.rest/thumb/view/3?minimum_age=20&gender=female');
+    background-image: url('https://fakeface.rest/thumb/view/3?minimum_age=20&gender=female');
 }
 
 blockquote {
@@ -654,6 +667,7 @@ blockquote p {
 .client-profil cite {
     position: absolute;
     margin-top: 13vw;
+    margin-left: 3vw;
 }
 
 @media (max-width: 1366px) {
@@ -669,6 +683,7 @@ blockquote p {
 
     .client-profil cite {
         margin-top: 27vw;
+        margin-left: 3vw;
     }
 
     .dateMessage {
@@ -679,7 +694,12 @@ blockquote p {
 @media (max-width: 768px) {
     .client-profil {
         width: 100%;
-        height: 98vw;
+        height: 120vw;
+    }
+
+    .client-profil cite {
+        margin-top: 52vw;
+        margin-left: 3vw;
     }
 
     .avatar {
@@ -690,9 +710,12 @@ blockquote p {
 
     blockquote p {
         width: 87vw;
-        height: 30vw;
+        height: 60vw;
     }
 
+    .dateMessage {
+        margin-top: 65vw;
+    }
 }
 
 /*--------------------------------------------------------------

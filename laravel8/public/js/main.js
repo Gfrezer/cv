@@ -187,49 +187,54 @@ elementDemo.addEventListener('click', function (event) {
     window.scrollTo(0, 0);
     setTimeout(function () {
         introJs().setOptions({
+            nextLabel: "Suivant",
+            prevLabel: "Précédent",
+            doneLabel: "Fin",
             steps: [{
                     element: document.querySelector('.oeilBeauf'),
-                    intro: "Bonjour, je suis Intro et je vais vous montrer quelques une des fonctionnalitées que j'ai utilisé pour créer mon site.",
+                    intro: "Bonjour, je suis Gaël et grâce à IntroJS je vais vous montrer quelques unes des technologies utilisées pour créer ce site.",
                     position: 'bottom',
-                    tooltipClass: "oeilBeaufDemo"
+                    tooltipClass: "oeilBeaufDemo",
+
                 },
                 {
                     element: document.querySelector('.htm'),
-                    intro: "En cliquant sur une de ces icones cela permet en un click de voir l'aspect du site en responsive sur tablette et mobile grace à l'utilisation d'iframes. ",
+                    intro: "Cliquez sur une de ces icones permet de voir l'aspect du site en responsive sur tablette et mobile grace à l'utilisation d'iframes. ",
                     position: 'right',
                     tooltipClass: "htmDemo",
-                    highlightClass: "htmHelperLayer"
+                    highlightClass: "htmHelperLayer",
+
                 },
                 {
                     element: document.querySelector('#hero'),
-                    intro: "L'effet d'ecriture automatique est réalisé par la bibliotheque Typed.js",
+                    intro: "L'effet d'écriture automatique est réalisé par la bibliotheque Typed.js",
                     position: 'left',
                     tooltipClass: "heroDemo",
                     highlightClass: "heroHelperLayer"
                 },
                 {
                     element: document.querySelector('.introFormation'),
-                    intro: "Ici j'ai fait appel à AOS (Animate On Scroll)qui est une librairie toute légère permettant d’ajouter des animations sur des éléments HTML",
+                    intro: "Ici j'ai fait appel à AOS (Animate On Scroll) qui est une librairie toute légère permettant d’ajouter des animations sur des éléments HTML, passez la souris sur une des trois images pour un zoom CSS3",
                     position: 'left',
                     tooltipClass: "introFormationDemo"
                 },
                 {
                     element: document.querySelector('.progress'),
-                    intro: "Pour donner de l'effet aux barres de progressions, j'ai recuperer un code Javascript que j'ai adapté pour mon utilisation. ",
+                    intro: "Les barres de progressions, sont animées par du code Javascript que j'ai adapté pour mon utilisation. ",
                     position: 'right',
                     tooltipClass: "progressDemo",
 
                 },
                 {
                     element: document.querySelector('.avatar'),
-                    intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur,il est génerer avec fakeface une A.I. qui crée des visages qui n'existe pas.",
+                    intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur, il est génerer avec Fakeface une A.I. qui crée des visages qui n'existe pas.",
                     position: 'right',
                     tooltipClass: "avatarDemo",
                     highlightClass: "avatarHelperLayer"
                 },
                 {
                     element: document.querySelector('.introModale'),
-                    intro: "la fenêtre modale beaucoup plus ergonomique et flexible q'un Pop-up à l’avantage d’être membre du DOM de la page.",
+                    intro: "La fenêtre modale beaucoup plus érgonomique et flexible q'un Pop-up à l’avantage d’être membre du DOM de la page.",
                     position: 'right',
                     tooltipClass: "introModaleDemo",
                     highlightClass: "introHelperModale"
@@ -237,13 +242,13 @@ elementDemo.addEventListener('click', function (event) {
 
                 {
                     element: document.querySelector('.introContact'),
-                    intro: "Formulaire avec l'excellent systeme d'Authentification Laravel, la methode fetch permet de gérer le corps de la requête et de la réponse de maniere asychrone ",
+                    intro: "Formulaire avec l'excellent systeme d'Authentification Laravel, la méthode fetch permet de gérer le corps de la requête et de la réponse de maniere asychrone ",
                     position: 'left',
                     tooltipClass: "introContactDemo"
                 },
                 {
                     element: document.querySelector('.admin'),
-                    intro: "Partie administrateur non accessible par les utilisateurs qui permet de gérer les contacts et les messages ",
+                    intro: "Partie administrateur non accessible par les utilisateurs qui me permet de gérer les contacts et vos messages ",
                     position: 'up',
                     tooltipClass: "adminDemo"
                 },

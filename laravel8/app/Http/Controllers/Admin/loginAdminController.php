@@ -15,9 +15,13 @@ class LoginAdminController extends Controller
     {
       $credentials = $request->only('nom','password');
         if (Auth::guard('admin')->attempt($credentials)) {
-           if(Auth::guard('admin')->user()->admin === 1){
+           if(Auth::guard('admin')->user()->admin == 1){
+                \Log::info('Ca se passe bien avec le '.gettype(Auth::guard('admin')->user()->admin));
                 return redirect('admin');
-      }           
+          } 
+          else{
+            \Log::info('Erreur avec le '.gettype(Auth::guard('admin')->user()->admin));
+          }          
         }else{
             return redirect('/login')->with('error','ok');
         }

@@ -287,13 +287,13 @@ i {
     .btn-demo .btn-gradient {
         padding: 10px 0px 10px 9px;
         margin-left: 0.2em;
-        left: -22px;
+        left: -15px;
     }
 
     .btn-github .btn-gradient {
         padding: 10px 9px 10px 13px;
         margin-left: 0.2em;
-        left: -14px;
+        left: -7px;
     }
 
     .btn-demo.message {
@@ -348,7 +348,7 @@ i {
     .btn-github .btn-gradient {
         padding: 10px 9px 10px 9px;
         margin-left: 0.2em;
-        left: -24px;
+        left: -18px;
     }
 
     .btn-demo.message {
@@ -479,7 +479,7 @@ i {
     }
 
     .navbar-nav {
-        margin-left: 25vw;
+        margin-left: 18vw;
 
     }
 
@@ -648,10 +648,18 @@ Navbar laterale
     position: fixed;
     z-index: 5000;
     margin-top: 5vw;
-    margin-left: 4.5vw;
+    margin-left: 3vw;
+    width: 10vw;
+    text-align: center;
 
 }
 
+.lienVisite p {
+    text-align: center;
+    margin-top: 2vw;
+    font-size: 0.8em;
+    color: #ffffff;
+}
 
 
 .oeilBeauf {
@@ -661,7 +669,7 @@ Navbar laterale
     width: 8vw;
     height: 8vw;
     border-radius: 50%;
-
+    margin: auto;
 }
 
 .blocIcone {
@@ -670,7 +678,8 @@ Navbar laterale
     text-align: center;
 }
 
-.blocIcone p {
+.blocIcone .nomPrenom {
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -680,16 +689,21 @@ Navbar laterale
     padding-top: 25px;
 }
 
+.navlater a {
+    font-size: 0.8em;
+}
 
 .nomPrenom {
+    display: grid;
+    text-align: center;
     color: #ffffff !important;
     font-size: 1em;
     font-weight: 500;
     font-family: 'Raleway',
         'sans-serif',
         'fantasy';
-    margin-bottom: 4vw;
-
+    margin-bottom: 0px;
+    margin-top: 1vw;
 }
 
 @media (max-width: 1366px) {
@@ -706,6 +720,16 @@ Navbar laterale
         max-width: 100%;
     }
 
+    .lienVisite {
+        margin-left: 3vw;
+    }
+
+    .lienVisite p {
+        text-align: center;
+        margin-top: 0;
+        font-size: 0.6em;
+        width: 16vw;
+    }
 
     .navlater {
         display: flex;
@@ -713,6 +737,7 @@ Navbar laterale
         z-index: 5000;
         margin-top: 1vw;
         margin-left: 4%;
+        width: 100%;
 
     }
 
@@ -723,6 +748,7 @@ Navbar laterale
         width: 10vw;
         height: 10vw;
         border-radius: 50%;
+        margin: 0px;
     }
 
     .blocIcone {
@@ -739,6 +765,8 @@ Navbar laterale
     }
 
     .nomPrenom {
+        display: flex;
+        flex-direction: column;
         font-size: 1em;
         margin-bottom: 0vw;
         margin-right: 5vw;
@@ -761,6 +789,11 @@ Navbar laterale
         max-width: 100%;
     }
 
+    .lienVisite p {
+        text-align: center;
+        margin-top: 0;
+        font-size: 0em;
+    }
 
     .navlater {
         display: flex;
@@ -769,6 +802,10 @@ Navbar laterale
         margin-top: 2vw;
         margin-left: 0.5vw;
 
+    }
+
+    .navlater i {
+        padding-top: 5px;
     }
 
     .oeilBeauf {
@@ -786,18 +823,18 @@ Navbar laterale
     .navlater i {
         font-size: 1.5em;
         color: #555;
-        padding-right: 4vw;
+        padding-right: 1vw;
     }
 
-    .nomPrenom {
+    .blocIcone .nomPrenom {
         color: #ffffff !important;
-        font-size: 4vw;
+        font-size: 3.5vw;
         font-weight: 500;
         font-family: 'Raleway',
             'sans-serif',
             'fantasy';
-        margin-right: 7vw;
-        margin-left: 5vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
     }
 
 

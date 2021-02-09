@@ -35,13 +35,13 @@ class messageUser extends FormRequest
        public function messages()
     {
         return [
-             'pseudo.required' => 'Le champs Pseudo est requis!',
-             'pseudo.max' => 'Le champs Pseudo ne doit pas dépasser 25 caractères!',
-             'pseudo.alpha' => 'Le Pseudo ne doit comporter que des caractères alphanumériques!',            
-             'message_user.required' => 'Envoyez un message valide!',
-             'message_user.regex' => 'Envoyez un message valide!',
-             'message_user.max' => 'Le champs Message ne doit pas dépasser 250 caractères!',
-             'sexe.required' => 'Veillez selectionner votre genre!',
+             'pseudo.required' => 'Le champ pseudo est requis',
+             'pseudo.max' => 'Le champ pseudo ne doit pas dépasser 25 caractères',
+             'pseudo.alpha' => 'Le champ pseudo ne doit comporter que des caractères alphanumériques',            
+             'message_user.required' => 'Le champ message est requis',
+             'message_user.regex' => "Le champ message n'est pas valide !",
+             'message_user.max' => 'Le champ message ne doit pas dépasser 250 caractères',
+             'sexe.required' => 'Veuillez selectionner votre genre',
     ];
     }
 

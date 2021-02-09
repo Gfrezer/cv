@@ -18,9 +18,9 @@
 
 .htmHelperLayer {
     border: solid 1px white;
-    width: 4vw !important;
+    width: 3vw !important;
     height: 3.5vw !important;
-    top: 27.5vw !important;
+    top: 24.5vw !important;
     left: 6.4vw !important;
 }
 
@@ -68,7 +68,7 @@
     .htmHelperLayer {
         width: 4.3vw !important;
         top: 2.5vw !important;
-        left: 48vw !important;
+        left: 46vw !important;
         height: 5vw !important;
     }
 
@@ -88,7 +88,7 @@
     }
 
     .progressDemo {
-        top: 0vw !important;
+
         left: 22vw;
     }
 
@@ -96,31 +96,37 @@
         bottom: 30vw !important;
     }
 
+    .avatarHelperLayer {
+        width: 10vw !important;
+        left: 13vw !important;
+    }
+
     .introModaleDemo {
         bottom: 0px !important;
         left: 28vw !important;
         top: 0px !important;
-        height: 28vw !important;
+        height: 30vw !important;
     }
 
     .introModaleDemo .introjs-arrow {
-        bottom: 25vw !important;
+        left: 25vw !important;
     }
 
     .introHelperModale {
         height: 6vw !important;
-        width: 20vw !important;
+        width: 26vw !important;
+        top: 5813px !important;
     }
 }
 
 @media (max-width: 768px) {
     .oeilBeaufDemo {
-        top: 75px !important;
+        top: 21vw !important;
         left: 20px !important;
     }
 
     .htmDemo {
-        left: -41vw !important;
+        left: -140px !important;
     }
 
     .htmDemo>.introjs-arrow {
@@ -131,7 +137,7 @@
     .htmHelperLayer {
         width: 37px !important;
         top: 6vw !important;
-        left: 75vw !important;
+        left: 278px !important;
         height: 9.5vw !important;
     }
 
@@ -143,54 +149,63 @@
     .heroDemo {
         right: 4vw !important;
         bottom: 0 !important;
-        height: 68vw !important;
-        top: 20vw !important;
+        height: 260px !important;
+        top: 76% !important;
+        margin-top: 0px !important;
     }
 
     .heroDemo .introjs-arrow {
-        bottom: 69vw !important;
-        left: 55vw !important;
+        bottom: 73vw !important;
+        left: 50vw !important;
         top: -10px !important;
+        display: block !important;
     }
 
 
     .introFormationDemo {
-        bottom: 298vw !important;
+        bottom: 251vw !important;
         left: 8vw;
     }
 
     .progressDemo {
         left: 8vw;
-        height: 74vw;
-        top: -77vw !important;
+        height: 281px;
+        top: -82w !important;
     }
 
     .progressDemo .introjs-arrow {
-        top: 74vw !important;
+        top: 78vw !important;
     }
 
     .introModaleDemo {
-        min-width: 83vw !important;
-        height: 80vw !important;
+        min-width: 63vw !important;
+        height: 280px !important;
         left: 2vw !important;
-        top: -83vw !important;
+        top: -80vw !important;
     }
 
     .introModaleDemo .introjs-arrow {
-        top: 80vw !important;
+        top: 78vw !important;
 
     }
 
     .introHelperModale {
-        height: 28vw !important;
+        height: 11vw !important;
+        width: 54vw !important;
+        top: 1984vw !important;
     }
 
     .avatarDemo {
-        right: -27vw;
+        left: -107px !important;
+    }
+
+    .avatarHelperLayer {
+        width: 37vw !important;
+        left: 30vw !important;
     }
 
     .avatarDemo>.introjs-arrow {
-        left: 35% !important;
+        bottom: -10px !important;
     }
 
     .introContactDemo {

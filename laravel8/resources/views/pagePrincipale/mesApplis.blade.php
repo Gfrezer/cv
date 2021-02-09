@@ -1,6 +1,6 @@
 <!--MES APPLIS-->
 <section>
-    <div class="container cv">
+    <div class="container cv applis">
         <div class="row">
             <div class="col-md-12">
                 <div class="espaceTitre" id="mesApplis"></div>
@@ -18,7 +18,9 @@
                             </div>
                             <div class="card-excerpt">
                                 <p>
-                                    Site de mon cv en ligne.
+                                    Site de mon cv en ligne. Développé en PHP/Laravel 8,
+                                    il est composé de différentes parties qui montrent
+                                    chacune un aspect différent du ce site.
                                 <ul>
                                     <li> Node.js</li>
                                     <li> Express.js</li>

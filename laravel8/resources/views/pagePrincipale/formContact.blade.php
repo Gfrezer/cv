@@ -1,29 +1,29 @@
 <div class="containerContact row card text-white bg-dark">
     <h4 class="card-header">Contactez-moi</h4>
     <div class="card-body introContact">
-        <form action="{{url('formContact') }}" method="POST" id="formContact">
+        <form action="{{ url('formContact') }}" method="POST" id="formContact">
             @csrf
             <div class="form-group">
-                <input type="text" class="form-control  @error('nom') is-invalid @enderror" name="nom" id="nom"
-                    placeholder="Votre nom" value="{{ old('nom') }}" required>
+                <input type="text" class="form-control  @error('nom') is-invalid @enderror" name="nom" id="nom" placeholder="Votre nom"
+                    value="{{ old('nom') }}" required>
                 @error('nom')
-                <div class="alert alert-danger">{{ $message }}</div>
+                    <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="form-group">
                 <input type="text" class="form-control  @error('email') is-invalid @enderror" name="email" id="email"
                     placeholder="Votre email" value="{{ old('email') }}" required>
                 @error('email')
-                <div class="alert alert-danger">{{ $message }}</div>
+                    <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="form-group">
 
-                <textarea type="textarea" class="form-control  @error('message') is-invalid @enderror" name="message"
-                    id="messageContact" placeholder="Votre message" value="{{ old('message') }}" required></textarea>
+                <textarea type="textarea" class="form-control  @error('message') is-invalid @enderror" name="message" id="messageContact"
+                    placeholder="Votre message" value="{{ old('message') }}" required></textarea>
 
                 @error('message')
-                <div class="alert alert-danger">{{ $message }}</div>
+                    <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="icon-btn">
@@ -37,8 +37,8 @@
                     <span class="btn-text">Envoyer</span>
                 </button>
             </div>
-            @if(session('messageOk'))
-            <div class="messageOk"> {{ session('messageOk') }}</div>
+            @if (session('messageOk'))
+                <div class="messageOk"> {{ session('messageOk') }}</div>
             @endif
             <div class="rgpd">
                 <label for="scales">
@@ -46,12 +46,12 @@
                     J'autorise ce site à conserver mes données personnelles transmises via ce
                     formulaire.
                     Aucune exploitation commerciale ne sera faite des données conservées.</br>Voir la <a target="_blank"
-                        href="{{url('/rgpd')}}">politique de
+                        href="{{ url('/rgpd') }}">politique de
                         gestion des données personnelles</a>
                 </label>
             </div>
             <div class="textRgpd" id="textRgpd">
-                <p>Vous devez Validez le RGPD!</p>
+                <p>Pour envoyer un message, veuillez accepter les termes de la politique de gestion des données personnelles</p>
             </div>
         </form>
     </div>

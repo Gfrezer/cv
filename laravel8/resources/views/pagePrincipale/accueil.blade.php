@@ -453,7 +453,7 @@
      <footer>
          <div class="copyright">
              <p>CV Développeur Web - Gaël H. - 2021.</p>
-             <a href="{{ asset('/document.pdf') }}">Mentions Légales
+             <a href="{{ asset('/rgpd.pdf') }}">Mentions Légales
              </a>
 
              <a class="admin" href="{{ url('login') }}" target=_blank>Administrateur</a>

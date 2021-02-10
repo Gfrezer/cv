@@ -2,7 +2,7 @@
     <div class="oeilBeauf card__image ">
     </div>
     <p class="nomPrenom">Gaël Hamonic
-        <a href="{{ asset('/cv.pdf') }}">Mon cv PDF
+        <a href="{{ asset('/cv_2021.pdf') }}">Mon cv PDF
         </a>
     </p>
     <div class="blocIcone">

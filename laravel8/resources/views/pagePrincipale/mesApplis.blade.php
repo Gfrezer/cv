@@ -155,7 +155,8 @@
                             </div>
                             <div class="card-excerpt">
                                 <p>
-                                    Application web permettant de commander
+                                    Application web permettant de resérver des bouteilles de vin par le client inscrit.
+                                    Interface administrateur pour effectuer la gestion du compte client, ainsi que le produit en stock.
                                 <ul>
                                     <li> Node.js</li>
                                     <li> Express.js</li>

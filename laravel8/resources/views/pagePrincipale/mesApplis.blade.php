@@ -18,14 +18,14 @@
                             </div>
                             <div class="card-excerpt">
                                 <p>
-                                    Site de mon cv en ligne. Développé en PHP/Laravel 8,
-                                    il est composé de différentes parties qui montrent
-                                    chacune un aspect différent du ce site.
+                                    Ce site à été conçu entièrement en PHP/Laravel 8 afin de
+                                    présenter mon CV et mon parcours. Ce site est comme un showroom à parcourir, dans lequel chaque élément
+                                    est présent comme un module de démonstration technique.
                                 <ul>
-                                    <li> Node.js</li>
-                                    <li> Express.js</li>
-                                    <li> Postgresql</li>
-                                    <li> ORM Sequelize</li>
+                                    <li>PHP 7.3</li>
+                                    <li>Laravel 8</li>
+                                    <li>MySQL </li>
+                                    <li>Eloquent ORM</li>
                                 </ul>
                                 </p>
                             </div>
@@ -67,12 +67,13 @@
                             <div class="card-excerpt">
                                 <p>
                                     Application web permettant de créer des parties de babyfoot en
-                                    collaboration et en temps réel.
+                                    collaboration et en temps réel.</br>Cette application est surtout un exercice pour comprendre le
+                                    fonctionnement des websockets.
                                 <ul>
                                     <li> Node.js</li>
                                     <li> Express.js</li>
                                     <li> Postgresql</li>
-                                    <li> ORM Sequelize</li>
+                                    <li> websockets</li>
                                 </ul>
                                 </p>
                             </div>
@@ -114,13 +115,13 @@
                                 <p>
                                     Application web permettant de laisser des messages avec un
                                     formulaire d'inscription
-                                    pour être client ou administrateur qui gères les articles et les
-                                    utilisateurs.
+                                    pour être client ou administrateur qui gère les articles et les
+                                    utilisateurs.Cette application fut le support de mon apprentissage PHP/Laravel8.
                                 <ul>
                                     <li> PHP</li>
                                     <li> Laravel 8</li>
                                     <li> MySQL</li>
-                                    <li> ORM Eloquent</li>
+                                    <li> Eloquent ORM</li>
                                 </ul>
                                 </p>
                             </div>
@@ -155,13 +156,13 @@
                             </div>
                             <div class="card-excerpt">
                                 <p>
-                                    Application web permettant de resérver des bouteilles de vin par le client inscrit.
+                                    Application web permettant de réserver des bouteilles de vin par le client inscrit.
                                     Interface administrateur pour effectuer la gestion du compte client, ainsi que le produit en stock.
                                 <ul>
                                     <li> Node.js</li>
                                     <li> Express.js</li>
                                     <li> Postgresql</li>
-                                    <li> ORM Sequelize</li>
+                                    <li> Sequelize ORM</li>
                                 </ul>
                                 </p>
                             </div>

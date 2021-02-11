@@ -26,7 +26,7 @@ class messageUser extends FormRequest
     public function rules()
     {
         return [
-            'pseudo' => 'required|alpha|max:25',
+            'pseudo' => ['required','max:35','regex:/^[\pL\s\-]+$/u'],
             'message_user' => ['required','max:250','regex:#^[^<>/]*[^<>/]*[^<>/]$#'],
             'sexe' => 'required',
 

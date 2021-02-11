@@ -316,7 +316,7 @@
                                                  - Formation à ARINFO (Node.js, Express, Bootstrap, Méthode Scrum
                                                  Agile), diplôme Bac+2.</br>
                                                  - Auto-Formation à Javascript et les Websockets, VueJS.</br>
-                                                 - Auto-Formation depuis Octobre 2019 en PHP/Laravel/MySQL.</br>
+                                                 - Auto-Formation depuis Octobre 2020 en PHP/Laravel/MySQL.</br>
                                              </div>
                                              </p>
                                          </div>
@@ -331,7 +331,7 @@
                                                  - Chauffeur Livreur remplaçant sur diverses tournées.</br>
                                                  - Formateur des nouveaux arrivants.</br>
                                                  - Optimisation de la tournée pour effecter la livraison.</br>
-                                                 - Relation diplomate avec la clientèle, afin de résoudre les problèmes en
+                                                 - Relation avec la clientèle, afin de résoudre les problèmes en
                                                  cas de perte, détérioration, envoi de pièces et leurs suivis.
                                              </div>
 

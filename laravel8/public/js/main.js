@@ -214,27 +214,27 @@ elementDemo.addEventListener('click', function (event) {
                 },
                 {
                     element: document.querySelector('.introFormation'),
-                    intro: "Ici j'ai fait appel à AOS (Animate On Scroll) qui est une librairie toute légère permettant d’ajouter des animations sur des éléments HTML, passez la souris sur une des trois images pour un zoom CSS3",
+                    intro: "Ici j'ai fait appel à AOS (Animate On Scroll) qui est une librairie toute légère permettant d’ajouter des animations sur des éléments HTML. Passez la souris sur une des trois images pour un zoom CSS3",
                     position: 'left',
                     tooltipClass: "introFormationDemo"
                 },
                 {
                     element: document.querySelector('.progress'),
-                    intro: "Les barres de progressions, sont animées par du code Javascript que j'ai adapté pour mon utilisation. ",
+                    intro: "Les barres de progression sont animées par du code Javascript que j'ai adapté pour mon utilisation.",
                     position: 'right',
                     tooltipClass: "progressDemo",
 
                 },
                 {
                     element: document.querySelector('.avatar'),
-                    intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur, il est génerer avec Fakeface une A.I. qui crée des visages qui n'existe pas.",
+                    intro: "L'avatar ici est différent à chaque rechargement du DOM tout en gardant le genre de l'utilisateur. Il est généré avec l'API Fakeface, une A.I. qui crée des visages qui n'existent pas.",
                     position: 'right',
                     tooltipClass: "avatarDemo",
                     highlightClass: "avatarHelperLayer"
                 },
                 {
                     element: document.querySelector('.introModale'),
-                    intro: "La fenêtre modale beaucoup plus érgonomique et flexible q'un Pop-up à l’avantage d’être membre du DOM de la page.",
+                    intro: "Un clique sur ce bouton pour ouvrir une fenêtre modal. Plus flexible qu'un pop-up, elle a l’avantage d’être membre du DOM de la page.",
                     position: 'right',
                     tooltipClass: "introModaleDemo",
                     highlightClass: "introHelperModale"
@@ -242,19 +242,19 @@ elementDemo.addEventListener('click', function (event) {
 
                 {
                     element: document.querySelector('.introContact'),
-                    intro: "Formulaire avec l'excellent systeme d'Authentification Laravel, la méthode fetch permet de gérer le corps de la requête et de la réponse de maniere asychrone ",
+                    intro: "Formulaire avec l'excellent systeme de validation Laravel. il est soumis en Javascript avec la méthode fetch qui permet de gérer l'envoi de la requête et la réception de la réponse de manière asynchrone ",
                     position: 'left',
                     tooltipClass: "introContactDemo"
                 },
                 {
                     element: document.querySelector('.admin'),
-                    intro: "Partie administrateur non accessible par les utilisateurs qui me permet de gérer les contacts et vos messages ",
+                    intro: "Partie administrateur non accessible par les utilisateurs qui me permet de gérer les contacts et vos messages.celle ci est gardée par le systeme d'authentification Laravel 8",
                     position: 'up',
                     tooltipClass: "adminDemo"
                 },
                 {
                     element: document.querySelector('.finDemo'),
-                    intro: "Bien sur je ne peux pas tous detaillé, si vous le souhaiter vous pouvez regarder pour plus de détails mon GitHup dans Mes Applis.",
+                    intro: "Bien sûr, je ne peux pas tout detailler, si vous le souhaitez, vous pouvez consulter le code de mes differents projets dans mon repo GitHub (lien dans la section Mes Applis).",
                     position: 'right',
                     tooltipClass: "adminDemo"
                 }
